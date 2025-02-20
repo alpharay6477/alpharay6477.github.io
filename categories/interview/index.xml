@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Interview on AlphaRay</title>
+    <link>https://alpharay.space/categories/interview/</link>
+    <description>Recent content in Interview on AlphaRay</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>ge6477@outlook.com (葛世杰)</managingEditor>
+    <webMaster>ge6477@outlook.com (葛世杰)</webMaster>
+    <copyright>© 2025 葛世杰</copyright>
+    <lastBuildDate>Sun, 26 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://alpharay.space/categories/interview/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Nuno Coração – Meet the Mentor</title>
+      <link>https://alpharay.space/blogs/202206-mentorcruise-interview/</link>
+      <pubDate>Sun, 26 Jun 2022 00:00:00 +0000</pubDate>
+      <author>ge6477@outlook.com (葛世杰)</author>
+      <guid>https://alpharay.space/blogs/202206-mentorcruise-interview/</guid>
+      <description>Nuno Coração is one of our professional mentors on MentorCruise and works as Staff Product Manager at Docker.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://alpharay.space/blogs/202206-mentorcruise-interview/featured.jpeg" />
+    </item>
+    
+  </channel>
+</rss>
