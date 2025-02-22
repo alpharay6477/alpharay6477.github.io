@@ -1,0 +1,29 @@
+disabled = false
+languageCode = "en"
+languageName = "English"
+weight = 1
+title = "AlphaRay"
+
+[params]
+  displayName = "EN"
+  isoCode = "en"
+  rtl = false
+  dateFormat = "2 January 2006"
+  # logo = "img/codepen.svg"
+  # secondaryLogo = "img/codepen.svg"
+  description = "欢迎来到我的 Blog"
+  copyright = "Copy right :{ year }  All rights reserved：Ge Shijie"
+
+ [params.author]
+   name = "葛世杰"
+   email = "ge6477@outlook.com"
+   image = "img/author.jpeg"
+   headline = "人生而自由，却无往不在枷锁之中。"
+   bio = " Student @ Soochow University"
+   links = [
+     { email = "mailto:hello@your_domain.com" },
+     { link = "https://alpharay.space/" },
+     { github = "https://github.com/alphray6477" },
+     { orcid = "https://orcid.org/0009-0005-2473-0379" },
+     { qq = "https://qm.qq.com/q/sF3Gyneco2"},
+   ]

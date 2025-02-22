@@ -1,0 +1,58 @@
+# -- Main Menu --
+# The main menu is displayed in the header at the top of the page.
+# Acceptable parameters are name, pageRef, page, url, title, weight.
+# 
+# The simplest menu configuration is to provide:
+#   name = The name to be displayed for this menu link
+#   pageRef = The identifier of the page or section to link to
+#
+# By default the menu is ordered alphabetically. This can be
+# overridden by providing a weight value. The menu will then be
+# ordered by weight from lowest to highest.
+[[main]]
+name = "Posts"
+pre = "codeberg"
+pageRef = "posts"
+identifier = "rXVCz71ATn"
+weight = 1
+
+[[main]]
+name = "Moments"
+pre = "heart"
+pageRef = "moments"
+identifier = "GGUl5ZU08Y"
+weight = 3
+
+[[main]]
+name = "Github"
+pre = "github"
+url = "https://github.com/alpharay6477"
+identifier = "rC5jEEROdS"
+weight = 5
+
+[[main]]
+name = "Links"
+pre = "link"
+pageRef = "links"
+identifier = "0X8DiTPZ4i"
+weight = 7
+
+[[main]]
+name = "About"
+pre = "circle-info"
+pageRef = "about"
+identifier = "bjj6otsrGw"
+weight = 9
+
+[[footer]]
+  name = "Tags"
+  pre = "tag"
+  pageRef = "tags"
+  weight = 10
+
+[[footer]]
+  name = "Categories"
+  pre = "category"
+  pageRef = "categories"
+  weight = 20
+
