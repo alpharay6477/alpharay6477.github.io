@@ -45,6 +45,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>//localhost:8989/links/</loc>
+    <lastmod>2025-01-07T22:56:14+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>//localhost:8989/posts/250109-2dnmr/</loc>
     <lastmod>2025-01-07T22:56:14+00:00</lastmod>
     <changefreq>daily</changefreq>
@@ -71,6 +77,12 @@
   <url>
     <loc>//localhost:8989/posts/250104-haloblogs/</loc>
     <lastmod>2025-01-04T19:22:20+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>//localhost:8989/about/</loc>
+    <lastmod>2025-01-01T22:56:14+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>

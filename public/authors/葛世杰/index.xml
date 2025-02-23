@@ -62,6 +62,16 @@
     </item>
     
     <item>
+      <title>友情链接</title>
+      <link>//localhost:8989/links/</link>
+      <pubDate>Tue, 07 Jan 2025 22:56:14 +0000</pubDate>
+      <author>ge6477@outlook.com (葛世杰)</author>
+      <guid>//localhost:8989/links/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="//localhost:8989/links/feature.jpg" />
+    </item>
+    
+    <item>
       <title>识别二维核磁共振氢谱</title>
       <link>//localhost:8989/posts/250109-2dnmr/</link>
       <pubDate>Tue, 07 Jan 2025 22:56:14 +0000</pubDate>
@@ -109,6 +119,16 @@
       <guid>//localhost:8989/posts/250104-haloblogs/</guid>
       <description>部署 Halo 博客，并链接到不同 docker compose 部署的 &lt;code&gt;postgres SQL&lt;/code&gt;​ 数据库。</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="//localhost:8989/posts/250104-haloblogs/feature.jpg" />
+    </item>
+    
+    <item>
+      <title>关于</title>
+      <link>//localhost:8989/about/</link>
+      <pubDate>Wed, 01 Jan 2025 22:56:14 +0000</pubDate>
+      <author>ge6477@outlook.com (葛世杰)</author>
+      <guid>//localhost:8989/about/</guid>
+      <description></description>
+      
     </item>
     
     <item>
