@@ -23,7 +23,7 @@ title = " "
    links = [
      { email = "mailto:hello@your_domain.com" },
      { link = "https://alpharay.space/" },
-     { github = "https://github.com/alphray6477" },
+     { github = "https://github.com/alpharay6477" },
      { orcid = "https://orcid.org/0009-0005-2473-0379" },
      { qq = "https://qm.qq.com/q/sF3Gyneco2"},
    ]
