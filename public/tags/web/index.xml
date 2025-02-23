@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Web on AlphaRay</title>
+    <title>Web on  </title>
     <link>//localhost:8989/tags/web/</link>
-    <description>Recent content in Web on AlphaRay</description>
+    <description>Recent content in Web on  </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>ge6477@outlook.com (葛世杰)</managingEditor>
@@ -13,12 +13,12 @@
     
     <item>
       <title>校园网环境下部署 molOCR</title>
-      <link>//localhost:8989/posts/250215-molocr/index-1/</link>
+      <link>//localhost:8989/posts/250215-molocr/</link>
       <pubDate>Sat, 15 Feb 2025 12:14:48 +0000</pubDate>
       <author>ge6477@outlook.com (葛世杰)</author>
-      <guid>//localhost:8989/posts/250215-molocr/index-1/</guid>
+      <guid>//localhost:8989/posts/250215-molocr/</guid>
       <description>molOCR 开源项目可以将图片转化学结构，对科研工作者极为方便。</description>
-      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="//localhost:8989/posts/250215-molocr/feature.jpg" />
     </item>
     
     <item>
@@ -48,7 +48,7 @@
       <author>ge6477@outlook.com (葛世杰)</author>
       <guid>//localhost:8989/posts/250105-certbotssl/</guid>
       <description>Linux 服务器使用 Certbot 申请 SSL 证书。</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="//localhost:8989/posts/250105-certbotssl/feature.jpeg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="//localhost:8989/posts/250105-certbotssl/feature.jpg" />
     </item>
     
     <item>

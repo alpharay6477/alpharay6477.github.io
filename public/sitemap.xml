@@ -9,7 +9,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>//localhost:8989/posts/250217-birad/</loc>
+    <loc>//localhost:8989/posts/250217-calbirad/</loc>
     <lastmod>2025-02-17T09:14:16+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -21,7 +21,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>//localhost:8989/posts/250215-molocr/index-1/</loc>
+    <loc>//localhost:8989/posts/250215-molocr/</loc>
     <lastmod>2025-02-15T12:14:48+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
