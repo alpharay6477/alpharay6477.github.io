@@ -2,33 +2,33 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Chemistry on  </title>
-    <link>/tags/chemistry/</link>
+    <link>https://blog.alpharay.space/tags/chemistry/</link>
     <description>Recent content in Chemistry on  </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>ge6477@outlook.com (葛世杰)</managingEditor>
     <webMaster>ge6477@outlook.com (葛世杰)</webMaster>
     <copyright>Copy right :2025  All rights reserved：Ge Shijie</copyright>
-    <lastBuildDate>Mon, 17 Feb 2025 09:14:16 +0000</lastBuildDate><atom:link href="/tags/chemistry/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 17 Feb 2025 09:14:16 +0000</lastBuildDate><atom:link href="https://blog.alpharay.space/tags/chemistry/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Gaussian | 计算双自由基</title>
-      <link>/blogs/250217-calbirad/</link>
+      <link>https://blog.alpharay.space/blogs/250217-calbirad/</link>
       <pubDate>Mon, 17 Feb 2025 09:14:16 +0000</pubDate>
       <author>ge6477@outlook.com (葛世杰)</author>
-      <guid>/blogs/250217-calbirad/</guid>
+      <guid>https://blog.alpharay.space/blogs/250217-calbirad/</guid>
       <description>课题组同门要做一个双自由基分子，虽然终产还没拿到，但是可以先算算性质。</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="/blogs/250217-calbirad/feature.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.alpharay.space/blogs/250217-calbirad/feature.jpg" />
     </item>
     
     <item>
       <title>校园网环境下部署 molOCR</title>
-      <link>/blogs/250215-molocr/</link>
+      <link>https://blog.alpharay.space/blogs/250215-molocr/</link>
       <pubDate>Sat, 15 Feb 2025 12:14:48 +0000</pubDate>
       <author>ge6477@outlook.com (葛世杰)</author>
-      <guid>/blogs/250215-molocr/</guid>
+      <guid>https://blog.alpharay.space/blogs/250215-molocr/</guid>
       <description>molOCR 开源项目可以将图片转化学结构，对科研工作者极为方便。</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="/blogs/250215-molocr/feature.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.alpharay.space/blogs/250215-molocr/feature.jpg" />
     </item>
     
   </channel>

@@ -3,91 +3,97 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>/</loc>
+    <loc>https://blog.alpharay.space/</loc>
     <lastmod>2025-02-17T09:14:16+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>/blogs/</loc>
+    <loc>https://blog.alpharay.space/blogs/</loc>
     <lastmod>2025-02-17T09:14:16+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>/blogs/250217-calbirad/</loc>
+    <loc>https://blog.alpharay.space/blogs/250217-calbirad/</loc>
     <lastmod>2025-02-17T09:14:16+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>/blogs/250215-molocr/</loc>
+    <loc>https://blog.alpharay.space/blogs/250215-molocr/</loc>
     <lastmod>2025-02-15T12:14:48+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>/blogs/250210-tadfcitation/</loc>
+    <loc>https://blog.alpharay.space/blogs/250210-tadfcitation/</loc>
     <lastmod>2025-02-10T10:17:21+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>/blogs/250206-slurmdbd/</loc>
+    <loc>https://blog.alpharay.space/blogs/250206-slurmdbd/</loc>
     <lastmod>2025-02-05T21:03:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>/blogs/250121-latex/</loc>
+    <loc>https://blog.alpharay.space/blogs/250121-latex/</loc>
     <lastmod>2025-01-21T13:17:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>/links/</loc>
+    <loc>https://blog.alpharay.space/links/</loc>
     <lastmod>2025-01-07T22:56:14+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>/blogs/250109-2dnmr/</loc>
+    <loc>https://blog.alpharay.space/moments/</loc>
     <lastmod>2025-01-07T22:56:14+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>/blogs/250107-logto/</loc>
+    <loc>https://blog.alpharay.space/blogs/250109-2dnmr/</loc>
+    <lastmod>2025-01-07T22:56:14+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://blog.alpharay.space/blogs/250107-logto/</loc>
     <lastmod>2025-01-07T08:35:20+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>/blogs/250105-certbotssl/</loc>
+    <loc>https://blog.alpharay.space/blogs/250105-certbotssl/</loc>
     <lastmod>2025-01-05T09:52:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>/blogs/250105-jingjijiqi/</loc>
+    <loc>https://blog.alpharay.space/blogs/250105-jingjijiqi/</loc>
     <lastmod>2025-01-05T09:52:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>/blogs/250104-haloblogs/</loc>
+    <loc>https://blog.alpharay.space/blogs/250104-haloblogs/</loc>
     <lastmod>2025-01-04T19:22:20+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>/about/</loc>
+    <loc>https://blog.alpharay.space/about/</loc>
     <lastmod>2025-01-01T22:56:14+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>/blogs/250101-helloworld/</loc>
+    <loc>https://blog.alpharay.space/blogs/250101-helloworld/</loc>
     <lastmod>2025-01-01T09:14:16+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

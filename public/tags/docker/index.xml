@@ -2,33 +2,33 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Docker on  </title>
-    <link>/tags/docker/</link>
+    <link>https://blog.alpharay.space/tags/docker/</link>
     <description>Recent content in Docker on  </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>ge6477@outlook.com (葛世杰)</managingEditor>
     <webMaster>ge6477@outlook.com (葛世杰)</webMaster>
     <copyright>Copy right :2025  All rights reserved：Ge Shijie</copyright>
-    <lastBuildDate>Sat, 15 Feb 2025 12:14:48 +0000</lastBuildDate><atom:link href="/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Feb 2025 12:14:48 +0000</lastBuildDate><atom:link href="https://blog.alpharay.space/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>校园网环境下部署 molOCR</title>
-      <link>/blogs/250215-molocr/</link>
+      <link>https://blog.alpharay.space/blogs/250215-molocr/</link>
       <pubDate>Sat, 15 Feb 2025 12:14:48 +0000</pubDate>
       <author>ge6477@outlook.com (葛世杰)</author>
-      <guid>/blogs/250215-molocr/</guid>
+      <guid>https://blog.alpharay.space/blogs/250215-molocr/</guid>
       <description>molOCR 开源项目可以将图片转化学结构，对科研工作者极为方便。</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="/blogs/250215-molocr/feature.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.alpharay.space/blogs/250215-molocr/feature.jpg" />
     </item>
     
     <item>
       <title>Logto | 控制台出现 Internal server error</title>
-      <link>/blogs/250107-logto/</link>
+      <link>https://blog.alpharay.space/blogs/250107-logto/</link>
       <pubDate>Tue, 07 Jan 2025 08:35:20 +0000</pubDate>
       <author>ge6477@outlook.com (葛世杰)</author>
-      <guid>/blogs/250107-logto/</guid>
+      <guid>https://blog.alpharay.space/blogs/250107-logto/</guid>
       <description>在更换 SSL 证书后，Logto 控制台出现 Internal server error.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="/blogs/250107-logto/feature.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.alpharay.space/blogs/250107-logto/feature.jpg" />
     </item>
     
   </channel>

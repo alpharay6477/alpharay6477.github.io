@@ -1,5 +1,5 @@
 ---
-title: 安装 Slurm DBD
+title: 安装 Slurm DataBase
 summary: Rocky Linux 在部署 Slurm 集群软件后启用 Slurm DataBase 对作业进行记录。
 tags:
   - Linux

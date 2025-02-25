@@ -46,8 +46,8 @@ smartTOCHideUnfocusedChildren = false
   homepageImage = "/img/background.svg" # used in: hero, and card
   showRecent = true
   showRecentItems = 9
-  showMoreLink = false
-  showMoreLinkDest = "/posts/"
+  showMoreLink = true
+  showMoreLinkDest = "/blogs"
   cardView = true
   cardViewScreenWidth = false
   layoutBackgroundBlur = true # only used when layout equals background
@@ -72,7 +72,7 @@ smartTOCHideUnfocusedChildren = false
   seriesOpened = false
   showHeadingAnchors = true
   showPagination = true
-  invertPagination = false
+  invertPagination = true
   showReadingTime = true
   showTableOfContents = true
   # showRelatedContent = false
@@ -92,7 +92,7 @@ smartTOCHideUnfocusedChildren = false
   showBreadcrumbs = false
   showSummary = true
   showViews = false
-  showLikes = true
+  showLikes = false
   showTableOfContents = true
   showCards = false
   orderByWeight = false
@@ -109,8 +109,8 @@ smartTOCHideUnfocusedChildren = false
   showHero = false
   heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   showBreadcrumbs = false
-  showViews = true
-  showLikes = true
+  showViews = false
+  showLikes = false
   showTableOfContents = false
   cardView = false
 
@@ -167,15 +167,15 @@ smartTOCHideUnfocusedChildren = false
   # feedId = ""
   # userId = ""
 
-[valine]
-    enable = true
-    appId = 'us0l9pDx2LZVukzltoztYgFH-MdYXbMMI'
-    appKey = 'gFk5QJ6clYNgLPK4RW4HJYhr'
-    notify = false   # mail notifier , https://github.com/xCss/Valine/wiki
-    verify = false  # Verification code
-    serverURLs = 'https://waline.alpharay.space/'
-    visitor = true
-    enableQQ = true
+#[valine]
+#    enable = true
+#    appId = 'us0l9pDx2LZVukzltoztYgFH-MdYXbMMI'
+#    appKey = 'gFk5QJ6clYNgLPK4RW4HJYhr'
+#    notify = false   # mail notifier , https://github.com/xCss/Valine/wiki
+#    verify = false  # Verification code
+#    serverURLs = 'https://waline.alpharay.space/'
+#    visitor = true
+#    enableQQ = true
 
 
 
