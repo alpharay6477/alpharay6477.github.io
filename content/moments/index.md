@@ -1,5 +1,5 @@
 ---
-title: 友情链接
+title: 瞬间
 summary: 
 tags:
 date: 2025-01-07T22:56:14Z
