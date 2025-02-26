@@ -3,97 +3,97 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>https://blog.alpharay.space/</loc>
+    <loc>http://localhost:8989/</loc>
     <lastmod>2025-02-17T09:14:16+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.alpharay.space/blogs/250217-calbirad/</loc>
+    <loc>http://localhost:8989/blogs/250217-calbirad/</loc>
     <lastmod>2025-02-17T09:14:16+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.alpharay.space/blogs/250215-molocr/</loc>
+    <loc>http://localhost:8989/blogs/250215-molocr/</loc>
     <lastmod>2025-02-15T12:14:48+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.alpharay.space/blogs/250210-tadfcitation/</loc>
+    <loc>http://localhost:8989/blogs/250210-tadfcitation/</loc>
     <lastmod>2025-02-10T10:17:21+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.alpharay.space/blogs/250206-slurmdbd/</loc>
+    <loc>http://localhost:8989/blogs/250206-slurmdbd/</loc>
     <lastmod>2025-02-05T21:03:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.alpharay.space/blogs/250121-latex/</loc>
+    <loc>http://localhost:8989/blogs/250121-latex/</loc>
     <lastmod>2025-01-21T13:17:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.alpharay.space/links/</loc>
+    <loc>http://localhost:8989/links/</loc>
     <lastmod>2025-01-07T22:56:14+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.alpharay.space/moments/</loc>
+    <loc>http://localhost:8989/moments/</loc>
     <lastmod>2025-01-07T22:56:14+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.alpharay.space/blogs/250109-2dnmr/</loc>
+    <loc>http://localhost:8989/blogs/250109-2dnmr/</loc>
     <lastmod>2025-01-07T22:56:14+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.alpharay.space/blogs/250107-logto/</loc>
+    <loc>http://localhost:8989/blogs/250107-logto/</loc>
     <lastmod>2025-01-07T08:35:20+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.alpharay.space/blogs/250105-certbotssl/</loc>
+    <loc>http://localhost:8989/blogs/250105-certbotssl/</loc>
     <lastmod>2025-01-05T09:52:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.alpharay.space/blogs/250105-jingjijiqi/</loc>
+    <loc>http://localhost:8989/blogs/250105-jingjijiqi/</loc>
     <lastmod>2025-01-05T09:52:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.alpharay.space/blogs/250104-haloblogs/</loc>
+    <loc>http://localhost:8989/blogs/250104-haloblogs/</loc>
     <lastmod>2025-01-04T19:22:20+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.alpharay.space/blogs/</loc>
+    <loc>http://localhost:8989/blogs/</loc>
     <lastmod>2025-01-01T22:56:14+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.alpharay.space/about/</loc>
+    <loc>http://localhost:8989/about/</loc>
     <lastmod>2025-01-01T22:56:14+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.alpharay.space/blogs/250101-helloworld/</loc>
+    <loc>http://localhost:8989/blogs/250101-helloworld/</loc>
     <lastmod>2025-01-01T09:14:16+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
