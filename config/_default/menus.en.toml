@@ -18,7 +18,7 @@ weight = 1
 
 [[main]]
 name = "Moments"
-pre = "heart"
+pre = "slack"
 pageRef = "moments"
 identifier = "GGUl5ZU08Y"
 weight = 3

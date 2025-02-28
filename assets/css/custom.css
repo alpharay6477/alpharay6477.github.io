@@ -1,4 +1,20 @@
-div {
-  font-size: 13pt;
+p {
+  font-size: 12pt;
   font-weight: 510;
 }
+pageStyle = "wide"
+
+
+
+/*@font-face {
+    font-family: CustomFont;
+    src:local('CustomFont'), url('/fonts/SegUIVar.woff2') format('woff2');
+}
+
+html {
+    font-family: "CustomFont", serif;
+}
+
+
+
+
