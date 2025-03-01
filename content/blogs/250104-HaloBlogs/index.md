@@ -16,7 +16,9 @@ authors:
 
 部署 Halo 博客，并链接到不同 docker compose 部署的 `postgres SQL`​ 数据库（postgres SQL docker 是之前部署 lobe chat database 所建立的）。
 
-## 一、在已有的 `postgres SQL`​ 创建新数据库 名称为 halo
+## 一、配置数据库
+
+在已有的 `postgres SQL`​ 创建新数据库 名称为 halo
 
 ```sh
 docker exec -it lobe-postgres bash      # 进入 postgres SQL 容器
@@ -63,7 +65,9 @@ services:
     restart: always
 ```
 
-## 二、参考 Halo博客 [docker compose install 文档](https://docs.halo.run/getting-started/install/docker-compose?current=external-db)
+## 二、参考文档部署 Halo博客
+
+参考 Halo博客 [docker compose install 文档](https://docs.halo.run/getting-started/install/docker-compose?current=external-db) 
 
 建立 Halo 博客容器，编辑 `docker-compose.yaml`​
 
@@ -100,7 +104,7 @@ services:
 
 然后使用 `docker compose up -d`​ 命令启用容器，访问服务器ip:8090 初始化网站，在 Nginx 中设置代理，Halo 博客部署完毕。
 
-### 附：数据备份
+## 附：数据备份
 
 对 dockers 挂载的 halo2 目录结构发现没有文章存放的位置，而网站的备份工具是将当前文件夹 zip
 

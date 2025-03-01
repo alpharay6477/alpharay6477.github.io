@@ -1,5 +1,5 @@
 ---
-title: Hello, world ！
+title: Hello, World ！
 summary: H如果你看到了这一篇文章，那么证明你已经安装成功了，感谢使用 Hugo，希望能够使用愉快。
 tags:
   - Web
@@ -24,5 +24,3 @@ authors:
 中文社区：[https://discourse.gohugo.io/](https://discourse.gohugo.io/)
 
 开源地址：[https://github.com/gohugoio/hugo](https://github.com/gohugoio/hugo)
-
-

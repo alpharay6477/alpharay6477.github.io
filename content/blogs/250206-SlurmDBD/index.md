@@ -13,7 +13,9 @@ authors:
   - 葛世杰
 ---
 
-## 一、 安装并初始化 MySQL 数据库
+## 一、 配置 MySQL 数据库
+
+1. 安装 MySQL 数据库
 
 ```sh
 root# dnf install mysql-server-8.0.36-1.el9_3.x86_64
@@ -24,7 +26,7 @@ root# systemctl enable mysqld
 root# mysql_secure_installation
 ```
 
-## 二、 设置 MySQL 数据库
+2. 设置 MySQL 数据库
 
 ```sh
 root# mysql -u root -p
@@ -35,7 +37,7 @@ root# mysql -u root -p
 > EXIT;
 ```
 
-CREATE USER 'slurm'@'localhost' IDENTIFIED BY 'jzq9093105';
+3. CREATE USER 'slurm'@'localhost' IDENTIFIED BY 'mypassword';
 
 ```sh
 vim /etc/my.cnf.d/mysql-server.cnf
@@ -46,7 +48,7 @@ innodb_lock_wait_timeout = 900
 systemctl restart mysqld
 ```
 
-## 三、 配置 Slurm DBD
+## 二、 配置 Slurm DBD
 
 ```sh
 dnf install slurm-slurmdbd-22.05.9-1.el9.x86_64
@@ -55,18 +57,18 @@ vim /etc/slurm/slurmdbd.conf
 
 AuthType=auth/munge
 DbdAddr=localhost
-DbdHost=localhost						# your_hostname
+DbdHost=localhost                        # your_hostname
 StorageType=accounting_storage/mysql
 StorageHost=localhost
 StoragePort=3306
-StoragePass=jzq9093105					# your_password
+StoragePass=jzq9093105                    # your_password
 StorageUser=slurm
 StorageLoc=slurm_acct_db
 ```
 
-## 四、配置 Slurm 控制器以使用 slurm DBD
+## 三、配置 SlurmCTL
 
-编辑 Slurm 的主配置文件 `slurm.conf`​，通常位于 `/etc/slurm/`​ 或 `/etc/slurm-llnl/`​：
+配置 SlurmCTL 控制器以使用 slurm DBD，编辑 Slurm 的主配置文件 `slurm.conf`​，通常位于 `/etc/slurm/`​ 或 `/etc/slurm-llnl/`​：
 
 ```bash
 sudo vim /etc/slurm/slurm.conf
@@ -77,8 +79,8 @@ sudo vim /etc/slurm/slurm.conf
 ```ini
 AccountingStorageEnforce=1
 AccountingStorageHost=localhost
-# AccountingStoragePass=							# 使用 slurmdbd 无这一项
-AccountingStoragePort=6819							# slurmdbd 的端口
+# AccountingStoragePass=                            # 使用 slurmdbd 无这一项
+AccountingStoragePort=6819                            # slurmdbd 的端口
 AccountingStorageType=accounting_storage/slurmdbd
 # AccountingStorageUser=slurm
 AccountingStoreFlags=job_account
@@ -95,28 +97,22 @@ systemctl restart slurmdbd.service
 systemctl restart slurmctld.service
 ```
 
-##五、初始化 Slurm 数据库
+## 四、初始化 Slurm 数据库
 
 ```bash
 sacctmgr -i add cluster lab-server           # your_cluster_name
 ```
 
-将 `your_cluster_name`​ 替换为你的集群名称。
-
-## 六、重启 Slurm 服务
+将 `your_cluster_name`​ 替换为你的集群名称，重启 Slurm 服务。
 
 重启 Slurm 控制器和节点服务以应用配置更改：
-
-bash复制
 
 ```bash
 sudo systemctl restart slurmd
 sudo systemctl restart slurmctld
 ```
 
-## 七、 验证配置
-
-使用 `sacct`​ 或 `sacctmgr`​ 命令验证数据库是否正常工作：
+验证配置：使用 `sacct`​ 或 `sacctmgr`​ 命令验证数据库是否正常工作：
 
 ```bash
 sacct 
@@ -181,59 +177,72 @@ Would you like to commit changes? (You have 30 seconds to decide)
 
 ‍
 
-## 附：slurm.conf 关于 Account （Slurm DBD）参数解释
+## 附：参数解释
+
+slurm.conf 关于 Account （Slurm DBD）参数解释
 
 1. ​**​`AccountingStorageEnforce`​**​
+   
+   * **用途**: 控制会计存储的强制性。
+   
+   * **值**:
+     
+     * ​`0`​: 不强制要求作业会计信息。
+     * ​`1`​: 强制要求作业会计信息。
+     * ​`2`​: 强制要求作业会计信息，并且会计信息不完整时拒绝作业。
+   
+   * **建议**: 如果需要严格的会计，可以设置为 `1`​ 。
 
-    * **用途**: 控制会计存储的强制性。
-    * **值**:
-
-      * ​`0`​: 不强制要求作业会计信息。
-      * ​`1`​: 强制要求作业会计信息。
-      * ​`2`​: 强制要求作业会计信息，并且会计信息不完整时拒绝作业。
-    * **建议**: 如果需要严格的会计，可以设置为 `1`​ 。
 2. ​**​`AccountingStorageHost`​**​
+   
+   * **用途**: 指定会计存储后端的主机名或 IP 地址。
+   * **值**: 根据你的后端存储（如 MySQL、PostgreSQL、SlurmDBD）设置相应的主机名或 IP。
+   * **建议**: 如果你使用的是 MySQL，可以设置为 `localhost`​ 或你的 MySQL 服务器地址。
 
-    * **用途**: 指定会计存储后端的主机名或 IP 地址。
-    * **值**: 根据你的后端存储（如 MySQL、PostgreSQL、SlurmDBD）设置相应的主机名或 IP。
-    * **建议**: 如果你使用的是 MySQL，可以设置为 `localhost`​ 或你的 MySQL 服务器地址。
 3. ​**​`AccountingStoragePass`​**​
+   
+   * **用途**: 指定访问会计存储后端的密码（如果是 Slurm DBD 则不设置）。
+   * **值**: 根据你的后端存储设置相应的密码。
+   * **建议**: 设置一个强密码，并确保它符合后端存储的要求。
 
-    * **用途**: 指定访问会计存储后端的密码（如果是 Slurm DBD 则不设置）。
-    * **值**: 根据你的后端存储设置相应的密码。
-    * **建议**: 设置一个强密码，并确保它符合后端存储的要求。
 4. ​**​`AccountingStoragePort`​**​
+   
+   * **用途**: 指定会计存储后端的端口号 （Slurm DBD 6819 `ss -tlnp | grep 6819`​）。
+   * **值**: 根据你的后端存储设置相应的端口号（例如 MySQL 默认是 `3306`​，PostgreSQL 默认是 `5432`​）。
+   * **建议**: 如果使用默认端口，可以保留为空或不设置。
 
-    * **用途**: 指定会计存储后端的端口号 （Slurm DBD 6819 `ss -tlnp | grep 6819`​）。
-    * **值**: 根据你的后端存储设置相应的端口号（例如 MySQL 默认是 `3306`​，PostgreSQL 默认是 `5432`​）。
-    * **建议**: 如果使用默认端口，可以保留为空或不设置。
 5. ​**​`AccountingStorageType`​**​
+   
+   * **用途**: 指定会计存储的类型。
+   
+   * **值**:
+     
+     * ​`accounting_storage/none`​: 禁用会计存储。
+     * ​`accounting_storage/mysql`​: 使用 MySQL 作为会计存储。
+     * ​`accounting_storage/slurmdbd`​: 使用 SlurmDBD 作为会计存储。
+   
+   * **建议**: 如果需要会计功能，建议设置为 `accounting_storage/mysql`​ 或更高级的 `accounting_storage/slurmdbd`​。
 
-    * **用途**: 指定会计存储的类型。
-    * **值**:
-
-      * ​`accounting_storage/none`​: 禁用会计存储。
-      * ​`accounting_storage/mysql`​: 使用 MySQL 作为会计存储。
-      * ​`accounting_storage/slurmdbd`​: 使用 SlurmDBD 作为会计存储。
-    * **建议**: 如果需要会计功能，建议设置为 `accounting_storage/mysql`​ 或更高级的 `accounting_storage/slurmdbd`​。
 6. ​**​`AccountingStorageUser`​**​
+   
+   * **用途**: 指定访问会计存储后端的用户名（如果是 Slurm DBD 则不设置）。
+   * **值**: 根据你的后端存储设置相应的用户名。
+   * **建议**: 设置一个专门用于会计的用户名，并确保它具有足够的权限。
 
-    * **用途**: 指定访问会计存储后端的用户名（如果是 Slurm DBD 则不设置）。
-    * **值**: 根据你的后端存储设置相应的用户名。
-    * **建议**: 设置一个专门用于会计的用户名，并确保它具有足够的权限。
 7. ​**​`AccountingStoreFlags`​**​
-
-    * **用途**: 指定会计存储的标记，控制哪些信息会被记录。
-    * **值**: 可以是以下一个或多个（用逗号分隔）：
-
-      * ​`job_comment`​: 存储作业的注释信息。
-      * ​`end`​: 存储作业结束信息。
-      * ​`durations`​: 存储作业的持续时间。
-      * ​`job_env`​: 存储作业的环境变量。
-      * ​`associative`​: 存储关联信息。
-      * ​`format_std`​: 存储标准格式。
-      * ​`job_account`​: 存储完整的会计信息。
-    * **建议**: 根据你的需求选择需要的标记。例如，`job_account`​ 会存储完整的会计信息。
+   
+   * **用途**: 指定会计存储的标记，控制哪些信息会被记录。
+   
+   * **值**: 可以是以下一个或多个（用逗号分隔）：
+     
+     * ​`job_comment`​: 存储作业的注释信息。
+     * ​`end`​: 存储作业结束信息。
+     * ​`durations`​: 存储作业的持续时间。
+     * ​`job_env`​: 存储作业的环境变量。
+     * ​`associative`​: 存储关联信息。
+     * ​`format_std`​: 存储标准格式。
+     * ​`job_account`​: 存储完整的会计信息。
+   
+   * **建议**: 根据你的需求选择需要的标记。例如，`job_account`​ 会存储完整的会计信息。
 
 ‍
-

@@ -143,54 +143,54 @@ Hit Ctrl-C to quit.
 ### 2. molOCR 连接 chembl_beaker
 
     这时候需要让前端 molOCR 和 后端 chembl_beaker 握手，学校内网的 ip 地址为 42.244.25.5 ，通过端口转发，服务器的 ip 地址为 192.168.1.8。这时候转发 molOCR 网站的本地端口 8000 到学校内网，识别会出现 无法连接 42.244.25.5:5000 （chembl_beaker 的端口）
-
+    
     将 chembl_beaker 的本地端口 5000 转发到学校内网，即可正常识别分子结构图片
 
 ## 三、设置为后台守护进程
 
 将 molOCR 和 chembl_beaker 设置为后台守护进程，我将 chembl_beaker 设置为 docker compose up -d 但是有时出现不识别的情况，于是另辟蹊径，使用 systemd 服务实现
 
-### 1. 后端 chembl_beaker 
+### 1. 后端 chembl_beaker
 
     ```bash
     sudo vim /etc/systemd/system/molocr-http.service
-
+    
     [Unit]
     Description=MolOCR HTTP Server
     After=network.target
-
+    
     [Service]
     ExecStart=/usr/bin/python -m http.server --directory /path/docker/chembl_beaker/molOCR
     WorkingDirectory=/path/docker/chembl_beaker/molOCR
     Restart=always
     User=jzq
-
+    
     [Install]
     WantedBy=multi-user.target
-
+    
     sudo systemctl daemon-reload
     sudo systemctl enable molocr-http.service
     sudo systemctl start molocr-http.service
     sudo systemctl status molocr-http.service
     ```
 
-### 2. 后端 chembl_beaker 
+### 2. 后端 chembl_beaker
 
     ```bash
     sudo vim /etc/systemd/system/my_chembl_beaker.service
-
+    
     [Unit]
     Description=My ChEMBL Beaker Service
     After=docker.service
     Requires=docker.service
-
+    
     [Service]
     ExecStartPre=-/usr/bin/docker rm -f chembl
     ExecStart=/usr/bin/docker run -p 5000:5000 --name chembl my_chembl_beaker:v1.2
     ExecStop=/usr/bin/docker stop $(/usr/bin/docker ps -q --filter ancestor=my_chembl_beaker:v1.2)
     Restart=always
     RestartSec=20
-
+    
     [Install]
     WantedBy=multi-user.target
     sudo systemctl daemon-reload
@@ -198,4 +198,3 @@ Hit Ctrl-C to quit.
     sudo systemctl start my_chembl_beaker.service
     sudo systemctl status my_chembl_beaker.service
     ```
-
