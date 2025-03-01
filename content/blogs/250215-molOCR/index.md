@@ -17,11 +17,13 @@ authors:
 
 molOCR 开源项目可以将图片转化学结构，对科研工作者极为方便。很多商业软件也可以实现这个功能，但是一般都需要登录和氪金。感谢开源项目：[molOCR](https://github.com/def-fun/molOCR) （前端）以及 [chembl_beaker](https://github.com/def-fun/chembl_beaker) （后端）
 
+![](assets/32283b709d3a17aef21050c4ac1417650d77318d.png)
+
 本课题组有量化计算用的服务器，在网上刷到 [纯白纱陵](https://bane-dysta.github.io/) 博客文章：[利用molOCR截图识别文献中的结构](https://bane-dysta.github.io/posts/23/)，故在本地部署 molOCR 。由于课题组服务器是在校园网内，有不同网段，做端口转发，中间遇到了一些问题并解决，特来记录。
 
 ## 一、后端 `chembl_beaker`​ 部署
 
-###1. 拉取项目
+### 1. 拉取项目
 
 默认你的 Linux 已经安装 docker 以及 root 登录 SSH。
 
@@ -138,13 +140,13 @@ Hit Ctrl-C to quit.
     Serving HTTP on :: port 8000 (http://[::]:8000/) ...
     ```
 
-这时候在 `./molOCR-master/js/img2mol.js`​ 配置文件中 `let OCR_API_URL = 'http://' + window.location.hostname + ':5000/image2ctab';`​ //根据实际情况修改 API 的地址，实际上是不需要修改，它会自动识别你的 ip 地址，如果修改为 0.0.0.0 、 127.0.0.1 或者 localhost 反而和后端连不上（我也不知道为什么，可能是我服务器的问题）
+这时候在 `./molOCR-master/js/img2mol.js`​ 配置文件中 `let OCR_API_URL = 'http://' + window.location.hostname + ':5000/image2ctab'; //根据实际情况修改 API 的地址`，实际上是不需要修改，它会自动识别服务器的 ip 地址，如果修改为 0.0.0.0 、 127.0.0.1 或者 localhost 反而和后端连不上（我也不知道为什么，可能是我服务器的问题）
 
 ### 2. molOCR 连接 chembl_beaker
 
-    这时候需要让前端 molOCR 和 后端 chembl_beaker 握手，学校内网的 ip 地址为 42.244.25.5 ，通过端口转发，服务器的 ip 地址为 192.168.1.8。这时候转发 molOCR 网站的本地端口 8000 到学校内网，识别会出现 无法连接 42.244.25.5:5000 （chembl_beaker 的端口）
+    这时候需要让前端 molOCR 和 后端 chembl_beaker 握手，学校内网的 ip 地址为 42.244.25.5 ，通过端口转发，局域网内服务器的 ip 地址为 192.168.1.8。这时候转发 molOCR 网站的本地端口 8000 到学校内网（42.244.25.5），识别会出现 无法连接 42.244.25.5:5000 （chembl_beaker 的端口）
     
-    将 chembl_beaker 的本地端口 5000 转发到学校内网，即可正常识别分子结构图片
+    将 chembl_beaker 的本地端口 5000 转发到学校内网（42.244.25.5），即可正常识别分子结构图片
 
 ## 三、设置为后台守护进程
 

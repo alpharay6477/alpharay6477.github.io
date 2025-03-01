@@ -175,11 +175,50 @@ Would you like to commit changes? (You have 30 seconds to decide)
        wjr       root      None
 ```
 
-‍
+## 附：对 Slurm DataBase 的补充
 
-## 附：参数解释
+#### 1. 记录已经完成的任务的路径（不使用 Slurm DataBase）
 
-slurm.conf 关于 Account （Slurm DBD）参数解释
+由于我比较需要记录完成作业的时间，名称和 路径，但是 `sacct` 命令不支持记录 **路径**，于是另辟蹊径，在 sbatch 脚本入手：
+
+```bash
+#!/bin/bash
+#SBATCH -J jobname
+#SBATCH -N 1
+#SBATCH -n 1
+......
+if ! grep -q "$(date '+%Y-%m-%d')" ~/.end_jobs; then
+    echo "-------------------------------------" >> ~/.end_jobs
+    echo "$(date '+%Y-%m-%d')" >> ~/.end_jobs
+    echo " TIME        NAME  CPUS WORK_DIR" >> ~/.end_jobs
+fi
+printf "%-6s %10s %5s %-25s\n" "$(date "+%H:%M")" "jobname" "32" "/path/lc-blyp/cal" >> ~/.end_jobs
+```
+
+在 .sbatch 脚本末尾加入如上代码，让后就可以在 用户目录下的 .end_jobs 文件中记录 `TIME NAME CPUS WORK_DIR` 信息，每次登录可以 tail 一下查看信息。
+
+修改生成 .sbatch 脚本的提交程序，只要在 `sbatch $sbatch` 前面加上如下代码，即可实现。
+
+```bash
+#!/bin/bash
+.....
+cat <<MYEND >> $sbatch    # 写入 sbatch 脚本
+#!/bin/bash
+#SBATCH -J jobname
+#SBATCH -N 1
+#SBATCH -n 1
+............
+if ! grep -q "\$(date '+%Y-%m-%d')" ~/.end_jobs; then
+echo "-------------------------------------" >> ~/.end_jobs
+echo "\$(date '+%Y-%m-%d')" >> ~/.end_jobs
+echo " TIME        NAME  CPUS WORK_DIR" >> ~/.end_jobs
+fi
+printf "%-6s %10s %5s %-25s\n" "\$(date "+%H:%M")" "$JOB_NAME" "$XNPROC" "$workdir" >> ~/.end_jobs
+MYEND 
+sbatch $sbatch        # 提交脚本计算
+```
+
+#### 2. slurm.conf 关于 Account （Slurm DBD）参数解释
 
 1. ​**​`AccountingStorageEnforce`​**​
    
