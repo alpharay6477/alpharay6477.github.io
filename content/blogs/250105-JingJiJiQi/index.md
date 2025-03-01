@@ -2,15 +2,15 @@
 title: 经济机器是怎样运行的
 summary: 在B站刷到过瑞·达利欧（Ray Dalio）制作的《经济机器是怎样运行的》纪录片，印象深刻，这里简做摘要。
 tags:
-- Knowledge
-  date: 2025-01-05T09:52:12Z
-  categories:
-- Life
-  draft: false
-  isCJKLanguage: true
-  showAuthor: true
-  authors:
-- 葛世杰
+  - Knowledge
+date: 2025-01-05T09:52:12Z
+categories:
+  - Life
+draft: false
+isCJKLanguage: true
+showAuthor: true
+authors:
+  - 葛世杰
 
 ---
 
