@@ -113,7 +113,7 @@
     "keywords": ["Web","Docker"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "1009"
+    "wordCount": "1033"
   }]
   </script>
 
@@ -749,7 +749,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2025-01-07T08:35:20&#43;00:00">7 January 2025</time><span class="px-2 text-primary-500">&middot;</span><span>1009 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">3 mins</span>
+  <time datetime="2025-01-07T08:35:20&#43;00:00">7 January 2025</time><span class="px-2 text-primary-500">&middot;</span><span>1033 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">3 mins</span>
   
 
   
@@ -956,8 +956,9 @@
     class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#一报错与排查">一、报错与排查：</a></li>
-    <li><a href="#二解决">二、解决：</a></li>
+    <li><a href="#一报错">一、报错</a></li>
+    <li><a href="#二排查">二、排查</a></li>
+    <li><a href="#三解决">三、解决</a></li>
   </ul>
 </nav>
   </div>
@@ -971,8 +972,9 @@
     class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#一报错与排查">一、报错与排查：</a></li>
-    <li><a href="#二解决">二、解决：</a></li>
+    <li><a href="#一报错">一、报错</a></li>
+    <li><a href="#二排查">二、排查</a></li>
+    <li><a href="#三解决">三、解决</a></li>
   </ul>
 </nav>
   </div>
@@ -1058,13 +1060,13 @@
 <p>参考：Chat GPT，<a href="https://emcorrales.com/blog/nodejs-debugging-and-fixing-https-ssl-issues-caused-by-changing-the-self-signed-certificate" target="_blank">Emmanuel Corrales</a>.</p>
 
 
-<h2 class="relative group">一、报错与排查： 
-    <div id="%E4%B8%80%E6%8A%A5%E9%94%99%E4%B8%8E%E6%8E%92%E6%9F%A5" class="anchor"></div>
+<h2 class="relative group">一、报错 
+    <div id="%E4%B8%80%E6%8A%A5%E9%94%99" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E4%B8%80%E6%8A%A5%E9%94%99%E4%B8%8E%E6%8E%92%E6%9F%A5" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#%E4%B8%80%E6%8A%A5%E9%94%99" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
@@ -1075,7 +1077,20 @@
       at TLSSocket._finishInit (node:_tls_wrap:1076:8)
       at ssl.onhandshakedone (node:_tls_wrap:862:12) {
     code: &#39;UNABLE_TO_VERIFY_LEAF_SIGNATURE&#39;
-</code></pre><p>询问 GPT 给出的答案均为 <code>在 SSL/TLS 连接过程中，客户端无法验证服务器证书的有效性</code>​ ，由于能够正常访问其他该 SSL 证书加密的网站，我第一反应是 Logto 缓存中停留的上一份 SSL 证书与当前证书不匹配。在仔细研究 Logto 的部署文档，重新调试了 docker 容器均无果，于是在 bing 上搜索。在 <a href="https://emcorrales.com/blog/nodejs-debugging-and-fixing-https-ssl-issues-caused-by-changing-the-self-signed-certificate" target="_blank">https://emcorrales.com/blog/nodejs-debugging-and-fixing-https-ssl-issues-caused-by-changing-the-self-signed-certificate</a> 找到了类似问题的原因。</p>
+</code></pre><p>询问 GPT 给出的答案均为： <code>在 SSL/TLS 连接过程中，客户端无法验证服务器证书的有效性</code>，由于能够正常访问其他该 SSL 证书加密的网站。</p>
+
+
+<h2 class="relative group">二、排查 
+    <div id="%E4%BA%8C%E6%8E%92%E6%9F%A5" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E4%BA%8C%E6%8E%92%E6%9F%A5" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>我第一反应是 Logto 缓存中停留的上一份 SSL 证书与当前证书不匹配。在仔细研究 Logto 的部署文档，重新调试了 docker 容器均无果，于是在 bing 上搜索。在 Emmanuel Corrales 的博文：<a href="https://emcorrales.com/blog/nodejs-debugging-and-fixing-https-ssl-issues-caused-by-changing-the-self-signed-certificate" target="_blank">nodejs debugging and fixing https ssl issues caused by changing the self signed certificate</a> 找到了类似问题的原因。</p>
 <p>​![[image-20250107085331-b9z89l3.png]]
     <figure>
       <img
@@ -1106,13 +1121,13 @@
 </span></span></code></pre></div><p>可以发现与 docker 日志中出现了相同的 <code>unable to verify the first certificate</code>​ ，证明是 SSL 的问题。</p>
 
 
-<h2 class="relative group">二、解决： 
-    <div id="%E4%BA%8C%E8%A7%A3%E5%86%B3" class="anchor"></div>
+<h2 class="relative group">三、解决 
+    <div id="%E4%B8%89%E8%A7%A3%E5%86%B3" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E4%BA%8C%E8%A7%A3%E5%86%B3" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#%E4%B8%89%E8%A7%A3%E5%86%B3" aria-label="Anchor">#</a>
     </span>        
     
 </h2>

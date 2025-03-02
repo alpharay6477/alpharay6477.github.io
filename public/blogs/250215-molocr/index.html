@@ -114,7 +114,7 @@
     "keywords": ["Docker","Chemistry","Web"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "1391"
+    "wordCount": "1405"
   }]
   </script>
 
@@ -679,7 +679,7 @@
 
     
     <div class="fixed inset-x-0 top-0 h-[800px] single_hero_background nozoom"
-    style="background-image:url(/blogs/250215-molocr/feature_hu_6b49170579746404.jpg);">
+    style="background-image:url(/blogs/250215-molocr/feature_hu_ea53cc33f4ccb859.jpg);">
     
 
 
@@ -750,7 +750,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2025-02-15T12:14:48&#43;00:00">15 February 2025</time><span class="px-2 text-primary-500">&middot;</span><span>1391 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">3 mins</span>
+  <time datetime="2025-02-15T12:14:48&#43;00:00">15 February 2025</time><span class="px-2 text-primary-500">&middot;</span><span>1405 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">3 mins</span>
   
 
   
@@ -967,6 +967,7 @@
   <ul>
     <li><a href="#一后端-chembl_beaker-部署">一、后端 <code>chembl_beaker</code>​ 部署</a>
       <ul>
+        <li><a href="#1-拉取项目">1. 拉取项目</a></li>
         <li><a href="#2-构建镜像">2. 构建镜像</a></li>
         <li><a href="#3-运行-chembl_beake-后端">3. 运行 chembl_beake 后端</a></li>
       </ul>
@@ -998,6 +999,7 @@
   <ul>
     <li><a href="#一后端-chembl_beaker-部署">一、后端 <code>chembl_beaker</code>​ 部署</a>
       <ul>
+        <li><a href="#1-拉取项目">1. 拉取项目</a></li>
         <li><a href="#2-构建镜像">2. 构建镜像</a></li>
         <li><a href="#3-运行-chembl_beake-后端">3. 运行 chembl_beake 后端</a></li>
       </ul>
@@ -1096,6 +1098,22 @@
 
         <div class="article-content max-w-prose mb-20">
           <p>molOCR 开源项目可以将图片转化学结构，对科研工作者极为方便。很多商业软件也可以实现这个功能，但是一般都需要登录和氪金。感谢开源项目：<a href="https://github.com/def-fun/molOCR" target="_blank">molOCR</a> （前端）以及 <a href="https://github.com/def-fun/chembl_beaker" target="_blank">chembl_beaker</a> （后端）</p>
+<p>
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        srcset="
+        /blogs/250215-molocr/assets/32283b709d3a17aef21050c4ac1417650d77318d_hu_6bad14d1f18340d.png 330w,
+        /blogs/250215-molocr/assets/32283b709d3a17aef21050c4ac1417650d77318d_hu_d1425affe437468f.png 660w,
+        /blogs/250215-molocr/assets/32283b709d3a17aef21050c4ac1417650d77318d_hu_3f6417508d906c8b.png 1024w,
+        /blogs/250215-molocr/assets/32283b709d3a17aef21050c4ac1417650d77318d_hu_67dc254d0db85b72.png 2x"
+        src="/blogs/250215-molocr/assets/32283b709d3a17aef21050c4ac1417650d77318d_hu_d1425affe437468f.png"
+        alt=""
+      />
+      
+    </figure>
+</p>
 <p>本课题组有量化计算用的服务器，在网上刷到 <a href="https://bane-dysta.github.io/" target="_blank">纯白纱陵</a> 博客文章：<a href="https://bane-dysta.github.io/posts/23/" target="_blank">利用molOCR截图识别文献中的结构</a>，故在本地部署 molOCR 。由于课题组服务器是在校园网内，有不同网段，做端口转发，中间遇到了一些问题并解决，特来记录。</p>
 
 
@@ -1109,7 +1127,18 @@
     </span>        
     
 </h2>
-<p>###1. 拉取项目</p>
+
+
+<h3 class="relative group">1. 拉取项目 
+    <div id="1-%E6%8B%89%E5%8F%96%E9%A1%B9%E7%9B%AE" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#1-%E6%8B%89%E5%8F%96%E9%A1%B9%E7%9B%AE" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
 <p>默认你的 Linux 已经安装 docker 以及 root 登录 SSH。</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 新建文件夹</span>
 </span></span><span class="line"><span class="cl">mkdir -p ./docker/molOCR <span class="o">&amp;&amp;</span> <span class="nb">cd</span> ./docker/molOCR
@@ -1245,7 +1274,7 @@ python -m http.server
 Serving HTTP on :: port 8000 (http://[::]:8000/) ...
 ```
 </code></pre>
-<p>这时候在 <code>./molOCR-master/js/img2mol.js</code>​ 配置文件中 <code>let OCR_API_URL = 'http://' + window.location.hostname + ':5000/image2ctab';</code>​ //根据实际情况修改 API 的地址，实际上是不需要修改，它会自动识别你的 ip 地址，如果修改为 0.0.0.0 、 127.0.0.1 或者 localhost 反而和后端连不上（我也不知道为什么，可能是我服务器的问题）</p>
+<p>这时候在 <code>./molOCR-master/js/img2mol.js</code>​ 配置文件中 <code>let OCR_API_URL = 'http://' + window.location.hostname + ':5000/image2ctab'; //根据实际情况修改 API 的地址</code>，实际上是不需要修改，它会自动识别服务器的 ip 地址，如果修改为 0.0.0.0 、 127.0.0.1 或者 localhost 反而和后端连不上（我也不知道为什么，可能是我服务器的问题）</p>
 
 
 <h3 class="relative group">2. molOCR 连接 chembl_beaker 
@@ -1258,9 +1287,9 @@ Serving HTTP on :: port 8000 (http://[::]:8000/) ...
     </span>        
     
 </h3>
-<pre><code>这时候需要让前端 molOCR 和 后端 chembl_beaker 握手，学校内网的 ip 地址为 42.244.25.5 ，通过端口转发，服务器的 ip 地址为 192.168.1.8。这时候转发 molOCR 网站的本地端口 8000 到学校内网，识别会出现 无法连接 42.244.25.5:5000 （chembl_beaker 的端口）
+<pre><code>这时候需要让前端 molOCR 和 后端 chembl_beaker 握手，学校内网的 ip 地址为 42.244.25.5 ，通过端口转发，局域网内服务器的 ip 地址为 192.168.1.8。这时候转发 molOCR 网站的本地端口 8000 到学校内网（42.244.25.5），识别会出现 无法连接 42.244.25.5:5000 （chembl_beaker 的端口）
 
-将 chembl_beaker 的本地端口 5000 转发到学校内网，即可正常识别分子结构图片
+将 chembl_beaker 的本地端口 5000 转发到学校内网（42.244.25.5），即可正常识别分子结构图片
 </code></pre>
 
 

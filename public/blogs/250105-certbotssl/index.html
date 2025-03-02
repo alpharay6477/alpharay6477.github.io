@@ -112,7 +112,7 @@
     "keywords": ["Web"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "322"
+    "wordCount": "431"
   }]
   </script>
 
@@ -748,7 +748,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2025-01-05T09:52:12&#43;00:00">5 January 2025</time><span class="px-2 text-primary-500">&middot;</span><span>322 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 min</span>
+  <time datetime="2025-01-05T09:52:12&#43;00:00">5 January 2025</time><span class="px-2 text-primary-500">&middot;</span><span>431 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 min</span>
   
 
   
@@ -949,7 +949,7 @@
   <ul>
     <li><a href="#一安装-certbot">一、安装 certbot</a></li>
     <li><a href="#二申请证书">二、申请证书</a></li>
-    <li><a href="#三在-nignx-中配置">三、在 Nignx 中配置</a></li>
+    <li><a href="#三nignx-配置证书">三、Nignx 配置证书</a></li>
   </ul>
 </nav>
   </div>
@@ -965,7 +965,7 @@
   <ul>
     <li><a href="#一安装-certbot">一、安装 certbot</a></li>
     <li><a href="#二申请证书">二、申请证书</a></li>
-    <li><a href="#三在-nignx-中配置">三、在 Nignx 中配置</a></li>
+    <li><a href="#三nignx-配置证书">三、Nignx 配置证书</a></li>
   </ul>
 </nav>
   </div>
@@ -1093,14 +1093,14 @@ sudo /opt/certbot/bin/pip install --upgrade pip
 Waiting for verification...
 Resetting dropped connection: acme-v02.api.letsencrypt.org
 Cleaning up challenges
-Subscribe to the EFF mailing list (email: wangwen135@gmail.com).
+Subscribe to the EFF mailing list (email: test@qq.com).
 Starting new HTTPS connection (1): supporters.eff.org
 
 IMPORTANT NOTES:
  - Congratulations! Your certificate and chain have been saved at:
-   /etc/letsencrypt/live/alpharay.space/fullchain.pem
+   /etc/letsencrypt/live/alpharay.space/fullchain.pem    # 证书
    Your key file has been saved at:
-   /etc/letsencrypt/live/alpharay.space/privkey.pem
+   /etc/letsencrypt/live/alpharay.space/privkey.pem    # 证书
    Your certificate will expire on 2024-08-13. To obtain a new or
    tweaked version of this certificate in the future, simply run
    certbot again. To non-interactively renew *all* of your
@@ -1112,35 +1112,50 @@ IMPORTANT NOTES:
 </code></pre><p>证书存储在 <code>/etc/letsencrypt/live/yourdomain.com</code>​ ，申请成功！</p>
 
 
-<h2 class="relative group">三、在 Nignx 中配置 
-    <div id="%E4%B8%89%E5%9C%A8-nignx-%E4%B8%AD%E9%85%8D%E7%BD%AE" class="anchor"></div>
+<h2 class="relative group">三、Nignx 配置证书 
+    <div id="%E4%B8%89nignx-%E9%85%8D%E7%BD%AE%E8%AF%81%E4%B9%A6" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E4%B8%89%E5%9C%A8-nignx-%E4%B8%AD%E9%85%8D%E7%BD%AE" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#%E4%B8%89nignx-%E9%85%8D%E7%BD%AE%E8%AF%81%E4%B9%A6" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
-<p>登录 Nignx 后台，在 SSL certificates 中选择 Add SSL certificates - custom，将 privkey.pem 和 cert.pem 分别填入 Certificate Key 和 Certificate 中，即可使用证书。</p>
-<p>​
+<ol>
+<li>
+<p>在 Nginx 配置</p>
+<pre tabindex="0"><code>server {
+    listen 80;
+    server_name test.alpharay.space;    # 域名
+    return 301 https://$host$request_uri;    # 跳转 443 SSL
+}
+server {
+    listen 443 ssl;
+    server_name test.alpharay.space;    # 域名
+    ssl_certificate /etc/letsencrypt/live/alpharay/fullchain.pem;    # 证书
+    ssl_certificate_key /etc/letsencrypt/live/alpharay/privkey.pem;    # 证书
+    ssl_protocols TLSv1.2 TLSv1.3; # 推荐使用较新的 TLS 版本
+    ssl_ciphers HIGH:!aNULL:!MD5; # 配置安全的加密套件
 
-    <figure>
-      <img
-        class="my-0 rounded-md"
-        loading="lazy"
-        srcset="
-        /blogs/250105-certbotssl/assets/image-20250105152619-2m0oru9_hu_58d05e0a3c2b2a10.png 330w,
-        /blogs/250105-certbotssl/assets/image-20250105152619-2m0oru9_hu_d2cbb73affd34f72.png 660w,
-        /blogs/250105-certbotssl/assets/image-20250105152619-2m0oru9_hu_18b86e32a78db24e.png 1024w,
-        /blogs/250105-certbotssl/assets/image-20250105152619-2m0oru9_hu_bd9f8b86b47cca34.png 2x"
-        src="/blogs/250105-certbotssl/assets/image-20250105152619-2m0oru9_hu_d2cbb73affd34f72.png"
-        alt="image"
-      />
-      
-    </figure>
+    server_tokens off;
 
-‍</p>
+    location / {
+        proxy_pass http://127.0.0.1:1111;    转发的端口
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto https;
+    }
+}
+</code></pre></li>
+<li>
+<p>在 Docker Nginx 中配置</p>
+<p>登录 Nignx 后台，在 SSL certificates 中选择 Add SSL certificates - custom，将 privkey.pem 和 fullchain.pem 分别填入 Certificate Key 和 Certificate 中，即可使用证书。</p>
+<img title="" src="assets/image-20250105152619-2m0oru9.png" alt="image" width="622" data-align="center">
+</li>
+</ol>
+<p>‍</p>
 
           
           

@@ -113,7 +113,7 @@
     "keywords": ["Web","Html"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "1126"
+    "wordCount": "1143"
   }]
   </script>
 
@@ -749,7 +749,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2025-01-04T19:22:20&#43;00:00">4 January 2025</time><span class="px-2 text-primary-500">&middot;</span><span>1126 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">3 mins</span>
+  <time datetime="2025-01-04T19:22:20&#43;00:00">4 January 2025</time><span class="px-2 text-primary-500">&middot;</span><span>1143 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">3 mins</span>
   
 
   
@@ -956,12 +956,9 @@
     class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#一在已有的-postgres-sql-创建新数据库-名称为-halo">一、在已有的 <code>postgres SQL</code>​ 创建新数据库 名称为 halo</a></li>
-    <li><a href="#二参考-halo博客-docker-compose-install-文档">二、参考 Halo博客 <a href="https://docs.halo.run/getting-started/install/docker-compose?current=external-db">docker compose install 文档</a></a>
-      <ul>
-        <li><a href="#附数据备份">附：数据备份</a></li>
-      </ul>
-    </li>
+    <li><a href="#一配置数据库">一、配置数据库</a></li>
+    <li><a href="#二参考文档部署-halo博客">二、参考文档部署 Halo博客</a></li>
+    <li><a href="#附数据备份">附：数据备份</a></li>
   </ul>
 </nav>
   </div>
@@ -975,12 +972,9 @@
     class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#一在已有的-postgres-sql-创建新数据库-名称为-halo">一、在已有的 <code>postgres SQL</code>​ 创建新数据库 名称为 halo</a></li>
-    <li><a href="#二参考-halo博客-docker-compose-install-文档">二、参考 Halo博客 <a href="https://docs.halo.run/getting-started/install/docker-compose?current=external-db">docker compose install 文档</a></a>
-      <ul>
-        <li><a href="#附数据备份">附：数据备份</a></li>
-      </ul>
-    </li>
+    <li><a href="#一配置数据库">一、配置数据库</a></li>
+    <li><a href="#二参考文档部署-halo博客">二、参考文档部署 Halo博客</a></li>
+    <li><a href="#附数据备份">附：数据备份</a></li>
   </ul>
 </nav>
   </div>
@@ -1065,16 +1059,17 @@
           <p>部署 Halo 博客，并链接到不同 docker compose 部署的 <code>postgres SQL</code>​ 数据库（postgres SQL docker 是之前部署 lobe chat database 所建立的）。</p>
 
 
-<h2 class="relative group">一、在已有的 <code>postgres SQL</code>​ 创建新数据库 名称为 halo 
-    <div id="%E4%B8%80%E5%9C%A8%E5%B7%B2%E6%9C%89%E7%9A%84-postgres-sql-%E5%88%9B%E5%BB%BA%E6%96%B0%E6%95%B0%E6%8D%AE%E5%BA%93-%E5%90%8D%E7%A7%B0%E4%B8%BA-halo" class="anchor"></div>
+<h2 class="relative group">一、配置数据库 
+    <div id="%E4%B8%80%E9%85%8D%E7%BD%AE%E6%95%B0%E6%8D%AE%E5%BA%93" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E4%B8%80%E5%9C%A8%E5%B7%B2%E6%9C%89%E7%9A%84-postgres-sql-%E5%88%9B%E5%BB%BA%E6%96%B0%E6%95%B0%E6%8D%AE%E5%BA%93-%E5%90%8D%E7%A7%B0%E4%B8%BA-halo" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#%E4%B8%80%E9%85%8D%E7%BD%AE%E6%95%B0%E6%8D%AE%E5%BA%93" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
+<p>在已有的 <code>postgres SQL</code>​ 创建新数据库 名称为 halo</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">docker <span class="nb">exec</span> -it lobe-postgres bash      <span class="c1"># 进入 postgres SQL 容器</span>
 </span></span><span class="line"><span class="cl">root@c885cce584ec:/# su postgres        <span class="c1"># 切换用户</span>
 </span></span><span class="line"><span class="cl">postgres@c885cce584ec:~$ psql           <span class="c1"># 登录 postgre sql</span>
@@ -1111,16 +1106,17 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l">always</span><span class="w">
 </span></span></span></code></pre></div>
 
-<h2 class="relative group">二、参考 Halo博客 <a href="https://docs.halo.run/getting-started/install/docker-compose?current=external-db" target="_blank">docker compose install 文档</a> 
-    <div id="%E4%BA%8C%E5%8F%82%E8%80%83-halo%E5%8D%9A%E5%AE%A2-docker-compose-install-%E6%96%87%E6%A1%A3" class="anchor"></div>
+<h2 class="relative group">二、参考文档部署 Halo博客 
+    <div id="%E4%BA%8C%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3%E9%83%A8%E7%BD%B2-halo%E5%8D%9A%E5%AE%A2" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E4%BA%8C%E5%8F%82%E8%80%83-halo%E5%8D%9A%E5%AE%A2-docker-compose-install-%E6%96%87%E6%A1%A3" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#%E4%BA%8C%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3%E9%83%A8%E7%BD%B2-halo%E5%8D%9A%E5%AE%A2" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
+<p>参考 Halo博客 <a href="https://docs.halo.run/getting-started/install/docker-compose?current=external-db" target="_blank">docker compose install 文档</a></p>
 <p>建立 Halo 博客容器，编辑 <code>docker-compose.yaml</code>​</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">services:
 </span></span><span class="line"><span class="cl">  halo:
@@ -1153,7 +1149,7 @@ DATABASE_URL=postgresql://postgres:uW*******8dxC@postgresql:5432/lobe</p></block
 <p>然后使用 <code>docker compose up -d</code>​ 命令启用容器，访问服务器ip:8090 初始化网站，在 Nginx 中设置代理，Halo 博客部署完毕。</p>
 
 
-<h3 class="relative group">附：数据备份 
+<h2 class="relative group">附：数据备份 
     <div id="%E9%99%84%E6%95%B0%E6%8D%AE%E5%A4%87%E4%BB%BD" class="anchor"></div>
     
     <span
@@ -1162,7 +1158,7 @@ DATABASE_URL=postgresql://postgres:uW*******8dxC@postgresql:5432/lobe</p></block
             style="text-decoration-line: none !important;" href="#%E9%99%84%E6%95%B0%E6%8D%AE%E5%A4%87%E4%BB%BD" aria-label="Anchor">#</a>
     </span>        
     
-</h3>
+</h2>
 <p>对 dockers 挂载的 halo2 目录结构发现没有文章存放的位置，而网站的备份工具是将当前文件夹 zip</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="l">./halo</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="l">└──attachments   </span><span class="w"> </span><span class="c"># 附件</span><span class="w">
@@ -1231,7 +1227,7 @@ DATABASE_URL=postgresql://postgres:uW*******8dxC@postgresql:5432/lobe</p></block
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >Hello, world ！</span
+                  >Hello, World ！</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
