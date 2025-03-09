@@ -61,7 +61,7 @@ DbdHost=localhost                        # your_hostname
 StorageType=accounting_storage/mysql
 StorageHost=localhost
 StoragePort=3306
-StoragePass=jzq9093105                    # your_password
+StoragePass=p*******5                    # your_password
 StorageUser=slurm
 StorageLoc=slurm_acct_db
 ```
