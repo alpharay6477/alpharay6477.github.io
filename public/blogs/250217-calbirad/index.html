@@ -28,8 +28,8 @@
   
   
   
-  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.ff686d74f9d623cc3d82ea1ce9f405f623448ad2e8fa754d17d0bce82b5f6d53e97709dc25ef457a13bfe034d52dcb0935210b7362fc19e9e89ff7aa9b943239.css"
-    integrity="sha512-/2htdPnWI8w9guoc6fQF9iNEitLo&#43;nVNF9C86CtfbVPpdwncJe9FehO/4DTVLcsJNSELc2L8Genon/eqm5QyOQ==" />
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.2bf222fd2089a4d5ead8666e6aabbeb6e35fc45af01e2540447d532f823e4ac7a8ec89851f133d63a7f8f565d3857140d1d4d30f37dde4764efc4f5f7dd87c2b.css"
+    integrity="sha512-K/Ii/SCJpNXq2GZuaqu&#43;tuNfxFrwHiVARH1TL4I&#43;Sseo7ImFHxM9Y6f49WXThXFA0dTTDzfd5HZO/E9ffdh8Kw==" />
   
   
   <script type="text/javascript" src="/js/appearance.min.4336acf2c4efcb6a51a222e565ab5f9bbad8938060988cbf09195dfc8b699d1eca6d5e85c29d889d9d323febf99f0e675c10b0349a7d78021c720a7ec69dbe23.js"
@@ -113,7 +113,7 @@
     "keywords": ["Chemistry","Gaussian"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "904"
+    "wordCount": "869"
   }]
   </script>
 
@@ -749,7 +749,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2025-02-17T09:14:16&#43;00:00">17 February 2025</time><span class="px-2 text-primary-500">&middot;</span><span>904 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">2 mins</span>
+  <time datetime="2025-02-17T09:14:16&#43;00:00">17 February 2025</time><span class="px-2 text-primary-500">&middot;</span><span>869 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">2 mins</span>
   
 
   
@@ -958,7 +958,7 @@
   <ul>
     <li><a href="#一计算关键词">一、计算关键词</a></li>
     <li><a href="#二自旋密度分布图">二、自旋密度分布图</a></li>
-    <li><a href="#三计算-双自由基特征">三、计算 双自由基特征</a></li>
+    <li><a href="#三衡量双自由基特征">三、衡量双自由基特征</a></li>
   </ul>
 </nav>
   </div>
@@ -974,7 +974,7 @@
   <ul>
     <li><a href="#一计算关键词">一、计算关键词</a></li>
     <li><a href="#二自旋密度分布图">二、自旋密度分布图</a></li>
-    <li><a href="#三计算-双自由基特征">三、计算 双自由基特征</a></li>
+    <li><a href="#三衡量双自由基特征">三、衡量双自由基特征</a></li>
   </ul>
 </nav>
   </div>
@@ -1129,17 +1129,17 @@
 y
 </code></pre>
 
-<h2 class="relative group">三、计算 双自由基特征 
-    <div id="%E4%B8%89%E8%AE%A1%E7%AE%97-%E5%8F%8C%E8%87%AA%E7%94%B1%E5%9F%BA%E7%89%B9%E5%BE%81" class="anchor"></div>
+<h2 class="relative group">三、衡量双自由基特征 
+    <div id="%E4%B8%89%E8%A1%A1%E9%87%8F%E5%8F%8C%E8%87%AA%E7%94%B1%E5%9F%BA%E7%89%B9%E5%BE%81" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E4%B8%89%E8%AE%A1%E7%AE%97-%E5%8F%8C%E8%87%AA%E7%94%B1%E5%9F%BA%E7%89%B9%E5%BE%81" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#%E4%B8%89%E8%A1%A1%E9%87%8F%E5%8F%8C%E8%87%AA%E7%94%B1%E5%9F%BA%E7%89%B9%E5%BE%81" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
-<p>基于 alpha 和 beta 轨道重叠来计算 双自由基特征，相关引用文献：<a href="https://doi.org/10.1016/0009-2614%2875%2980169-2" target="_blank">Chem. Phys. Lett., 33, 330 (1975)</a></p>
+<p>基于双正交化轨道计算 alpha 和 beta 重叠积分来衡量 双自由基特征，相关引用文献：<a href="https://doi.org/10.1016/0009-2614%2875%2980169-2" target="_blank">Chem. Phys. Lett., 33, 330 (1975)</a></p>
 <pre tabindex="0"><code class="language-TXT" data-lang="TXT">将 fchk 文件载入 Multiwfn 后依次输入
 100  //其它功能（Part 1）
 12  //双正交化
@@ -1149,7 +1149,8 @@ y
 Singular values of orbital overlap matrix:
   1.0000   1.0000   1.0000   1.0000   0.9999   0.9999   0.9999   0.9998
   0.9993   0.9991   0.9990   0.9990   0.9968   0.9965   0.9960   0.1231
-</code></pre><p>前 n 号alpha/beta分子轨道都是占据轨道（重叠积分接近 1 ）。可见第 n 号 alpha 和 beta 分子轨道的重叠积分的绝对值 0.042710很小，说明这两条轨道分离很充分，而其它序号相同的 alpha 和 beta 占据轨道之间则重叠积分的绝对值都很接近 1，因此第16号 alpha 和 beta 分子轨道的重叠积分 0.042710 就可以作为前式中的 T。把 T=0.042710 代入 y 表达式，得到双自由基特征为 0.915，比2.2节基于CAS(2,2) 波函数得到的 0.732 大不少。</p>
+</code></pre><p>alpha 和 beta 分子轨道的重叠积分的绝对值很小，说明这两条轨道分离很充分，为 SOMO 轨道，表现出自由基特征。
+可以看出，最后一个数对应第16号双正交化 alpha 轨道和第16号双正交化 beta 轨道间的重叠积分，有且仅有这一对轨道数值远小于1，说明这适合作为计算双自由基特征的重叠积分T。将 0.1231 (T) 代入双自由基特征的表达式，得到结果 0.780</p>
 <p>$y=1-(2*T)/(1+T^2)$</p>
 <p>可见，双激发组态的权重c22越大，双自由基特征越强，和基态组态权重c12相同时就是完美双自由基。基于这个考虑，Yamaguchi在 Chem. Phys. Lett., 33, 330 (1975) 中将y=2*c22定义为双自由基特征，完美双自由基时 c2=1/2，故 y 恰为1。</p>
 <p>‍</p>

@@ -48,11 +48,13 @@ Grimme’s D3 (BJ) : [10.1002/jcc.21759](https://doi.org/10.1002/jcc.21759)
 
 Electron - hole Anlysis : [10.1021/ct200308m](https://doi.org/10.1021/ct200308m)
 
+Solvent model : [1](https://doi.org/)
+
 IGMH : [10.1002/jcc.26812](https://doi.org/10.1002/jcc.26812)
 
 RDG : [10.1021/ja100936w](https://doi.org/10.1021/ja100936w)
 
-HuangRhys Index : [10.1098/rspa.1950.0184](https://doi.org/10.1098/rspa.1950.0184)
+HuangRhys index : [10.1098/rspa.1950.0184](https://doi.org/10.1098/rspa.1950.0184)
 
 Natural transition orbital （NTO）[10.1063/1.1558471](https://doi.org/10.1063/1.1558471)
 

@@ -1,9 +1,10 @@
+@import("https://chinese-fonts-cdn.deno.dev/packages/dyh/dist/SmileySans-Oblique/result.css");
+
 p {
   font-size: 12pt;
   font-weight: 510;
-}
+};
 pageStyle = "wide"
-
 
 
 /*@font-face {
