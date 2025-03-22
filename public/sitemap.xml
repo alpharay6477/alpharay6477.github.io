@@ -4,7 +4,13 @@
 
   <url>
     <loc>https://blog.alpharay.space/</loc>
-    <lastmod>2025-03-16T20:56:14+00:00</lastmod>
+    <lastmod>2025-03-16T12:14:48+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://blog.alpharay.space/blogs/250316-macmini/</loc>
+    <lastmod>2025-03-16T12:14:48+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
