@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Paper on  </title>
-    <link>http://localhost:1313/tags/paper/</link>
+    <link>https://blog.alpharay.space/tags/paper/</link>
     <description>Recent content in Paper on  </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>ge6477@outlook.com (葛世杰)</managingEditor>
     <webMaster>ge6477@outlook.com (葛世杰)</webMaster>
     <copyright>Copy right :2025  All rights reserved：Ge Shijie</copyright>
-    <lastBuildDate>Tue, 21 Jan 2025 13:17:09 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/paper/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 21 Jan 2025 13:17:09 +0000</lastBuildDate><atom:link href="https://blog.alpharay.space/tags/paper/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>使用 Latex 论文投稿</title>
-      <link>http://localhost:1313/blogs/250121-latex/</link>
+      <link>https://blog.alpharay.space/blogs/250121-latex/</link>
       <pubDate>Tue, 21 Jan 2025 13:17:09 +0000</pubDate>
       <author>ge6477@outlook.com (葛世杰)</author>
-      <guid>http://localhost:1313/blogs/250121-latex/</guid>
+      <guid>https://blog.alpharay.space/blogs/250121-latex/</guid>
       <description>如果你熟悉一门编程语言以及 Markdown 标记语言，使用 Latex 投稿文章是一个不错的选择。</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blogs/250121-latex/feature.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.alpharay.space/blogs/250121-latex/feature.png" />
     </item>
     
   </channel>

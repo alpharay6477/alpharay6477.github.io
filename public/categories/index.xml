@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on  </title>
-    <link>http://localhost:1313/categories/</link>
+    <link>https://blog.alpharay.space/categories/</link>
     <description>Recent content in Categories on  </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>ge6477@outlook.com (葛世杰)</managingEditor>
     <webMaster>ge6477@outlook.com (葛世杰)</webMaster>
     <copyright>Copy right :2025  All rights reserved：Ge Shijie</copyright>
-    <lastBuildDate>Sun, 16 Mar 2025 12:14:48 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 02 Apr 2025 09:14:16 +0000</lastBuildDate><atom:link href="https://blog.alpharay.space/categories/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Life</title>
-      <link>http://localhost:1313/categories/life/</link>
-      <pubDate>Sun, 16 Mar 2025 12:14:48 +0000</pubDate>
+      <title>Work</title>
+      <link>https://blog.alpharay.space/categories/work/</link>
+      <pubDate>Wed, 02 Apr 2025 09:14:16 +0000</pubDate>
       <author>ge6477@outlook.com (葛世杰)</author>
-      <guid>http://localhost:1313/categories/life/</guid>
+      <guid>https://blog.alpharay.space/categories/work/</guid>
       <description></description>
       
     </item>
     
     <item>
-      <title>Work</title>
-      <link>http://localhost:1313/categories/work/</link>
-      <pubDate>Mon, 17 Feb 2025 09:14:16 +0000</pubDate>
+      <title>Life</title>
+      <link>https://blog.alpharay.space/categories/life/</link>
+      <pubDate>Sun, 16 Mar 2025 12:14:48 +0000</pubDate>
       <author>ge6477@outlook.com (葛世杰)</author>
-      <guid>http://localhost:1313/categories/work/</guid>
+      <guid>https://blog.alpharay.space/categories/life/</guid>
       <description></description>
       
     </item>
