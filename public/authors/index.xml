@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors on  </title>
-    <link>https://blog.alpharay.space/authors/</link>
+    <link>http://localhost:1313/authors/</link>
     <description>Recent content in Authors on  </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>ge6477@outlook.com (葛世杰)</managingEditor>
     <webMaster>ge6477@outlook.com (葛世杰)</webMaster>
     <copyright>Copy right :2025  All rights reserved：Ge Shijie</copyright>
-    <lastBuildDate>Sun, 16 Mar 2025 12:14:48 +0000</lastBuildDate><atom:link href="https://blog.alpharay.space/authors/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 16 Mar 2025 12:14:48 +0000</lastBuildDate><atom:link href="http://localhost:1313/authors/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>葛世杰</title>
-      <link>https://blog.alpharay.space/authors/%E8%91%9B%E4%B8%96%E6%9D%B0/</link>
+      <link>http://localhost:1313/authors/%E8%91%9B%E4%B8%96%E6%9D%B0/</link>
       <pubDate>Sun, 16 Mar 2025 12:14:48 +0000</pubDate>
       <author>ge6477@outlook.com (葛世杰)</author>
-      <guid>https://blog.alpharay.space/authors/%E8%91%9B%E4%B8%96%E6%9D%B0/</guid>
+      <guid>http://localhost:1313/authors/%E8%91%9B%E4%B8%96%E6%9D%B0/</guid>
       <description></description>
       
     </item>

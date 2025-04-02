@@ -2,33 +2,33 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Html on  </title>
-    <link>https://blog.alpharay.space/tags/html/</link>
+    <link>http://localhost:1313/tags/html/</link>
     <description>Recent content in Html on  </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>ge6477@outlook.com (葛世杰)</managingEditor>
     <webMaster>ge6477@outlook.com (葛世杰)</webMaster>
     <copyright>Copy right :2025  All rights reserved：Ge Shijie</copyright>
-    <lastBuildDate>Mon, 10 Feb 2025 10:17:21 +0000</lastBuildDate><atom:link href="https://blog.alpharay.space/tags/html/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 Feb 2025 10:17:21 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/html/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>TADF 材料计算部分常用的 Citation</title>
-      <link>https://blog.alpharay.space/blogs/250210-tadfcitation/</link>
+      <link>http://localhost:1313/blogs/250210-tadfcitation/</link>
       <pubDate>Mon, 10 Feb 2025 10:17:21 +0000</pubDate>
       <author>ge6477@outlook.com (葛世杰)</author>
-      <guid>https://blog.alpharay.space/blogs/250210-tadfcitation/</guid>
+      <guid>http://localhost:1313/blogs/250210-tadfcitation/</guid>
       <description>在写文章时，对前人工作的引用是非常重要的。</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.alpharay.space/blogs/250210-tadfcitation/feature.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blogs/250210-tadfcitation/feature.jpg" />
     </item>
     
     <item>
       <title>部署 Halo 博客 | 连接到外部 Docker postgres 数据库</title>
-      <link>https://blog.alpharay.space/blogs/250104-haloblogs/</link>
+      <link>http://localhost:1313/blogs/250104-haloblogs/</link>
       <pubDate>Sat, 04 Jan 2025 19:22:20 +0000</pubDate>
       <author>ge6477@outlook.com (葛世杰)</author>
-      <guid>https://blog.alpharay.space/blogs/250104-haloblogs/</guid>
+      <guid>http://localhost:1313/blogs/250104-haloblogs/</guid>
       <description>部署 Halo 博客，并链接到不同 docker compose 部署的 &lt;code&gt;postgres SQL&lt;/code&gt;​ 数据库。</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.alpharay.space/blogs/250104-haloblogs/feature.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blogs/250104-haloblogs/feature.jpg" />
     </item>
     
   </channel>

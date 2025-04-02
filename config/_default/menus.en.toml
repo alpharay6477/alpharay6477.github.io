@@ -17,11 +17,18 @@ identifier = "rXVCz71ATn"
 weight = 1
 
 [[main]]
-name = "Moments"
+name = "QC"
 pre = "slack"
-pageRef = "moments"
-identifier = "GGUl5ZU08Y"
+pageRef = "quantum_chemistry"
+identifier = "qXVCz71ATc"
 weight = 3
+
+#[[main]]
+#name = "Moments"
+#pre = "slack"
+#pageRef = "moments"
+#identifier = "GGUl5ZU08Y"
+#weight = 3
 
 [[main]]
 name = "Github"

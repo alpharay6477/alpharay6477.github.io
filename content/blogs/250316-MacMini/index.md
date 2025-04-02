@@ -41,32 +41,33 @@ GPU 性能
 
 ## 二、需要 CrossOver 跨平台运行
 
-CrossOver 是一种类虚拟机技术，但是不需要虚拟机这么大的硬件负担。CrossOver 会提供 Windows 应用程序所需的资源，包括系统库、API 和其他必要的组件。无需搭建完整的 Windows 系统环境，即可在 Mac 上直接使用 Windows X86 应用。几乎是原声体验，但是不是所有的应用都能模拟，比如 Origin 等这种比较大的软件就不行。
+CrossOver 是一种类虚拟机技术，但是不需要虚拟机这么大的硬件负担。CrossOver 会提供 Windows 应用程序所需的资源，包括系统库、API 和其他必要的组件。无需搭建完整的 Windows 系统环境，即可在 Mac 上直接使用 Windows X86 应用。相对于原生应用，反应会稍微有点慢，而且不是所有的应用都能模拟，比如 Origin 等这种比较大的软件就不行。
 ​![Fig3](assets/Fig3.png)​
 1. Gaussian & Gaussian View：量子计算常用的软件。
 2. Multiwfn：强大的波函数分析工具。
 3. POV-Ray：图像生成软件，科研绘图实用（AICD 磁感应电流密度）。
-4. MobaXterm：SSH 连接工具，现在使用 Mac 终端进行 SSH 连接，但是我还是要说 MobaXterm 很好用。
 ## 三、Mac 原生支持的软件
 
-Mac 当然是原声的软件用起来最舒服，丝滑的体验，除了之前 Windows 上面用的应用，Mac 有些功能上的缺失，又在网上找了一些软件作为补充。
+Mac 当然是原生的软件用起来最舒服，丝滑的体验，除了之前 Windows 上面用的应用，Mac 有些功能上的缺失，又在网上找了一些软件作为补充。
 ​![Fig4](assets/Fig4.png)​
 1. UTM：开源的虚拟机软件，免费，但是不如 parallels desktop 好用，消耗硬盘和内存。
 2. CrossOver：类虚拟机软件，前面提到过。
 3. Maccy：免费的剪贴板管理工具，可以记录剪贴板历史，包括文字和图片。
 4. RClick：免费的右键工具，可以新建文件。（为什么 Mac 没有自带这个功能！）
-5. VimR：编辑文字软件，基于 Vim。
-6. MacZip：解压软件，用着还不错。
-7. VLC：视频播放软件。
-8. SiYuan 笔记：开源软件，最适合我的笔记工具，Notion 平替。
-9. Shadowrocket：科学上网。
-10. VMD：.cub 格点文件绘图，做量化计算的经常用，可以直接加载到 Mac 终端到 zshrc，用起来和 Linux 环境差不多。
-11. EasyConnect：连接校园网，直接在学校 VPN 网站下载。
-12. ChemDraw：化学结构绘图，感觉不如 Windows 平台的好用，主要是不能嵌入 Word、PPT 里面编辑，而且没有套件，只有这一款。
-13. Mercury：单晶分析软件。
-14. Zotero：非常好用的文献管理软件。
-15. Windows APP：管理 Windows 远程桌面的工具（Remote Desk），不知道为什么要换这个名字。
-16. Word、Excel、Power Point、Edge：和在 Windows 下使用没什么区别，甚至更好用一些。
+5. SSH Term Pro: 好用的 SSH 连接工具，和 MobaXterm 虽然风格不一样，但是一样的好用。在 APP Store 只需要 1 元，相当于是免费了。 
+6. VimR：编辑文字软件，基于 Vim。
+7. MacZip：解压软件，用着还不错。
+8. VLC：视频播放软件。
+9. SiYuan 笔记：开源软件，最适合我的笔记工具，Notion 平替。
+10. Shadowrocket：科学上网。
+11. VMD：.cub 格点文件绘图，做量化计算的经常用，可以直接加载到 Mac 终端到 zshrc，用起来和 Linux 环境差不多。
+12. EasyConnect：连接校园网，直接在学校 VPN 网站下载。
+13. ChemDraw：化学结构绘图，感觉不如 Windows 平台的好用，主要是不能嵌入 Word、PPT 里面编辑，而且没有套件，只有这一款。
+14. Mercury：单晶分析软件。
+15. Zotero：非常好用的文献管理软件。
+16. Windows APP：管理 Windows 远程桌面的工具（Remote Desk），不知道为什么要换这个名字。
+17. Word、Excel、Power Point、Edge：和在 Windows 下使用没什么区别，甚至更好用一些。
+18. One Switch: Mac 下的一些小开关，放在任务栏用。
 
 还有一些日常用的其他软件就不多介绍了，什么，你说还有游戏，买了 Mac 就不要想着打游戏了（其实也有一些，但是还是 Steam 和 Epic 香）
 
