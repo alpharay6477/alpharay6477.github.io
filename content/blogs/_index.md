@@ -1,5 +1,5 @@
 ---
-title: Blogs
+title: Blogs 
 summary: 
 tags:
 date: 2025-01-01T22:56:14Z
@@ -10,7 +10,7 @@ showDateUpdated : false
 showHeadingAnchors : false
 showPagination : false
 showReadingTime : false
-showTableOfContents : true
+showTableOfContents : false
 showTaxonomies : false 
 showWordCount : false
 showSummary : false
@@ -24,4 +24,4 @@ authors:
   - 葛世杰
 ---
 
-**“人生本没有意义，人生的意义在于我们要努力赋予它的意义。”**
+### “人生本没有意义，但是我们可以赋予人生意义。”

@@ -6,8 +6,8 @@
 # https://blowfish.page/docs/configuration/#theme-parameters
 
 colorScheme = "blowfish"
-defaultAppearance = "light" # valid options: light or dark
-autoSwitchAppearance = false
+defaultAppearance = "dark" # valid options: light or dark
+autoSwitchAppearance = "false"
 
 enableSearch = true
 enableCodeCopy = true
@@ -21,7 +21,7 @@ disableImageOptimization = false
 disableTextInHeader = false
 # backgroundImageWidth = 1200
 
-defaultBackgroundImage = "/img/background.svg" # used as default for background images 
+defaultBackgroundImage = "/img/background.jpg" # used as default for background images 
 defaultFeaturedImage = "/img/featured.svg" # used as default for featured images in all articles
 
 highlightCurrentMenuArea = false
@@ -43,9 +43,9 @@ smartTOCHideUnfocusedChildren = false
 
 [homepage]
   layout = "background" # valid options: page, profile, hero, card, background, custom
-  homepageImage = "/img/background.svg" # used in: hero, and card
+  homepageImage = "/img/background.jpg" # used in: hero, and card
   showRecent = true
-  showRecentItems = 9
+  showRecentItems = 6
   showMoreLink = true
   showMoreLinkDest = "/blogs"
   cardView = true
@@ -83,23 +83,24 @@ smartTOCHideUnfocusedChildren = false
   # sharingLinks = [ "linkedin", "twitter", "bluesky", "mastodon", "reddit", "pinterest", "facebook", "email", "whatsapp", "telegram"]
   showZenMode = false
   showComments = true
+  math = true
 
 [list]
   showHero = true
   heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
-  layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
+  layoutBackgroundHeaderSpace = false # only used when heroStyle equals background
   showBreadcrumbs = false
-  showSummary = true
+  showSummary = false
   showViews = false
   showLikes = false
-  showTableOfContents = true
+  showTableOfContents = false
   showCards = false
   orderByWeight = false
   groupByYear = true
   cardView = false
   cardViewScreenWidth = false
-  constrainItemsWidth = true
+  constrainItemsWidth = false
 
 [sitemap]
   excludedKinds = ["taxonomy", "term"]

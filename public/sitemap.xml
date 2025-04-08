@@ -4,13 +4,13 @@
 
   <url>
     <loc>https://blog.alpharay.space/</loc>
-    <lastmod>2025-04-02T09:14:16+00:00</lastmod>
+    <lastmod>2025-04-02T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://blog.alpharay.space/quantum_chemistry/250402-exstdy/</loc>
-    <lastmod>2025-04-02T09:14:16+00:00</lastmod>
+    <lastmod>2025-04-02T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
@@ -33,7 +33,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.alpharay.space/blogs/250210-tadfcitation/</loc>
+    <loc>https://blog.alpharay.space/quantum_chemistry/250210-tadfcitation/</loc>
     <lastmod>2025-02-10T10:17:21+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

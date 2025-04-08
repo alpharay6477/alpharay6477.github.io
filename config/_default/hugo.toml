@@ -11,9 +11,8 @@ defaultContentLanguage = "en"
 enableRobotsTXT = true
 summaryLength = 0
 
-buildDrafts = false
-buildFuture = false
-
+buildDrafts = true
+buildFuture = true
 enableEmoji = true
 
 googleAnalytics = "G-43K4VXZZ17"

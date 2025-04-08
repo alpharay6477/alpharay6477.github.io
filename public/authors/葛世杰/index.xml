@@ -9,16 +9,16 @@
     <managingEditor>ge6477@outlook.com (葛世杰)</managingEditor>
     <webMaster>ge6477@outlook.com (葛世杰)</webMaster>
     <copyright>Copy right :2025  All rights reserved：Ge Shijie</copyright>
-    <lastBuildDate>Wed, 02 Apr 2025 09:14:16 +0000</lastBuildDate><atom:link href="https://blog.alpharay.space/authors/%E8%91%9B%E4%B8%96%E6%9D%B0/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 02 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.alpharay.space/authors/%E8%91%9B%E4%B8%96%E6%9D%B0/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>激发态动力学计算</title>
       <link>https://blog.alpharay.space/quantum_chemistry/250402-exstdy/</link>
-      <pubDate>Wed, 02 Apr 2025 09:14:16 +0000</pubDate>
+      <pubDate>Wed, 02 Apr 2025 00:00:00 +0000</pubDate>
       <author>ge6477@outlook.com (葛世杰)</author>
       <guid>https://blog.alpharay.space/quantum_chemistry/250402-exstdy/</guid>
       <description>计算常见激发态过程动力学速率，包括辐射速率、系间窜跃和内转换。</description>
-      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.alpharay.space/quantum_chemistry/250402-exstdy/feature.jpg" />
     </item>
     
     <item>
@@ -53,12 +53,12 @@
     
     <item>
       <title>TADF 材料计算部分常用的 Citation</title>
-      <link>https://blog.alpharay.space/blogs/250210-tadfcitation/</link>
+      <link>https://blog.alpharay.space/quantum_chemistry/250210-tadfcitation/</link>
       <pubDate>Mon, 10 Feb 2025 10:17:21 +0000</pubDate>
       <author>ge6477@outlook.com (葛世杰)</author>
-      <guid>https://blog.alpharay.space/blogs/250210-tadfcitation/</guid>
+      <guid>https://blog.alpharay.space/quantum_chemistry/250210-tadfcitation/</guid>
       <description>在写文章时，对前人工作的引用是非常重要的。</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.alpharay.space/blogs/250210-tadfcitation/feature.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.alpharay.space/quantum_chemistry/250210-tadfcitation/feature.jpg" />
     </item>
     
     <item>
@@ -87,7 +87,7 @@
       <pubDate>Tue, 07 Jan 2025 22:56:14 +0000</pubDate>
       <author>ge6477@outlook.com (葛世杰)</author>
       <guid>https://blog.alpharay.space/links/</guid>
-      <description>钟成老师 Gitee 主页：https://gitee.</description>
+      <description></description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.alpharay.space/links/feature.jpg" />
     </item>
     
@@ -97,7 +97,7 @@
       <pubDate>Tue, 07 Jan 2025 22:56:14 +0000</pubDate>
       <author>ge6477@outlook.com (葛世杰)</author>
       <guid>https://blog.alpharay.space/moments/</guid>
-      <description>—— 25.</description>
+      <description></description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.alpharay.space/moments/feature.png" />
     </item>
     
@@ -157,7 +157,7 @@
       <pubDate>Wed, 01 Jan 2025 22:56:14 +0000</pubDate>
       <author>ge6477@outlook.com (葛世杰)</author>
       <guid>https://blog.alpharay.space/blogs/</guid>
-      <description>“人生本没有意义，人生的意义在于我们要努力赋予它的意义。”</description>
+      <description></description>
       
     </item>
     
@@ -167,7 +167,7 @@
       <pubDate>Wed, 01 Jan 2025 22:56:14 +0000</pubDate>
       <author>ge6477@outlook.com (葛世杰)</author>
       <guid>https://blog.alpharay.space/quantum_chemistry/</guid>
-      <description>量子化学（Quantum Chemistry）计算方法记录。</description>
+      <description></description>
       
     </item>
     
@@ -177,7 +177,7 @@
       <pubDate>Wed, 01 Jan 2025 22:56:14 +0000</pubDate>
       <author>ge6477@outlook.com (葛世杰)</author>
       <guid>https://blog.alpharay.space/about/</guid>
-      <description>作为一个学化学的人来说，计算机算是属于个人爱好了。如果当年填报专业的时候能够坚持己见，或许我会走上另一条路，有时候想想这可能就是命运。</description>
+      <description></description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.alpharay.space/about/feature.jpg" />
     </item>
     

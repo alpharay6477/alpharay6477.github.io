@@ -110,23 +110,14 @@ authors:
 &emsp;&emsp;介绍：[Libretexts：Marcus Theory for Electron Transfer（我也看不懂）](<https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Time_Dependent_Quantum_Mechanics_and_Spectroscopy_(Tokmakoff)/15%3A_Energy_and_Charge_Transfer/15.05%3A_Marcus_Theory_for_Electron_Transfer>)
 
 {{< katex >}}
-&emsp;&emsp;公式 1：
+&emsp;&emsp;公式：
 
-$$
-k_{T, \text { Marcus }}=\frac{\pi}{\hbar}\left|\hat{H}_{if}\right|^{2} \frac{1}{\sqrt{\pi \lambda_{M} k_{\mathrm{B}} T}} \exp \left(\frac{-\left(\Delta G^{\circ}+\lambda_{M}\right)^{2}}{4 \lambda_{M} k_{\mathrm{B}} T}\right)
-$$
+<div>$$
+k_{T, \text{Marcus}} = \frac{\pi}{\hbar} \left|\hat{H}_{if}\right|^{2} \frac{1}{\sqrt{\pi \lambda_{M} k_{\mathrm{B}} T}} \exp \left( \frac{ - \left( \Delta G^{\circ} + \lambda_{M} \right)^{2} }{ 4 \lambda_{M} k_{\mathrm{B}} T } \right) 
+$$<div>
 
-{{< katex >}}
 
-&emsp;&emsp;公式 2：
-
-$$
-k_{T, M \mathrm{JL}, \mathrm{eff}}=\frac{\pi}{\hbar}|\mathrm{NAC}|^{2} \frac{1}{\sqrt{\pi \lambda_{M} k_{\mathrm{B}} T}} \sum_{n=0}^{\infty} \exp (-S) \frac{S^{n}}{n!} \exp \left(\frac{-\left(\Delta G^{\circ}+\lambda_{M}+n \hbar \omega_{\text {eff }}\right)^{2}}{4 \lambda_{M} k_{\mathrm{B}} T}\right)
-$$
-
-{{< katex >}}
-
-&emsp;&emsp;Marcus方程是用于计算电子跃迁速率的一个经典理论模型，由 R. A. Marcus 在1956年首次提出。这个方程主要用于描述外层电子转移过程的速率常数，后来被扩展和改进以适用于不同类型的电子转移过程。以下是Marcus方程的核心内容和计算电子跃迁速率的关键参数：$SOC(H_{if})$，$ΔE_{st}(ΔG)$， $λ_M$ 有效重组能，$ω_{eff}$ 有效振动频率；$S$ 黄里因子，$\hbar$，$k_B$，$T$ 均为常数。
+&emsp;&emsp;Marcus方程是用于计算电子跃迁速率的一个经典理论模型，由 R. A. Marcus 在1956年首次提出。这个方程主要用于描述外层电子转移过程的速率常数，后来被扩展和改进以适用于不同类型的电子转移过程。以下是Marcus方程的核心内容和计算电子跃迁速率的关键参数：\\(H_{if}(SOC)\\)，\\(ΔG(ΔE_{st})\\)， \\(λ_M\\) 重组能，\\(\hbar\\)，\\(k_B\\)，\\(T\\) 均为常数。
 
 ### 13. 单分子动力学 (Monomolecule dynamics method)
 
@@ -191,13 +182,14 @@ $$
 
 &emsp;&emsp;介绍：[思想家公社：福井函数](http://sobereva.com/533)
 
-&emsp;&emsp;反映分子中电子密度对电子数变化的响应，用于定位亲核（f+f+）、亲电（f−f−）和自由基（f0f0）反应位点：
+&emsp;&emsp;反映分子中电子密度对电子数变化的响应，用于定位亲核（\\(f^+\\)）、亲电（\\(f^−\\)）和自由基（\\(f^0\\)）反应位点：
 
-* f+f+：亲核攻击敏感位点（HOMO电子密度主导）。
-* f−f−：亲电攻击敏感位点（LUMO电子密度主导）。
+* \\(f^+\\)：亲核攻击敏感位点（HOMO电子密度主导）。
+* \\(f^−\\)：亲电攻击敏感位点（LUMO电子密度主导）。
+
 **双描述符（Dual Descriptor, DD）** ：
-定义为二阶电子密度变化率（Δf\=f+−f−Δf\=f+−f−），可同时区分亲核和亲电位点：
+定义为二阶电子密度变化率 \\(Δf=f^+−f^−\\)，可同时区分亲核和亲电位点：
 
-* Δf\>0Δf\>0：亲核反应位点（HOMO贡献大）。
-* Δf\<0Δf\<0：亲电反应位点（LUMO贡献大）。
+* \\(Δf>0\\)：亲核反应位点（HOMO贡献大）。
+* \\(Δf<0\\)：亲电反应位点（LUMO贡献大）。
 
