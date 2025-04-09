@@ -21,6 +21,6 @@ authors:
 
 主题：[https://themes.gohugo.io/](https://themes.gohugo.io/)
 
-中文社区：[https://discourse.gohugo.io/](https://discourse.gohugo.io/)
+社区：[https://discourse.gohugo.io/](https://discourse.gohugo.io/)
 
 开源地址：[https://github.com/gohugoio/hugo](https://github.com/gohugoio/hugo)
