@@ -9,7 +9,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.alpharay.space/quantum_chemistry/250402-exstdy/</loc>
+    <loc>https://blog.alpharay.space/quantumchemistry/250402-exstdy/</loc>
     <lastmod>2025-04-02T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -21,7 +21,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.alpharay.space/quantum_chemistry/250217-calbirad/</loc>
+    <loc>https://blog.alpharay.space/quantumchemistry/250217-calbirad/</loc>
     <lastmod>2025-02-17T09:14:16+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -33,7 +33,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.alpharay.space/quantum_chemistry/250210-tadfcitation/</loc>
+    <loc>https://blog.alpharay.space/quantumchemistry/250210-calcitation/</loc>
     <lastmod>2025-02-10T10:17:21+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -93,19 +93,19 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://blog.alpharay.space/about/</loc>
+    <lastmod>2025-01-01T22:56:14+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://blog.alpharay.space/blogs/</loc>
     <lastmod>2025-01-01T22:56:14+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.alpharay.space/quantum_chemistry/</loc>
-    <lastmod>2025-01-01T22:56:14+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://blog.alpharay.space/about/</loc>
+    <loc>https://blog.alpharay.space/quantumchemistry/</loc>
     <lastmod>2025-01-01T22:56:14+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

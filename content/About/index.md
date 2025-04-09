@@ -1,5 +1,5 @@
 ---
-title: 关于
+title: About
 summary: 
 tags:
 date: 2025-01-01T22:56:14Z

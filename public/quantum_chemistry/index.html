@@ -444,7 +444,7 @@
 
     </span>
     
-    <p class="text-base font-medium" title="友情链接">
+    <p class="text-base font-medium" title="Links">
         Links
     </p>
 </a>
@@ -466,7 +466,7 @@
 
     </span>
     
-    <p class="text-base font-medium" title="关于">
+    <p class="text-base font-medium" title="About">
         About
     </p>
 </a>
@@ -700,7 +700,7 @@
 
         </div>
         
-        <p class="text-bg font-bg" title="友情链接">
+        <p class="text-bg font-bg" title="Links">
             Links
         </p>
     </a>
@@ -726,7 +726,7 @@
 
         </div>
         
-        <p class="text-bg font-bg" title="关于">
+        <p class="text-bg font-bg" title="About">
             About
         </p>
     </a>
@@ -845,10 +845,161 @@
   <script type="text/javascript" src="/js/page.min.0860cf4e04fa2d72cc33ddba263083464d48f67de06114529043cb4623319efed4f484fd7f1730df5abea0e2da6f3538855634081d02f2d6e920b956f063e823.js" integrity="sha512-CGDPTgT6LXLMM926JjCDRk1I9n3gYRRSkEPLRiMxnv7U9IT9fxcw31q&#43;oOLabzU4hVY0CB0C8tbpILlW8GPoIw=="></script>
   
   </header>
-  <section class="mt-0 prose flex max-w-full flex-col dark:prose-invert lg:flex-row">
+  <section class="mt-12 prose flex max-w-full flex-col dark:prose-invert lg:flex-row">
+    
+    <div class="order-first px-0 lg:order-last lg:max-w-xs ltr:lg:pl-8 rtl:lg:pr-8">
+      <div class="toc ltr:pl-5 rtl:pr-5 lg:sticky lg:top-[140px]">
+        <details open id="TOCView"
+  class="toc-right mt-0 overflow-y-scroll overscroll-contain scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600 rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
+  <summary
+    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#一量子化学计算方法">一、量子化学计算方法</a>
+      <ul>
+        <li><a href="#1-基态">1. 基态</a></li>
+        <li><a href="#2-垂直激发态">2. 垂直激发态</a></li>
+        <li><a href="#3-绝热激发态">3. 绝热激发态</a></li>
+        <li><a href="#4-调控密度泛函方法计算分子tuned-density-functional-theorytdft">4. 调控密度泛函方法计算分子（Tuned Density Functional Theory，TDFT）</a></li>
+        <li><a href="#5-自然跃迁轨道分析-natural-transition-orbital-nto">5. 自然跃迁轨道分析 (Natural transition orbital, NTO)</a></li>
+        <li><a href="#6-片段间电荷转移分析-interfragment-charge-transfer-analysis-ifct">6. 片段间电荷转移分析 (Interfragment charge transfer analysis, IFCT)</a></li>
+        <li><a href="#7-空间电荷转移分析-space-charge-transfer-analysis-tsct">7. 空间电荷转移分析 (Space charge transfer analysis, TSCT)</a></li>
+        <li><a href="#8-轨道离域指数分析-orbital-delocalization-index-analysis-odi">8. 轨道离域指数分析 (Orbital delocalization index analysis, ODI)</a></li>
+        <li><a href="#9-片段相互作用分析-independent-gradient-model-based-on-hirshfeld-partition-igmh">9. 片段相互作用分析 (Independent gradient model based on Hirshfeld partition, IGMH)</a></li>
+        <li><a href="#10-势能面扫描-potential-energy-surface-scanning-pes">10. 势能面扫描 (Potential energy surface scanning, PES)</a></li>
+        <li><a href="#11-黄里因子计算-huang-rhys-factor">11. 黄里因子计算 (Huang-Rhys factor)</a></li>
+        <li><a href="#12-计算电子跃迁速率-marcus-equation">12. 计算电子跃迁速率 (Marcus equation)</a></li>
+        <li><a href="#13-单分子动力学-monomolecule-dynamics-method">13. 单分子动力学 (Monomolecule dynamics method)</a></li>
+        <li><a href="#14-键解离能-bond-disscociation-energy-bde">14. 键解离能 (Bond disscociation energy, BDE)</a></li>
+        <li><a href="#15-单分子反应分析">15. 单分子反应分析</a></li>
+        <li><a href="#16-芳香性计算">16. 芳香性计算</a></li>
+        <li><a href="#17-分子中的原子极化率-atomic-polarizabilities-in-molecules">17. 分子中的原子极化率 (Atomic polarizabilities in molecules)</a></li>
+        <li><a href="#18-福井函数-fukui-function-ff">18. 福井函数 (Fukui function, FF)</a></li>
+      </ul>
+    </li>
+    <li><a href="#二其他计算相关内容">二、其他计算相关内容</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+<details class="toc-inside mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 lg:hidden">
+  <summary
+    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#一量子化学计算方法">一、量子化学计算方法</a>
+      <ul>
+        <li><a href="#1-基态">1. 基态</a></li>
+        <li><a href="#2-垂直激发态">2. 垂直激发态</a></li>
+        <li><a href="#3-绝热激发态">3. 绝热激发态</a></li>
+        <li><a href="#4-调控密度泛函方法计算分子tuned-density-functional-theorytdft">4. 调控密度泛函方法计算分子（Tuned Density Functional Theory，TDFT）</a></li>
+        <li><a href="#5-自然跃迁轨道分析-natural-transition-orbital-nto">5. 自然跃迁轨道分析 (Natural transition orbital, NTO)</a></li>
+        <li><a href="#6-片段间电荷转移分析-interfragment-charge-transfer-analysis-ifct">6. 片段间电荷转移分析 (Interfragment charge transfer analysis, IFCT)</a></li>
+        <li><a href="#7-空间电荷转移分析-space-charge-transfer-analysis-tsct">7. 空间电荷转移分析 (Space charge transfer analysis, TSCT)</a></li>
+        <li><a href="#8-轨道离域指数分析-orbital-delocalization-index-analysis-odi">8. 轨道离域指数分析 (Orbital delocalization index analysis, ODI)</a></li>
+        <li><a href="#9-片段相互作用分析-independent-gradient-model-based-on-hirshfeld-partition-igmh">9. 片段相互作用分析 (Independent gradient model based on Hirshfeld partition, IGMH)</a></li>
+        <li><a href="#10-势能面扫描-potential-energy-surface-scanning-pes">10. 势能面扫描 (Potential energy surface scanning, PES)</a></li>
+        <li><a href="#11-黄里因子计算-huang-rhys-factor">11. 黄里因子计算 (Huang-Rhys factor)</a></li>
+        <li><a href="#12-计算电子跃迁速率-marcus-equation">12. 计算电子跃迁速率 (Marcus equation)</a></li>
+        <li><a href="#13-单分子动力学-monomolecule-dynamics-method">13. 单分子动力学 (Monomolecule dynamics method)</a></li>
+        <li><a href="#14-键解离能-bond-disscociation-energy-bde">14. 键解离能 (Bond disscociation energy, BDE)</a></li>
+        <li><a href="#15-单分子反应分析">15. 单分子反应分析</a></li>
+        <li><a href="#16-芳香性计算">16. 芳香性计算</a></li>
+        <li><a href="#17-分子中的原子极化率-atomic-polarizabilities-in-molecules">17. 分子中的原子极化率 (Atomic polarizabilities in molecules)</a></li>
+        <li><a href="#18-福井函数-fukui-function-ff">18. 福井函数 (Fukui function, FF)</a></li>
+      </ul>
+    </li>
+    <li><a href="#二其他计算相关内容">二、其他计算相关内容</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+<script>
+
+  var margin = 200;
+  var marginError = 50;
+
+  (function () {
+    var $window = $(window);
+    var $toc = $('#TOCView');
+    var tocHeight = $toc.height();
+
+    function onResize() {
+      var windowAndMarginHeight = $window.height() - margin;
+      if(tocHeight >= windowAndMarginHeight) {
+        $toc.css("overflow-y", "scroll")
+        $toc.css("max-height", (windowAndMarginHeight + marginError) + "px")
+      } else {
+        $toc.css("overflow-y", "hidden")
+        $toc.css("max-height", "9999999px")
+      }
+    }
+
+    $window.on('resize', onResize);
+    $(document).ready(onResize);
+  })();
+
+
+
+  (function () {
+    var $toc = $('#TableOfContents');
+    if ($toc.length > 0) {
+      var $window = $(window);
+
+      function onScroll() {
+        var currentScroll = $window.scrollTop();
+        var h = $('.anchor');
+        var id = "";
+        h.each(function (i, e) {
+          e = $(e);
+          if (e.offset().top - $(window).height()/3 <= currentScroll) {
+            id = decodeURIComponent(e.attr('id'));
+          }
+        });
+        var active = $toc.find('a.active');      
+        if (active.length == 1 && active.eq(0).attr('href') == '#' + id) return true;
+
+        active.each(function (i, e) {
+          
+            $(e).removeClass('active');
+          
+        });
+        $toc.find('a[href="#' + id + '"]').addClass('active')
+        $toc.find('a[href="#' + id + '"]').parentsUntil('#TableOfContents').each(function (i, e) {
+          $(e).children('a').parents('ul').show();          
+        });
+      }
+
+      $window.on('scroll', onScroll);
+      $(document).ready(function () {
+        
+        onScroll();
+      });
+    }
+  })();
+
+
+</script>
+
+      </div>
+    </div>
     
     <div class="min-w-0 min-h-0 max-w-prose">
-      <p><strong>量子化学（Quantum Chemistry）计算方法记录。</strong></p>
+      
+
+<h2 class="relative group">一、量子化学计算方法 
+    <div id="%E4%B8%80%E9%87%8F%E5%AD%90%E5%8C%96%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95" class="anchor"></div>
+    
+</h2>
 
 
 <h3 class="relative group">1. 基态 
@@ -1056,6 +1207,12 @@ $$<div>
 <li>\(Δf&lt;0\)：亲电反应位点（LUMO贡献大）。</li>
 </ul>
 
+
+<h2 class="relative group">二、其他计算相关内容 
+    <div id="%E4%BA%8C%E5%85%B6%E4%BB%96%E8%AE%A1%E7%AE%97%E7%9B%B8%E5%85%B3%E5%86%85%E5%AE%B9" class="anchor"></div>
+    
+</h2>
+
     </div>
 
 
@@ -1158,7 +1315,7 @@ $$<div>
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2025-04-02T00:00:00&#43;00:00">2 April 2025</time><span class="px-2 text-primary-500">&middot;</span><span>1630 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">4 mins</span>
+  <time datetime="2025-04-02T00:00:00&#43;00:00">2 April 2025</time><span class="px-2 text-primary-500">&middot;</span><span>1635 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">4 mins</span>
   
 
   
@@ -1378,16 +1535,16 @@ $$<div>
 
 
 
-  <a class="flex flex-wrap article " href="/quantum_chemistry/250210-tadfcitation/">
+  <a class="flex flex-wrap article " href="/quantum_chemistry/250210-calcitation/">
     
         
-        <div class="w-full md:w-auto h-full thumbnail nozoom thumbnailshadow md:mr-7" style="background-image:url(/quantum_chemistry/250210-tadfcitation/feature_hu_47e351477c68763.jpg);"></div>
+        <div class="w-full md:w-auto h-full thumbnail nozoom thumbnailshadow md:mr-7" style="background-image:url(/quantum_chemistry/250210-calcitation/feature_hu_47e351477c68763.jpg);"></div>
         
       <div class=" mt-3 md:mt-0">
       <div class="items-center text-left text-xl font-semibold">
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/quantum_chemistry/250210-tadfcitation/">TADF 材料计算部分常用的 Citation</div>
+          href="/quantum_chemistry/250210-calcitation/">有机发光分子计算常用的 Citation</div>
         
         
         
@@ -1432,7 +1589,7 @@ $$<div>
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2025-02-10T10:17:21&#43;00:00">10 February 2025</time><span class="px-2 text-primary-500">&middot;</span><span>1204 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">3 mins</span>
+  <time datetime="2025-02-10T10:17:21&#43;00:00">10 February 2025</time><span class="px-2 text-primary-500">&middot;</span><span>1200 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">3 mins</span>
   
 
   

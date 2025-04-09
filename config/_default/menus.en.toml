@@ -12,14 +12,14 @@
 [[main]]
 name = "Blog"
 pre = "codeberg"
-pageRef = "blogs"
+pageRef = "Blogs"
 identifier = "rXVCz71ATn"
 weight = 1
 
 [[main]]
 name = "QC"
 pre = "slack"
-pageRef = "quantum_chemistry"
+pageRef = "QuantumChemistry"
 identifier = "qXVCz71ATc"
 weight = 3
 
@@ -47,7 +47,7 @@ weight = 7
 [[main]]
 name = "About"
 pre = "circle-info"
-pageRef = "about"
+pageRef = "About"
 identifier = "bjj6otsrGw"
 weight = 9
 

@@ -112,7 +112,7 @@
     "keywords": ["Chemistry"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "1630"
+    "wordCount": "1635"
   }]
   </script>
 
@@ -473,7 +473,7 @@
 
     </span>
     
-    <p class="text-base font-medium" title="友情链接">
+    <p class="text-base font-medium" title="Links">
         Links
     </p>
 </a>
@@ -495,7 +495,7 @@
 
     </span>
     
-    <p class="text-base font-medium" title="关于">
+    <p class="text-base font-medium" title="About">
         About
     </p>
 </a>
@@ -729,7 +729,7 @@
 
         </div>
         
-        <p class="text-bg font-bg" title="友情链接">
+        <p class="text-bg font-bg" title="Links">
             Links
         </p>
     </a>
@@ -755,7 +755,7 @@
 
         </div>
         
-        <p class="text-bg font-bg" title="关于">
+        <p class="text-bg font-bg" title="About">
             About
         </p>
     </a>
@@ -881,7 +881,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2025-04-02T00:00:00&#43;00:00">2 April 2025</time><span class="px-2 text-primary-500">&middot;</span><span>1630 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">4 mins</span>
+  <time datetime="2025-04-02T00:00:00&#43;00:00">2 April 2025</time><span class="px-2 text-primary-500">&middot;</span><span>1635 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">4 mins</span>
   
 
   
@@ -1081,7 +1081,13 @@
     <nav id="TableOfContents">
   <ul>
     <li><a href="#一概要">一、概要</a></li>
-    <li><a href="#二具体计算的过程">二、具体计算的过程</a></li>
+    <li><a href="#二具体计算的过程">二、具体计算的过程</a>
+      <ul>
+        <li><a href="#1-荧光辐射速率-k_r">1. 荧光辐射速率 （<code>k_r</code>）</a></li>
+        <li><a href="#2-系间窜跃和反系间穿越窜跃速率k_isc-k_risc">2. 系间窜跃和反系间穿越窜跃速率（<code>k_ISC, k_RISC</code>）</a></li>
+        <li><a href="#3-内转换速率k_ic-非辐射跃迁速率-k_nr">3. 内转换速率（<code>k_IC</code>）/ 非辐射跃迁速率 （<code>k_nr</code>）</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
   </div>
@@ -1096,7 +1102,13 @@
     <nav id="TableOfContents">
   <ul>
     <li><a href="#一概要">一、概要</a></li>
-    <li><a href="#二具体计算的过程">二、具体计算的过程</a></li>
+    <li><a href="#二具体计算的过程">二、具体计算的过程</a>
+      <ul>
+        <li><a href="#1-荧光辐射速率-k_r">1. 荧光辐射速率 （<code>k_r</code>）</a></li>
+        <li><a href="#2-系间窜跃和反系间穿越窜跃速率k_isc-k_risc">2. 系间窜跃和反系间穿越窜跃速率（<code>k_ISC, k_RISC</code>）</a></li>
+        <li><a href="#3-内转换速率k_ic-非辐射跃迁速率-k_nr">3. 内转换速率（<code>k_IC</code>）/ 非辐射跃迁速率 （<code>k_nr</code>）</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
   </div>
@@ -1244,12 +1256,20 @@ $$<div>
     </span>        
     
 </h2>
-<ol>
-<li>
-<p>荧光辐射速率 （<code>k_r</code>）</p>
-<p>借助量化程序，优化 S1 态的极小点结构，得到 S1 的振子强度 f 和 激发态能级 E，然后根据爱因斯坦自发辐射速率公式推导得到的：</p>
-</li>
-</ol>
+
+
+<h3 class="relative group">1. 荧光辐射速率 （<code>k_r</code>） 
+    <div id="1-%E8%8D%A7%E5%85%89%E8%BE%90%E5%B0%84%E9%80%9F%E7%8E%87-k_r" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#1-%E8%8D%A7%E5%85%89%E8%BE%90%E5%B0%84%E9%80%9F%E7%8E%87-k_r" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<pre><code>借助量化程序，优化 S1 态的极小点结构，得到 S1 的振子强度 f 和 激发态能级 E，然后根据爱因斯坦自发辐射速率公式推导得到的：
+</code></pre>
 <div>$$
 k=\frac{f·E^2}{1.499}
 $$<div>
@@ -1259,20 +1279,39 @@ $$<div>
 <div>$$
 \tau^{a v}=\frac{1+e^{-\left(\Delta E_{1,2} / k_{B} T\right)}+e^{-\left(\Delta E_{1,3} / k_{B} T\right)}}{1 / \tau_{1}+e^{-\left(\Delta E_{1,2} / k_{B} T\right)} / \tau_{2}+e^{-\left(\Delta E_{1,3} / k_{B} T\right)} / \tau_{3}}
 $$<div>
-<ol start="2">
-<li>系间窜跃和反系间穿越窜跃速率（<code>k_ISC, k_RISC</code>）</li>
-</ol>
+
+
+<h3 class="relative group">2. 系间窜跃和反系间穿越窜跃速率（<code>k_ISC, k_RISC</code>） 
+    <div id="2-%E7%B3%BB%E9%97%B4%E7%AA%9C%E8%B7%83%E5%92%8C%E5%8F%8D%E7%B3%BB%E9%97%B4%E7%A9%BF%E8%B6%8A%E7%AA%9C%E8%B7%83%E9%80%9F%E7%8E%87k_isc-k_risc" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#2-%E7%B3%BB%E9%97%B4%E7%AA%9C%E8%B7%83%E5%92%8C%E5%8F%8D%E7%B3%BB%E9%97%B4%E7%A9%BF%E8%B6%8A%E7%AA%9C%E8%B7%83%E9%80%9F%E7%8E%87k_isc-k_risc" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
 <p>计算系间窜跃需要用到 Marcus 电子转移速率方程：</p>
 <div>$$
 k=\frac{2 \pi}{\hbar z}|SOC|^{2} \frac{1}{\sqrt{4 \pi k_{B} T \lambda}} \exp \left(-\frac{\left(\lambda+\Delta E_{S T}\right)^{2}}{4 \lambda k_{B} T}\right)
 $$<div>
 <p>其中，\(k_b 、SOC、T\) 分别代表玻尔兹曼常数 1.38 × 10<sup>-23</sup> J/K、自旋轨道耦合常数（cm <sup>-1</sup>）和 温度（298 K）。采用 0.16 eV 的代表性重组能（λ）来表征介质诱导的弛豫效应（J. Am. Chem. Soc. 2017, 139, 4042.）。参数 z 在 ISC（系间窜越）过程中设为 1，在 RISC（反向系间窜越）过程中设为 3（三重态的 3 个简并态只有 1 个态是主要通道）。</p>
 <p>ISC 和 RISC 速率包含了来自更高三重态（如 T2 和 T3）的贡献，其中对 RISC 速率的贡献需通过这些态的玻尔兹曼热布居进行加权计算（如上公式）。</p>
-<p>通过量化计算得到 单三线态能级差，单三线态 SOC，带入公式即可计算。
-3. 内转换速率（<code>k_IC</code>）/ 非辐射跃迁速率 （<code>k_nr</code>）</p>
-<pre><code>内转换速率比如：S3 到 S1 、S1 到 S0、T5 到 T3，这些都属于内转换。通过内转换速率可以计算某个态到某个态之间的非辐射速率 $k_{nr}$ 。本文使用免费的 FCclasses 软件进行计算。
+<p>通过量化计算得到 单三线态能级差，单三线态 SOC，带入公式即可计算。</p>
 
-1）假设研究 S1 到 S0 之间的内转换（`k_IC`）/ 非辐射跃迁速率 （`k_nr`），使用 Gaussian 分别优化计算两个态得到极小点结构，并保存 fchk 波函数文件。这里假设为 S1.fchk 和 S0.fchk
+
+<h3 class="relative group">3. 内转换速率（<code>k_IC</code>）/ 非辐射跃迁速率 （<code>k_nr</code>） 
+    <div id="3-%E5%86%85%E8%BD%AC%E6%8D%A2%E9%80%9F%E7%8E%87k_ic-%E9%9D%9E%E8%BE%90%E5%B0%84%E8%B7%83%E8%BF%81%E9%80%9F%E7%8E%87-k_nr" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#3-%E5%86%85%E8%BD%AC%E6%8D%A2%E9%80%9F%E7%8E%87k_ic-%E9%9D%9E%E8%BE%90%E5%B0%84%E8%B7%83%E8%BF%81%E9%80%9F%E7%8E%87-k_nr" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>内转换速率比如：S3 到 S1 、S1 到 S0、T5 到 T3，这些都属于内转换。通过内转换速率可以计算某个态到某个态之间的非辐射速率 $k_{nr}$ 。本文使用免费的 FCclasses 软件进行计算。</p>
+<pre><code>1）假设研究 S1 到 S0 之间的内转换（`k_IC`）/ 非辐射跃迁速率 （`k_nr`），使用 Gaussian 分别优化计算两个态得到极小点结构，并保存 fchk 波函数文件。这里假设为 S1.fchk 和 S0.fchk
 
 2）使用 FCclasses 将 fchk 文件转为 state_file 文件 nac_file （非绝热耦合矢量）文件，其中 state_file 需要 S1 和 S0 都需要转换，nac_file 只需要 S1 的 fchk 进行转换。
 

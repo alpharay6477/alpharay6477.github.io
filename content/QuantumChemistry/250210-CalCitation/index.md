@@ -1,5 +1,5 @@
 ---
-title: TADF 材料计算部分常用的 Citation
+title: 有机发光分子计算常用的 Citation
 summary: 在写文章时，对前人工作的引用是非常重要的。
 tags:
   - Web
@@ -26,7 +26,7 @@ PBE0 (TD-DFT) : [10.1063/1.479571](https://doi.org/10.1063/1.479571)
 
 B3LYP : [10.1063/1.464913](https://doi.org/10.1063/1.464913)
 
-ωB97XD : [10.1039/B810189B](https://doi.org/10.1039/B810189B "Link to landing page via DOI")
+ωB97XD : [10.1039/B810189B](https://doi.org/10.1039/B810189B)
 
 ### 2. 基组
 
@@ -47,8 +47,6 @@ Grimme’s D3 (BJ) : [10.1002/jcc.21759](https://doi.org/10.1002/jcc.21759)
 ### 4. 其他分析方法
 
 Electron - hole Anlysis : [10.1021/ct200308m](https://doi.org/10.1021/ct200308m)
-
-Solvent model : [1](https://doi.org/)
 
 IGMH : [10.1002/jcc.26812](https://doi.org/10.1002/jcc.26812)
 

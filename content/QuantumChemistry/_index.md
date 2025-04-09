@@ -10,7 +10,7 @@ showDateUpdated : false
 showHeadingAnchors : false
 showPagination : false
 showReadingTime : false
-showTableOfContents : false
+showTableOfContents : true
 showTaxonomies : false 
 showWordCount : false
 showSummary : false
@@ -24,7 +24,7 @@ authors:
   - 葛世杰
 ---
 
-**量子化学（Quantum Chemistry）计算方法记录。**
+## 一、量子化学计算方法
 
 ### 1. 基态
 
@@ -193,3 +193,5 @@ $$<div>
 * \\(Δf>0\\)：亲核反应位点（HOMO贡献大）。
 * \\(Δf<0\\)：亲电反应位点（LUMO贡献大）。
 
+
+## 二、其他计算相关内容
