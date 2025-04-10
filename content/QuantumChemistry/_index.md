@@ -105,19 +105,14 @@ authors:
 
 &emsp;&emsp;分子的电子跃迁过程中，分子的振动模式与电子态之间的相互作用。这种耦合效应对分子光谱以及能量转移等特性有重要的影响。使用 FCclasses 3 软件包计算。
 
-### 12. 计算电子跃迁速率 (Marcus Equation)
+### 12. 计算激发态动力学 (Excited State Dynamics)
 
-&emsp;&emsp;介绍：[Libretexts：Marcus Theory for Electron Transfer（我也看不懂）](<https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Time_Dependent_Quantum_Mechanics_and_Spectroscopy_(Tokmakoff)/15%3A_Energy_and_Charge_Transfer/15.05%3A_Marcus_Theory_for_Electron_Transfer>)
+&emsp;&emsp;根据 Jablonski Diagram，分子收到激发到达不同的激发态能级后，会经历一系列激发态过程，包括振动弛豫（Vibrational Relaxation, VR）、内转换（Internal Conversion, iC）、系间窜跃（Intersystem Crossing, ISC）、反系间窜跃（Reverse Intersystem Crossing, RISC）、荧光（Fluorescence, Fl）、磷光过程（Phosphorescence, Phos）。这一系列过程被统称为激发态动力学。
 
 {{< katex >}}
-&emsp;&emsp;公式：
 
-<div>$$
-k_{T, \text{Marcus}} = \frac{\pi}{\hbar} \left|\hat{H}_{if}\right|^{2} \frac{1}{\sqrt{\pi \lambda_{M} k_{\mathrm{B}} T}} \exp \left( \frac{ - \left( \Delta G^{\circ} + \lambda_{M} \right)^{2} }{ 4 \lambda_{M} k_{\mathrm{B}} T } \right) 
-$$<div>
+&emsp;&emsp;可以计算：荧光辐射速率、磷光辐射速率、（反）系间穿越速率、内转换速率。链接：[计算激发态动力学](https://blog.alpharay.space/quantumchemistry/250402-exstdy/)。
 
-
-&emsp;&emsp;Marcus方程是用于计算电子跃迁速率的一个经典理论模型，由 R. A. Marcus 在1956年首次提出。这个方程主要用于描述外层电子转移过程的速率常数，后来被扩展和改进以适用于不同类型的电子转移过程。以下是Marcus方程的核心内容和计算电子跃迁速率的关键参数：\\(H_{if}(SOC)\\)，\\(ΔG(ΔE_{st})\\)， \\(λ_M\\) 重组能，\\(\hbar\\)，\\(k_B\\)，\\(T\\) 均为常数。
 
 ### 13. 单分子动力学 (Monomolecule Dynamics Method)
 

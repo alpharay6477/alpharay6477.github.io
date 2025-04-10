@@ -872,7 +872,7 @@
         <li><a href="#9-片段相互作用分析-independent-gradient-model-based-on-hirshfeld-partition-igmh">9. 片段相互作用分析 (Independent Gradient Model Based on Hirshfeld Partition, IGMH)</a></li>
         <li><a href="#10-势能面扫描-potential-energy-surface-scanning-pes">10. 势能面扫描 (Potential Energy Surface Scanning, PES)</a></li>
         <li><a href="#11-黄里因子计算-huang-rhys-factor">11. 黄里因子计算 (Huang-Rhys Factor)</a></li>
-        <li><a href="#12-计算电子跃迁速率-marcus-equation">12. 计算电子跃迁速率 (Marcus Equation)</a></li>
+        <li><a href="#12-计算激发态动力学-excited-state-dynamics">12. 计算激发态动力学 (Excited State Dynamics)</a></li>
         <li><a href="#13-单分子动力学-monomolecule-dynamics-method">13. 单分子动力学 (Monomolecule Dynamics Method)</a></li>
         <li><a href="#14-键解离能-bond-disscociation-energy-bde">14. 键解离能 (Bond disscociation energy, BDE)</a></li>
         <li><a href="#15-单分子反应single-molecule-reaction">15. 单分子反应（Single-Molecule Reaction）</a></li>
@@ -908,7 +908,7 @@
         <li><a href="#9-片段相互作用分析-independent-gradient-model-based-on-hirshfeld-partition-igmh">9. 片段相互作用分析 (Independent Gradient Model Based on Hirshfeld Partition, IGMH)</a></li>
         <li><a href="#10-势能面扫描-potential-energy-surface-scanning-pes">10. 势能面扫描 (Potential Energy Surface Scanning, PES)</a></li>
         <li><a href="#11-黄里因子计算-huang-rhys-factor">11. 黄里因子计算 (Huang-Rhys Factor)</a></li>
-        <li><a href="#12-计算电子跃迁速率-marcus-equation">12. 计算电子跃迁速率 (Marcus Equation)</a></li>
+        <li><a href="#12-计算激发态动力学-excited-state-dynamics">12. 计算激发态动力学 (Excited State Dynamics)</a></li>
         <li><a href="#13-单分子动力学-monomolecule-dynamics-method">13. 单分子动力学 (Monomolecule Dynamics Method)</a></li>
         <li><a href="#14-键解离能-bond-disscociation-energy-bde">14. 键解离能 (Bond disscociation energy, BDE)</a></li>
         <li><a href="#15-单分子反应single-molecule-reaction">15. 单分子反应（Single-Molecule Reaction）</a></li>
@@ -1107,18 +1107,14 @@
 <p>  分子的电子跃迁过程中，分子的振动模式与电子态之间的相互作用。这种耦合效应对分子光谱以及能量转移等特性有重要的影响。使用 FCclasses 3 软件包计算。</p>
 
 
-<h3 class="relative group">12. 计算电子跃迁速率 (Marcus Equation) 
-    <div id="12-%E8%AE%A1%E7%AE%97%E7%94%B5%E5%AD%90%E8%B7%83%E8%BF%81%E9%80%9F%E7%8E%87-marcus-equation" class="anchor"></div>
+<h3 class="relative group">12. 计算激发态动力学 (Excited State Dynamics) 
+    <div id="12-%E8%AE%A1%E7%AE%97%E6%BF%80%E5%8F%91%E6%80%81%E5%8A%A8%E5%8A%9B%E5%AD%A6-excited-state-dynamics" class="anchor"></div>
     
 </h3>
-<p>  介绍：<a href="https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Time_Dependent_Quantum_Mechanics_and_Spectroscopy_%28Tokmakoff%29/15%3A_Energy_and_Charge_Transfer/15.05%3A_Marcus_Theory_for_Electron_Transfer" target="_blank">Libretexts：Marcus Theory for Electron Transfer（我也看不懂）</a></p>
-<p>
+<p>  根据 Jablonski Diagram，分子收到激发到达不同的激发态能级后，会经历一系列激发态过程，包括振动弛豫（Vibrational Relaxation, VR）、内转换（Internal Conversion, iC）、系间窜跃（Intersystem Crossing, ISC）、反系间窜跃（Reverse Intersystem Crossing, RISC）、荧光（Fluorescence, Fl）、磷光过程（Phosphorescence, Phos）。这一系列过程被统称为激发态动力学。</p>
 
-  公式：</p>
-<div>$$
-k_{T, \text{Marcus}} = \frac{\pi}{\hbar} \left|\hat{H}_{if}\right|^{2} \frac{1}{\sqrt{\pi \lambda_{M} k_{\mathrm{B}} T}} \exp \left( \frac{ - \left( \Delta G^{\circ} + \lambda_{M} \right)^{2} }{ 4 \lambda_{M} k_{\mathrm{B}} T } \right) 
-$$<div>
-<p>  Marcus方程是用于计算电子跃迁速率的一个经典理论模型，由 R. A. Marcus 在1956年首次提出。这个方程主要用于描述外层电子转移过程的速率常数，后来被扩展和改进以适用于不同类型的电子转移过程。以下是Marcus方程的核心内容和计算电子跃迁速率的关键参数：\(H_{if}(SOC)\)，\(ΔG(ΔE_{st})\)， \(λ_M\) 重组能，\(\hbar\)，\(k_B\)，\(T\) 均为常数。</p>
+
+<p>  可以计算：荧光辐射速率、磷光辐射速率、（反）系间穿越速率、内转换速率。链接：<a href="https://blog.alpharay.space/quantumchemistry/250402-exstdy/" target="_blank">计算激发态动力学</a>。</p>
 
 
 <h3 class="relative group">13. 单分子动力学 (Monomolecule Dynamics Method) 
@@ -1315,7 +1311,7 @@ $$<div>
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2025-04-02T00:00:00&#43;00:00">2 April 2025</time><span class="px-2 text-primary-500">&middot;</span><span>1635 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">4 mins</span>
+  <time datetime="2025-04-02T00:00:00&#43;00:00">2 April 2025</time><span class="px-2 text-primary-500">&middot;</span><span>2168 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">5 mins</span>
   
 
   

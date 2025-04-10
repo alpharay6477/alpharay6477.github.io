@@ -112,7 +112,7 @@
     "keywords": ["Chemistry"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "1635"
+    "wordCount": "2168"
   }]
   </script>
 
@@ -879,7 +879,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2025-04-02T00:00:00&#43;00:00">2 April 2025</time><span class="px-2 text-primary-500">&middot;</span><span>1635 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">4 mins</span>
+  <time datetime="2025-04-02T00:00:00&#43;00:00">2 April 2025</time><span class="px-2 text-primary-500">&middot;</span><span>2168 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">5 mins</span>
   
 
   
@@ -1082,8 +1082,9 @@
     <li><a href="#二具体计算的过程">二、具体计算的过程</a>
       <ul>
         <li><a href="#1-荧光辐射速率-k_r">1. 荧光辐射速率 （<code>k_r</code>）</a></li>
-        <li><a href="#2-系间窜跃和反系间穿越窜跃速率k_isc-k_risc">2. 系间窜跃和反系间穿越窜跃速率（<code>k_ISC, k_RISC</code>）</a></li>
-        <li><a href="#3-内转换速率k_ic-非辐射跃迁速率-k_nr">3. 内转换速率（<code>k_IC</code>）/ 非辐射跃迁速率 （<code>k_nr</code>）</a></li>
+        <li><a href="#2-磷光辐射速率k_p">2. 磷光辐射速率：<code>（k_p）</code></a></li>
+        <li><a href="#3-系间窜跃和反系间穿越窜跃速率k_isc-k_risc">3. 系间窜跃和反系间穿越窜跃速率（<code>k_ISC, k_RISC</code>）</a></li>
+        <li><a href="#4-内转换速率k_ic-非辐射跃迁速率-k_nr">4. 内转换速率（<code>k_IC</code>）/ 非辐射跃迁速率 （<code>k_nr</code>）</a></li>
       </ul>
     </li>
   </ul>
@@ -1103,8 +1104,9 @@
     <li><a href="#二具体计算的过程">二、具体计算的过程</a>
       <ul>
         <li><a href="#1-荧光辐射速率-k_r">1. 荧光辐射速率 （<code>k_r</code>）</a></li>
-        <li><a href="#2-系间窜跃和反系间穿越窜跃速率k_isc-k_risc">2. 系间窜跃和反系间穿越窜跃速率（<code>k_ISC, k_RISC</code>）</a></li>
-        <li><a href="#3-内转换速率k_ic-非辐射跃迁速率-k_nr">3. 内转换速率（<code>k_IC</code>）/ 非辐射跃迁速率 （<code>k_nr</code>）</a></li>
+        <li><a href="#2-磷光辐射速率k_p">2. 磷光辐射速率：<code>（k_p）</code></a></li>
+        <li><a href="#3-系间窜跃和反系间穿越窜跃速率k_isc-k_risc">3. 系间窜跃和反系间穿越窜跃速率（<code>k_ISC, k_RISC</code>）</a></li>
+        <li><a href="#4-内转换速率k_ic-非辐射跃迁速率-k_nr">4. 内转换速率（<code>k_IC</code>）/ 非辐射跃迁速率 （<code>k_nr</code>）</a></li>
       </ul>
     </li>
   </ul>
@@ -1266,26 +1268,105 @@ $$<div>
     </span>        
     
 </h3>
-<pre><code>借助量化程序，优化 S1 态的极小点结构，得到 S1 的振子强度 f 和 激发态能级 E，然后根据爱因斯坦自发辐射速率公式推导得到的：
-</code></pre>
+<p>1）借助量化程序，优化 S1 态的极小点结构，得到 S1 的振子强度 f 和 激发态能级 E，然后根据爱因斯坦自发辐射速率公式推导得到的：</p>
 <div>$$
 k=\frac{f·E^2}{1.499}
 $$<div>
 <p>举例：S1 激发能为 0.19847 hartree = 0.19847 x 2.1947 x  10<sup>5</sup>  cm<sup>-1</sup> = 43558 cm<sup>-1</sup>，f = 0.3808 。因此 τ = 1.499/ (0.3808*43558<sup>2</sup> ) = 0.2075 x 10<sup>-8</sup> s，因此辐射跃迁速率为 1/τ = 4.82 x 10<sup>8</sup> s<sup>-1</sup> 。</p>
-<p>需要注意的是，磷光辐射速率在不考虑 T1 和 S0 之间自旋轨道耦合（SOC）情况下，振子强度为 0（也就是不发光），考虑自旋轨道耦合的振子强度需要通过量化程序得到 &lt;T1|SOC|S0&gt; 的数值，然后额外接触其他程序得到振子强度来计算磷光辐射速率。</p>
-<p>三重态的三个分态的寿命和辐射跃迁速率是不一样的。如果没有其他的跃迁机理，三个三重态都直接跃迁到基态S0，那么观察到的辐射寿命就是从三个态的平均跃迁速率得到的：\(τ^{av}=\dfrac{3}{k_1+k_2+k_3}\) （参考 Phys.Chem.Chem.Phys., 2014, 16, 14523 ）。更严格的，是将辐射跃迁寿命根据能量进行玻尔兹曼平均得到的。</p>
-<div>$$
-\tau^{a v}=\frac{1+e^{-\left(\Delta E_{1,2} / k_{B} T\right)}+e^{-\left(\Delta E_{1,3} / k_{B} T\right)}}{1 / \tau_{1}+e^{-\left(\Delta E_{1,2} / k_{B} T\right)} / \tau_{2}+e^{-\left(\Delta E_{1,3} / k_{B} T\right)} / \tau_{3}}
-$$<div>
+<p>2）使用 FCclasses3 计算辐射跃迁速率（Orca、MOMAP 也可以计算，具体参考文档）</p>
+<p>假设研究 S1 到 S0 的辐射跃迁速率：使用 Gaussian 分别优化计算两个态得到极小点结构，并保存 fchk 波函数文件。这里假设为 S1.fchk 和 S0.fchk</p>
+<p>使用 FCclasses 将 fchk 文件转为 state_file 文件 dipfile_file （非绝热耦合矢量）文件，其中 state_file 需要 S1 和 S0 都需要转换，eldip_file 只需要 S1 的 fchk 进行转换。</p>
+<pre tabindex="0"><code>gen_fcc_state -i S1.fchk
+gen_fcc_state -i S1.fchk
+gen_fcc_dipfile -i S1.fchk
+</code></pre><p>编写 FCclasses 计算输入文件，fcc.inp</p>
+<pre tabindex="0"><code>$$$
+PROPERTY     =   EMI  ; OPA/EMI/ECD/CPL/RR/TPA/TPCD/MCD/IC/NRSC
+MODEL        =   AH   ; AS/ASF/AH/VG/VGF/VH
+DIPOLE       =   FC   ; FC/HTi/HTf
+TEMP         =   298.15 ; (temperature in K)
+;DE           = (read) ; (adiabatic/vertical energy in eV. By default, read from state files)
+BROADFUN     =   GAU  ; GAU/LOR/VOI
+HWHM         =   0.01 ; (broadening width in eV)
+METHOD       =   TD   ; TI/TD
+;VIBRATIONAL ANALYSIS
+NORMALMODES  =   COMPUTE   ; COMPUTE/READ/IMPLICIT
+COORDS       =   CARTESIAN ; CARTESIAN/INTERNAL
+;INPUT DATA FILES
+STATE1_FILE  =   S1.fcc    ; 状态 s1 的 fcc 文件
+STATE2_FILE  =   S0.fcc          ; 状态 s0 的 fcc 文件
+ELDIP_FILE   =   eldip_S1_fchk ; 状态 s1 的 偶极子 文件
+</code></pre><p>运行 fcclasses3 fcc.inp 就可以得到 fcc.out 文件，搜索 rate 就会有：<code>kr constant (s-1) 9.028E+08​</code></p>
 
 
-<h3 class="relative group">2. 系间窜跃和反系间穿越窜跃速率（<code>k_ISC, k_RISC</code>） 
-    <div id="2-%E7%B3%BB%E9%97%B4%E7%AA%9C%E8%B7%83%E5%92%8C%E5%8F%8D%E7%B3%BB%E9%97%B4%E7%A9%BF%E8%B6%8A%E7%AA%9C%E8%B7%83%E9%80%9F%E7%8E%87k_isc-k_risc" class="anchor"></div>
+<h3 class="relative group">2. 磷光辐射速率：<code>（k_p）</code> 
+    <div id="2-%E7%A3%B7%E5%85%89%E8%BE%90%E5%B0%84%E9%80%9F%E7%8E%87k_p" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#2-%E7%B3%BB%E9%97%B4%E7%AA%9C%E8%B7%83%E5%92%8C%E5%8F%8D%E7%B3%BB%E9%97%B4%E7%A9%BF%E8%B6%8A%E7%AA%9C%E8%B7%83%E9%80%9F%E7%8E%87k_isc-k_risc" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#2-%E7%A3%B7%E5%85%89%E8%BE%90%E5%B0%84%E9%80%9F%E7%8E%87k_p" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>磷光辐射速率在不考虑 T1 和 S0 之间自旋轨道耦合（SOC）情况下，振子强度为 0（也就是不发光），考虑自旋轨道耦合的振子强度需要通过量化程序得到 &lt;T1|SOC|S0&gt; 的数值，然后额外接触其他程序得到振子强度来计算磷光辐射速率。</p>
+<p>三重态的三个分态的寿命和辐射跃迁速率是不一样的。如果没有其他的跃迁机理，三个三重态都直接跃迁到基态S0，那么观察到的辐射寿命就是从三个态的平均跃迁速率得到的：\(τ^{av}=\dfrac{3}{k_1+k_2+k_3}\) （参考 Phys.Chem.Chem.Phys., 2014, 16, 14523 ）。更严格的，是将辐射跃迁寿命根据能量进行玻尔兹曼平均得到的。</p>
+<div>$$
+\tau^{a v}=\frac{1+e^{-\left(\Delta E_{1,2} / k_{B} T\right)}+e^{-\left(\Delta E_{1,3} / k_{B} T\right)}}{1 / \tau_{1}+e^{-\left(\Delta E_{1,2} / k_{B} T\right)} / \tau_{2}+e^{-\left(\Delta E_{1,3} / k_{B} T\right)} / \tau_{3}}
+$$<div>
+<p>Orca 计算磷光辐射跃迁速率，需要基态和激发三线态的 hess 文件，输入文件如下：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 基态 S0.inp</span>
+</span></span><span class="line"><span class="cl">! PBE0 def2-SVP OPT FREQ
+</span></span><span class="line"><span class="cl">%pal nprocs <span class="m">40</span>
+</span></span><span class="line"><span class="cl">     end
+</span></span><span class="line"><span class="cl">%MaxCore <span class="m">2560</span>
+</span></span><span class="line"><span class="cl">* xyz <span class="m">0</span> <span class="m">1</span>
+</span></span><span class="line"><span class="cl">*
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 激发三线态 T1.inp</span>
+</span></span><span class="line"><span class="cl">! PBE0 def2-SVP OPT FREQ
+</span></span><span class="line"><span class="cl">%TDDFT
+</span></span><span class="line"><span class="cl">  NROOTS <span class="m">5</span>
+</span></span><span class="line"><span class="cl">  IROOTMULT TRIPLET
+</span></span><span class="line"><span class="cl">END
+</span></span><span class="line"><span class="cl">%pal nprocs <span class="m">8</span>
+</span></span><span class="line"><span class="cl">     end
+</span></span><span class="line"><span class="cl">%MaxCore <span class="m">2560</span>
+</span></span><span class="line"><span class="cl">* XYZFILE <span class="m">0</span> <span class="m">1</span> S0.xyz
+</span></span></code></pre></div><p>顺序提交计算结束后文件夹下出现 S0.hess 和 T1.hess 文件，然后编辑 Phos.inp</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">!B3LYP DEF2-TZVP<span class="o">(</span>-F<span class="o">)</span> TIGHTSCF CPCM<span class="o">(</span>ETHANOL<span class="o">)</span> ESD<span class="o">(</span>PHOSP<span class="o">)</span> RI-SOMF<span class="o">(</span>1X<span class="o">)</span>
+</span></span><span class="line"><span class="cl">%TDDFT
+</span></span><span class="line"><span class="cl">NROOTS <span class="m">10</span>
+</span></span><span class="line"><span class="cl">DOSOC TRUE
+</span></span><span class="line"><span class="cl">TDA FALSE
+</span></span><span class="line"><span class="cl">IROOT <span class="m">1</span>
+</span></span><span class="line"><span class="cl">END
+</span></span><span class="line"><span class="cl">%ESD
+</span></span><span class="line"><span class="cl">GSHESSIAN <span class="s2">&#34;S0.hess&#34;</span>
+</span></span><span class="line"><span class="cl">TSHESSIAN <span class="s2">&#34;T1.hess&#34;</span>
+</span></span><span class="line"><span class="cl">DOHT TRUE
+</span></span><span class="line"><span class="cl">DELE <span class="m">17260</span>
+</span></span><span class="line"><span class="cl">END
+</span></span><span class="line"><span class="cl">%pal nprocs <span class="m">8</span>
+</span></span><span class="line"><span class="cl">     end
+</span></span><span class="line"><span class="cl">%MaxCore <span class="m">2560</span>
+</span></span><span class="line"><span class="cl">* XYZFILE <span class="m">0</span> <span class="m">1</span> S0.xyz
+</span></span></code></pre></div><p>然后在 Phos.out 文件中搜索 rate​ 出现：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">  Tobias Risthaus        : range-separated hybrid DFT                    
+</span></span><span class="line"><span class="cl">We gratefully acknowledge several colleagues who have allowed us to      
+</span></span><span class="line"><span class="cl">Integral batch strategy                     ... SHARK/LIBINT Hybrid
+</span></span><span class="line"><span class="cl">RI-J <span class="o">(</span><span class="k">if</span> used<span class="o">)</span> integral strategy            ... SPLIT-RIJ <span class="o">(</span>Revised <span class="m">2003</span> algorithm where possible<span class="o">)</span>
+</span></span><span class="line"><span class="cl">RPA-Integral strategy          ... AO-integrals
+</span></span><span class="line"><span class="cl">The calculated phosphorescence rate constant is 2.146413e-02 s-1
+</span></span></code></pre></div>
+
+<h3 class="relative group">3. 系间窜跃和反系间穿越窜跃速率（<code>k_ISC, k_RISC</code>） 
+    <div id="3-%E7%B3%BB%E9%97%B4%E7%AA%9C%E8%B7%83%E5%92%8C%E5%8F%8D%E7%B3%BB%E9%97%B4%E7%A9%BF%E8%B6%8A%E7%AA%9C%E8%B7%83%E9%80%9F%E7%8E%87k_isc-k_risc" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#3-%E7%B3%BB%E9%97%B4%E7%AA%9C%E8%B7%83%E5%92%8C%E5%8F%8D%E7%B3%BB%E9%97%B4%E7%A9%BF%E8%B6%8A%E7%AA%9C%E8%B7%83%E9%80%9F%E7%8E%87k_isc-k_risc" aria-label="Anchor">#</a>
     </span>        
     
 </h3>
@@ -1298,13 +1379,13 @@ $$<div>
 <p>通过量化计算得到 单三线态能级差，单三线态 SOC，带入公式即可计算。</p>
 
 
-<h3 class="relative group">3. 内转换速率（<code>k_IC</code>）/ 非辐射跃迁速率 （<code>k_nr</code>） 
-    <div id="3-%E5%86%85%E8%BD%AC%E6%8D%A2%E9%80%9F%E7%8E%87k_ic-%E9%9D%9E%E8%BE%90%E5%B0%84%E8%B7%83%E8%BF%81%E9%80%9F%E7%8E%87-k_nr" class="anchor"></div>
+<h3 class="relative group">4. 内转换速率（<code>k_IC</code>）/ 非辐射跃迁速率 （<code>k_nr</code>） 
+    <div id="4-%E5%86%85%E8%BD%AC%E6%8D%A2%E9%80%9F%E7%8E%87k_ic-%E9%9D%9E%E8%BE%90%E5%B0%84%E8%B7%83%E8%BF%81%E9%80%9F%E7%8E%87-k_nr" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#3-%E5%86%85%E8%BD%AC%E6%8D%A2%E9%80%9F%E7%8E%87k_ic-%E9%9D%9E%E8%BE%90%E5%B0%84%E8%B7%83%E8%BF%81%E9%80%9F%E7%8E%87-k_nr" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#4-%E5%86%85%E8%BD%AC%E6%8D%A2%E9%80%9F%E7%8E%87k_ic-%E9%9D%9E%E8%BE%90%E5%B0%84%E8%B7%83%E8%BF%81%E9%80%9F%E7%8E%87-k_nr" aria-label="Anchor">#</a>
     </span>        
     
 </h3>
