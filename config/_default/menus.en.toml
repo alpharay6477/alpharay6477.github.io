@@ -28,14 +28,14 @@ weight = 3
 #pre = "slack"
 #pageRef = "moments"
 #identifier = "GGUl5ZU08Y"
-#weight = 3
+#weight = 5
 
-[[main]]
-name = "Github"
-pre = "github"
-url = "https://github.com/alpharay6477"
-identifier = "rC5jEEROdS"
-weight = 5
+#[[main]]
+#name = "Github"
+#pre = "github"
+#url = "https://github.com/alpharay6477"
+#identifier = "rC5jEEROdS"
+#weight = 5
 
 [[main]]
 name = "Links"
