@@ -179,4 +179,26 @@ authors:
 * \\(Δf>0\\)：亲核反应位点（HOMO贡献大）。
 * \\(Δf<0\\)：亲电反应位点（LUMO贡献大）。
 
+### 19. 完全活性空间自洽场方法
 
+&emsp;&emsp;Complete Active Space Self-Consistent Field Method, CASSCF 
+
+&emsp;&emsp;把所有自洽场分子轨道分为内层(永远双占据)， 外层(永远不占据)和活性轨道，只对选择的活性轨道进行 MCSCF 计算。CASSCF(N,M)：N：活性电子数（分布在活性轨道上的电子），M：活性轨道数。对N个电子和M个轨道，所有可能的电子组态（CSFs）都被包含在计算中，通过这种方式，CASSCF能严格处理活性空间内的静态相关（多参考态特性）。
+
+在计算过程中，可以指定：<br>
+&emsp;&emsp;1) 多根（Roots）计算：可同时求多个态（如基态、激发态）的波函数和能量。<br>
+&emsp;&emsp;2) 多重度（Multiplicities）：支持不同自旋态（单重态、三重态等）。<br>
+&emsp;&emsp;3) 态平均（State-Average）：用户可定义多个态的权重，优化其平均能量（避免偏向某个态）。<br>
+
+适合使用 CASSCF 计算的体系：<br>
+&emsp;&emsp;1) 多个电子组态能量接近（简并），无法用单参考态（如HF）描述。<br>
+&emsp;&emsp;2) 需多组态处理的波函数。<br>
+&emsp;&emsp;3) 需平衡多个电子态（如基态和激发态）的轨道需求。<br>
+&emsp;&emsp;4) 需保证波函数是自旋算符的本征态，避免自旋污染（Spin Contamination）。<br>
+&emsp;&emsp;5) 为高阶多参考方法（如MRCI、NEVPT2）提供合理的初始轨道。<br>
+
+### 20. 轨道定域化
+
+&emsp;&emsp;orbital localization 介绍：[思想家公社：Multiwfn的轨道定域化功能的使用以及与NBO、AdNDP分析的对比](http://sobereva.com/380)
+
+&emsp;&emsp;将轨道与化学键直接联系起来。正则分子轨道（如HF或DFT计算的轨道）通常离域于整个分子，而定域化轨道能反映化学键、孤对电子或原子核芯电子等局域特征，更贴近传统的路易斯结构。定域化轨道可加速后续计算（如多参考态方法或大体系计算），因为局域性可减少电子关联计算的复杂度。

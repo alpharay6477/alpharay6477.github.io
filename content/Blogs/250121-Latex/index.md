@@ -40,7 +40,7 @@ authors:
    └ example2.pdf        # main.tex 中的示例图片，可删除。
    └ main.tex            # Latex 文件，文章正文，是我们主要编辑的文件
    └ README.txt        # 使用指南
-   └ Royal_Society_of_Chemistry_article_template.pdf    # 使用 main.tex 预编译的 pdf 文件
+   └ Royal_Society_of_Chemistry_article_template.pdf    # 使用 main.tex 预编译的 pdf 文件，可删除。
    └ rsc.bib            # 引用文献，需要编辑
    └ rsc.bst            # 引用文献参考格式，不用动
    ```
@@ -65,7 +65,7 @@ authors:
    %%%Please don't disable any packages in the preamble, as this may cause the template to display incorrectly.%%%%
    ......        # 不要禁用任何在导言区（preamble）加载的包，不用动
    %%%%%%%%% Preamble of the bibliography, can be commented or deleted
-   ......        # 参考文献部分，我们在 rsc.bib 文件中编辑，这里不用动
+   ......        # 参考文献部分，我们在 rsc.bib 文件中编辑，这里
    \begin{document}
    .......        # 文档的开始，所有的正文内容将从这里开始
    %%%HEADER%%%
@@ -103,10 +103,22 @@ authors:
    
         \begin{figure}[h]
             \centering
-            \includegraphics[width=0.5\textwidth]{example-image-a} % 替换为你的图片路径
+            \includegraphics[width=0.5\textwidth]{example-image.pdf} % 替换为你的图片路径
             \caption{这是一个例子图片。}
             \label{fig:example1}
         \end{figure}
+   
+   如果在 Figure 标签中插入一张 Scheme 图片（比如合成路线一般用 Scheme ）则可以插入如下内容：
+        
+        \begin{figure*}[h]
+             \centering
+             \renewcommand{\figurename}{Scheme}   # 将标签从 Fig 改为 Scheme
+             \addtocounter{figure}{-1}            # 将图形计数器减 1，用于覆盖自动编号
+             \includegraphics[width=0.8\linewidth]{Scheme1.pdf}
+             \caption{Synthetic routes for A and B.}
+             \label{Scheme1}
+        \end{figure*}
+
 
 3. 表格：有单列表格和全宽表格
    
@@ -134,6 +146,33 @@ authors:
 
 ## 四、插入参考文献
 
-使用任何可以生成 BibTeX 格式的参考文献文件，将内容复制到 rsc.bib 文件中然后编译完成后，在 main.tex 使用 `\cite{}` 命令引用文献，Latex 会自动生成序号以及 Bibliography
+使用任何可以生成 BibTeX 格式的参考文献文件，将内容复制到 rsc.bib 文件中然后编译完成后，在 main.tex 使用 `\cite{}` 命令引用文献，Latex 会自动生成序号以及 Bibliography。这时候还需要仔细检查格式，会有如下情况：
+
+出版社会提供统一的 Latex 模板，但是出版社旗下的不同期刊可能对参考文献的格式要求不同，比如：参考文献需要期刊名称为缩写，这时候导出的 bibtex 文件中的期刊名称字段需要修改。以及需要显示文章标题，这时候就需要修改 rsc.bst 参考文献格式文件中的内容。
+
+例：参考文献显示文章标题
+
+FUNCTION {article}
+{ output.bibitem
+  format.authors "author" output.check
+  title format.title.noemph "title" output.check 
+  journal emphasize "journal" output.check
+  format.date "year" output.check
+  volume empty$
+    { "" format.pages.nopp output }
+    { format.vol.pages output }
+  if$
+  format.doi
+  fin.entry
+}
+
+这个就是修改参考文献文章类型的字段，可以调整每个元数据的位置，显示活隐藏某个部分。
+
+
+## 五、投稿提交文件
+
+和使用 Word 投稿不同的地方在于，Manuscript 部分上传的不是 docx 而是编译好的 pdf 文件，然后再最后加上每个 figure.pdf 文件和  Latex support file （main.tex 和 rsc.bib）
+
+
 
 ‍

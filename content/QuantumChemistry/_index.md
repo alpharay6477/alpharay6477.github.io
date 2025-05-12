@@ -24,6 +24,10 @@ authors:
   - 葛世杰
 ---
 
+### All models are wrong, but some are useful. &emsp;&emsp; ——George E. P. Box
+
+&emsp;&emsp;
+
 {{< article link="/quantumchemistry/241205-calmeth/" >}}
 
 
