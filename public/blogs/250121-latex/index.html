@@ -106,7 +106,7 @@
     "keywords": ["Paper","Knowledge"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "2090"
+    "wordCount": "2117"
   }]
   </script>
 
@@ -740,7 +740,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2025-01-21T13:17:09&#43;00:00">21 January 2025</time><span class="px-2 text-primary-500">&middot;</span><span>2090 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">5 mins</span>
+  <time datetime="2025-01-21T13:17:09&#43;00:00">21 January 2025</time><span class="px-2 text-primary-500">&middot;</span><span>2117 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">5 mins</span>
   
 
   
@@ -1088,15 +1088,15 @@
 <p>zip 包中的文件有如下文件：</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">royal-society-of-chemistry-article-template.zip
 </span></span><span class="line"><span class="cl">└ head_foot        <span class="c1"># 出版社图片/格式文件，不用动</span>
-</span></span><span class="line"><span class="cl"> └ dates.pdf
-</span></span><span class="line"><span class="cl"> └ DOI.pdf
-</span></span><span class="line"><span class="cl"> └ header_bar.pdf
-</span></span><span class="line"><span class="cl"> └ journal_name.pdf
-</span></span><span class="line"><span class="cl"> └ LF.pdf
-</span></span><span class="line"><span class="cl"> └ RF.pdf
-</span></span><span class="line"><span class="cl"> └ RSC_LOGO_CMYK.eps
-</span></span><span class="line"><span class="cl"> └ RSC_LOGO_CMYK.pdf
-</span></span><span class="line"><span class="cl"> └ RSC_pub.pdf
+</span></span><span class="line"><span class="cl">     └ dates.pdf
+</span></span><span class="line"><span class="cl">     └ DOI.pdf
+</span></span><span class="line"><span class="cl">     └ header_bar.pdf
+</span></span><span class="line"><span class="cl">     └ journal_name.pdf
+</span></span><span class="line"><span class="cl">     └ LF.pdf
+</span></span><span class="line"><span class="cl">     └ RF.pdf
+</span></span><span class="line"><span class="cl">     └ RSC_LOGO_CMYK.eps
+</span></span><span class="line"><span class="cl">     └ RSC_LOGO_CMYK.pdf
+</span></span><span class="line"><span class="cl">     └ RSC_pub.pdf
 </span></span><span class="line"><span class="cl">└ example.pdf        <span class="c1"># main.tex 中的示例图片，可删除。</span>
 </span></span><span class="line"><span class="cl">└ example1.pdf        <span class="c1"># main.tex 中的示例图片，可删除。</span>
 </span></span><span class="line"><span class="cl">└ example2.pdf        <span class="c1"># main.tex 中的示例图片，可删除。</span>
@@ -1277,21 +1277,21 @@
 </h2>
 <p>使用任何可以生成 BibTeX 格式的参考文献文件，将内容复制到 rsc.bib 文件中然后编译完成后，在 main.tex 使用 <code>\cite{}</code> 命令引用文献，Latex 会自动生成序号以及 Bibliography。这时候还需要仔细检查格式，会有如下情况：</p>
 <p>出版社会提供统一的 Latex 模板，但是出版社旗下的不同期刊可能对参考文献的格式要求不同，比如：参考文献需要期刊名称为缩写，这时候导出的 bibtex 文件中的期刊名称字段需要修改。以及需要显示文章标题，这时候就需要修改 rsc.bst 参考文献格式文件中的内容。</p>
-<p>例：参考文献显示文章标题</p>
-<p>FUNCTION {article}
+<p>例：参考文献显示格式</p>
+<pre tabindex="0"><code>FUNCTION {article}
 { output.bibitem
-format.authors &ldquo;author&rdquo; output.check
-title format.title.noemph &ldquo;title&rdquo; output.check
-journal emphasize &ldquo;journal&rdquo; output.check
-format.date &ldquo;year&rdquo; output.check
-volume empty$
-    { "" format.pages.nopp output }
+  format.authors &#34;author&#34; output.check              # 显示作者
+  title format.title.noemph &#34;title&#34; output.check    # 显示文章标题
+  journal emphasize &#34;journal&#34; output.check          # 显示期刊名称
+  format.date &#34;year&#34; output.check                   # 显示日期
+  volume empty$                                     # 显示卷号
+    { &#34;&#34; format.pages.nopp output }
     { format.vol.pages output }
   if$
-format.doi
-fin.entry
-}</p>
-<p>这个就是修改参考文献文章类型的字段，可以调整每个元数据的位置，显示活隐藏某个部分。</p>
+  format.doi
+  fin.entry
+}
+</code></pre><p>这个就是修改参考文献文章类型的字段，可以调整每个元数据的位置，显示活隐藏某个部分。</p>
 
 
 <h2 class="relative group">五、投稿提交文件 

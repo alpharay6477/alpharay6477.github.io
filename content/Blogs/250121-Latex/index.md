@@ -26,15 +26,15 @@ authors:
    ```sh
    royal-society-of-chemistry-article-template.zip
    └ head_foot        # 出版社图片/格式文件，不用动
-    └ dates.pdf
-    └ DOI.pdf
-    └ header_bar.pdf
-    └ journal_name.pdf
-    └ LF.pdf
-    └ RF.pdf
-    └ RSC_LOGO_CMYK.eps
-    └ RSC_LOGO_CMYK.pdf
-    └ RSC_pub.pdf
+        └ dates.pdf
+        └ DOI.pdf
+        └ header_bar.pdf
+        └ journal_name.pdf
+        └ LF.pdf
+        └ RF.pdf
+        └ RSC_LOGO_CMYK.eps
+        └ RSC_LOGO_CMYK.pdf
+        └ RSC_pub.pdf
    └ example.pdf        # main.tex 中的示例图片，可删除。
    └ example1.pdf        # main.tex 中的示例图片，可删除。
    └ example2.pdf        # main.tex 中的示例图片，可删除。
@@ -150,21 +150,23 @@ authors:
 
 出版社会提供统一的 Latex 模板，但是出版社旗下的不同期刊可能对参考文献的格式要求不同，比如：参考文献需要期刊名称为缩写，这时候导出的 bibtex 文件中的期刊名称字段需要修改。以及需要显示文章标题，这时候就需要修改 rsc.bst 参考文献格式文件中的内容。
 
-例：参考文献显示文章标题
+例：参考文献显示格式
 
+```
 FUNCTION {article}
 { output.bibitem
-  format.authors "author" output.check
-  title format.title.noemph "title" output.check 
-  journal emphasize "journal" output.check
-  format.date "year" output.check
-  volume empty$
+  format.authors "author" output.check              # 显示作者
+  title format.title.noemph "title" output.check    # 显示文章标题
+  journal emphasize "journal" output.check          # 显示期刊名称
+  format.date "year" output.check                   # 显示日期
+  volume empty$                                     # 显示卷号
     { "" format.pages.nopp output }
     { format.vol.pages output }
   if$
   format.doi
   fin.entry
 }
+```
 
 这个就是修改参考文献文章类型的字段，可以调整每个元数据的位置，显示活隐藏某个部分。
 

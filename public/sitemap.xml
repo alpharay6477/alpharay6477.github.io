@@ -10,7 +10,13 @@
   </url>
   <url>
     <loc>https://blog.alpharay.space/</loc>
-    <lastmod>2025-04-02T00:00:00+00:00</lastmod>
+    <lastmod>2025-05-14T15:14:48+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://blog.alpharay.space/blogs/250514-sanson/</loc>
+    <lastmod>2025-05-14T15:14:48+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
