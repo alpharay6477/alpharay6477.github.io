@@ -33,6 +33,9 @@ authors:
 ### 王进的个人网站：[https://www.jingege.wang/](https://www.jingege.wang/)
 
 
+### 纯白纱绫：[https://bane-dysta.top/](https://bane-dysta.top/)
+
+
 ### 滑翔闪's Blog：[https://blog.huaxiangshan.com/zh-cn/](https://blog.huaxiangshan.com/zh-cn/)
 
 

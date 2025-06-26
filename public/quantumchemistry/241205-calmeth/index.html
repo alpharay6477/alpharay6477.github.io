@@ -106,7 +106,7 @@
     "keywords": ["Quantum Chemistry"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "4995"
+    "wordCount": "5232"
   }]
   </script>
 
@@ -873,7 +873,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-12-05T00:00:00&#43;00:00">5 December 2024</time><span class="px-2 text-primary-500">&middot;</span><span>4995 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">10 mins</span>
+  <time datetime="2024-12-05T00:00:00&#43;00:00">5 December 2024</time><span class="px-2 text-primary-500">&middot;</span><span>5232 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">11 mins</span>
   
 
   
@@ -1095,6 +1095,7 @@
         <li><a href="#19-完全活性空间自洽场方法">19. 完全活性空间自洽场方法</a></li>
         <li><a href="#20-轨道定域化">20. 轨道定域化</a></li>
         <li><a href="#21-自旋密度分布">21. 自旋密度分布</a></li>
+        <li><a href="#22-差分密度电荷">22. 差分密度电荷</a></li>
       </ul>
     </li>
   </ul>
@@ -1133,6 +1134,7 @@
         <li><a href="#19-完全活性空间自洽场方法">19. 完全活性空间自洽场方法</a></li>
         <li><a href="#20-轨道定域化">20. 轨道定域化</a></li>
         <li><a href="#21-自旋密度分布">21. 自旋密度分布</a></li>
+        <li><a href="#22-差分密度电荷">22. 差分密度电荷</a></li>
       </ul>
     </li>
   </ul>
@@ -1241,7 +1243,7 @@
     
 </h3>
 <p>  分子或原子在最低能量时的电子结构和几何构型。</p>
-<p>  可计算：限制性优化、构象分析、结合能计算、分子轨道模拟、静电势模拟 (ESP)、偶极矩计算、振动分析、分子体积（pdb 盒子）、热力学函数计算 (内能 U、焓 H、功函 A、吉布斯自由能 G)。</p>
+<p>  可计算：限制性优化、构象分析、结合能计算、分子轨道模拟、静电势模拟 (ESP)、偶极矩计算、键级分析、振动分析、Mulliken 电荷分析、核磁 NMR 预测、分子体积（pdb 盒子）、热力学函数计算 (内能 U、焓 H、功函 A、吉布斯自由能 G)。</p>
 
 
 <h3 class="relative group">2. 垂直激发态 
@@ -1326,14 +1328,15 @@
     </span>        
     
 </h3>
-<p>  1）红外光谱（IR, Infrared Spectroscopy）：分子对红外光的吸收，对应化学键的振动和转动能级跃迁。可以识别官能团（如-OH、C=O、N-H等）。横轴为波数（cm⁻¹），纵轴为透射率（%）或吸光度（A）。</p>
-<p>  2）拉曼光谱（Raman Spectroscopy）：拉曼散射，反映分子振动/转动模式，与IR互补（如对称振动在拉曼中更强）。横轴为拉曼位移（cm⁻¹），纵轴为散射强度。</p>
-<p>  3）紫外-可见光谱（UV-Vis, Ultraviolet-Visible Spectroscopy）：分子对紫外/可见光的吸收，对应电子能级跃迁。横轴为波长（nm），纵轴为吸收强度。</p>
-<p>  4）振动分辨光谱（Vibrationally Resolved Spectroscopy）：包括振动分辨荧光光谱、振动分辨磷光光谱。
-电子跃迁时，会伴随振动能级的改变（电子-振动耦合），振动分辨光谱反映了激发态与基态振动波函数的重叠积分，通常表现为多个振动峰的序列（Franck–Condon 原理）。</p>
-<p>  5）电子圆二色谱（ECD, Electronic Circular Dichroism）：测量手性分子对左/右旋圆偏振光的吸收差异。横轴为波长（nm），纵轴为椭圆度（mdeg）或Δε。</p>
-<p>  6）振动圆二色谱（VCD, Vibrational Circular Dichroism）：类似红外光谱，但检测手性分子对红外左/右旋光的吸收差异。横轴为波数（cm⁻¹），纵轴为ΔA（吸收差异）。</p>
-<p>  7）拉曼光学活性光谱（ROA, Raman Optical Activity）：拉曼散射的偏振差异，反映手性分子的振动模式。横轴为拉曼位移（cm⁻¹），纵轴为左/右旋光强度差。</p>
+<p>  1）红外光谱（IR, Infrared Spectroscopy）：分子对红外光的吸收，对应化学键的振动和转动能级跃迁。可以识别官能团（如-OH、C=O、N-H等）。横轴为波数（cm⁻¹），纵轴为透射率（%）或吸光度（A）。<br>
+  2）拉曼光谱（Raman Spectroscopy）：拉曼散射，反映分子振动/转动模式，与IR互补（如对称振动在拉曼中更强）。横轴为拉曼位移（cm⁻¹），纵轴为散射强度。<br>
+  3）紫外-可见光谱（UV-Vis, Ultraviolet-Visible Spectroscopy）：分子对紫外/可见光的吸收，对应电子能级跃迁。横轴为波长（nm），纵轴为吸收强度。<br>
+  4）振动分辨光谱（Vibrationally Resolved Spectroscopy）：包括振动分辨荧光光谱、振动分辨磷光光谱。
+电子跃迁时，会伴随振动能级的改变（电子-振动耦合），振动分辨光谱反映了激发态与基态振动波函数的重叠积分，通常表现为多个振动峰的序列（Franck–Condon 原理）。<br>
+  5）电子圆二色谱（ECD, Electronic Circular Dichroism）：测量手性分子对左/右旋圆偏振光的吸收差异。横轴为波长（nm），纵轴为椭圆度（mdeg）或Δε。<br>
+  6）振动圆二色谱（VCD, Vibrational Circular Dichroism）：类似红外光谱，但检测手性分子对红外左/右旋光的吸收差异。横轴为波数（cm⁻¹），纵轴为ΔA（吸收差异）。<br>
+  7）拉曼光学活性光谱（ROA, Raman Optical Activity）：拉曼散射的偏振差异，反映手性分子的振动模式。横轴为拉曼位移（cm⁻¹），纵轴为左/右旋光强度差。<br>
+  8）构象权重平均的光谱（Conformationally Averaged Spectrum）：通过对分子所有可能构象的光谱（如红外、紫外等）按其构象出现的概率（能量权重或 Boltzmann 分布）进行加权平均后得到的总光谱，反映分子在动态平衡下的整体光谱特征。</p>
 
 
 <h3 class="relative group">8. 轨道离域指数分析 
@@ -1597,7 +1600,7 @@
     </span>        
     
 </h3>
-<p>  orbital localization。将轨道与化学键直接联系起来。正则分子轨道（如HF或DFT计算的轨道）通常离域于整个分子，而定域化轨道能反映化学键、孤对电子或原子核芯电子等局域特征，更贴近传统的路易斯结构。定域化轨道可加速后续计算（如多参考态方法或大体系计算），因为局域性可减少电子关联计算的复杂度。</p>
+<p>  Orbital localization。将轨道与化学键直接联系起来。正则分子轨道（如HF或DFT计算的轨道）通常离域于整个分子，而定域化轨道能反映化学键、孤对电子或原子核芯电子等局域特征，更贴近传统的路易斯结构。定域化轨道可加速后续计算（如多参考态方法或大体系计算），因为局域性可减少电子关联计算的复杂度。</p>
 
 
 <h3 class="relative group">21. 自旋密度分布 
@@ -1612,6 +1615,19 @@
 </h3>
 <p>  对于开壳层体系（自由基、激发态、过渡金属）中电子自旋的空间分布情况。它通过 α 电子密度和 β 电子密度的差来定义，公式为：ρ（自旋密度）= ρ （α 电子密度） – ρ（β 电子密度）。
 对于闭壳层体系（即电子总数为偶数，且每个自旋方向的电子都完全配对的体系），由于每一个 α 自旋电子都有一个 β 自旋电子与之配对，因此在空间中的任何位置，α 和 β 电子的分布密度是完全相等的。这就导致在整个空间中，自旋密度处处为零，即不存在净自旋密度。</p>
+
+
+<h3 class="relative group">22. 差分密度电荷 
+    <div id="22-%E5%B7%AE%E5%88%86%E5%AF%86%E5%BA%A6%E7%94%B5%E8%8D%B7" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#22-%E5%B7%AE%E5%88%86%E5%AF%86%E5%BA%A6%E7%94%B5%E8%8D%B7" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>  Difference map for electron density，体系中电子密度的变化分布，通过计算实际电子密度与参考状态（如孤立原子或理论模型）电子密度的差值得到，用于直观显示化学键形成、电荷转移或外场作用下的电子重新分布。</p>
 
           
           

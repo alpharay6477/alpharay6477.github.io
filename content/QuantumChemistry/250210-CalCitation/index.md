@@ -20,13 +20,25 @@ authors:
 
 ### 1. 泛函
 
-PBE0 (DFT) : [10.1063/1.478522](http://doi.org/10.1063/1.478522)
-
-PBE0 (TD-DFT) : [10.1063/1.479571](https://doi.org/10.1063/1.479571)
+PBE0 : [10.1063/1.478522](http://doi.org/10.1063/1.478522)
 
 B3LYP : [10.1063/1.464913](https://doi.org/10.1063/1.464913)
 
 ωB97XD : [10.1039/B810189B](https://doi.org/10.1039/B810189B)
+
+CAM-B3LYP : [10.1016/j.cplett.2004.06.011](https://doi.org/10.1016/j.cplett.2004.06.011)
+
+M06-2X : [10.1007/s00214-007-0310-x](https://doi.org/10.1007/s00214-007-0310-x)
+
+LC-PBE0 : [10.1063/1.2954017](https://doi.org/10.1063/1.2954017)
+
+LC-wPBE : [10.1063/1.2409292](https://doi.org/10.1063/1.2409292)
+
+LC-BLYP : []()
+
+SOS-PBE-QIDH : []()
+
+mPW2PLYP : []()
 
 ### 2. 基组
 
@@ -50,17 +62,35 @@ IEFPCM：[10.1016/0301-0104(81)85090-2](https://doi.org/10.1016/0301-0104(81)850
 
 SMD：[10.1021/ja100936w](https://doi.org/10.1021/ja100936w)
 
-### 5. 其他分析方法
+### 5. 其他计算/分析方法
+
+Screened range-separated hybrid : [10.1021/acs.jctc.9b00480](https://doi.org/10.1021/acs.jctc.9b00480) 、OT-SRSH-PCM [10.1021/acs.jctc.8b00876](https://doi.org/10.1021/acs.jctc.8b00876)
 
 Electron - hole Anlysis : [10.1021/ct200308m](https://doi.org/10.1021/ct200308m)
+
+Electrostatic potential (ESP) : [10.1039/D1CP02805G](https://doi.org/10.1039/D1CP02805G)
 
 IGMH : [10.1002/jcc.26812](https://doi.org/10.1002/jcc.26812)
 
 RDG : [10.1021/ja100936w](https://doi.org/10.1021/ja100936w)
 
-HuangRhys index : [10.1098/rspa.1950.0184](https://doi.org/10.1098/rspa.1950.0184)
+HuangRhys factor : [10.1098/rspa.1950.0184](https://doi.org/10.1098/rspa.1950.0184)
 
-Natural transition orbital （NTO）[10.1063/1.1558471](https://doi.org/10.1063/1.1558471)
+Natural transition orbital （NTO）: [10.1063/1.1558471](https://doi.org/10.1063/1.1558471)
+
+KRISC of TADF (Marcus equation) : [10.1021/jacs.6b12124](https://doi.org/10.1021/jacs.6b12124)
+
+NICS : [10.1021/ja960582d](https://doi.org/10.1021/ja960582d) 、NICS_zz [10.1021/ol0529546](https://doi.org/10.1021/ol0529546)
+
+ICSS : [10.1039/B009809O](https://doi.org/10.1039/B009809O) 、ICSS_zz [10.1016/j.carbon.2020.04.099](https://doi.org/10.1016/j.carbon.2020.04.099)
+
+AICD : [10.1021/jp0034426](https://doi.org/10.1021/jp0034426)
+
+Fukui function : [10.1002/jcc.24699](https://doi.org/10.1002/jcc.24699) 、[10.1021/acs.jpca.9b07516](https://doi.org/10.1021/acs.jpca.9b07516)
+
+Natural bond orbital（NBO） : [10.1002/0470845015.cna009](https://doi.org/10.1002/0470845015.cna009)
+
+
 
 ## 二、计算软件
 
