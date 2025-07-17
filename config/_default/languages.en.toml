@@ -12,7 +12,7 @@ title = " "
   logo = "img/AlphaRay.svg"
   secondaryLogo = "img/AlphaRay.svg"
   description = "欢迎来到我的 Blog"
-  copyright = "Copy right :{ year }  All rights reserved：Ge Shijie"
+  copyright = "Copyright @ 2025. All Rights Reserved."
 
  [params.author]
    name = "葛世杰"

@@ -1,5 +1,5 @@
 module my-project
 
-go 1.24.0
+go 1.23
 
-require github.com/nunocoracao/blowfish/v2 v2.84.0 // indirect
+require github.com/nunocoracao/blowfish/v2 v2.88.1 // indirect
