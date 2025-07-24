@@ -3,14 +3,20 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>https://blog.alpharay.space/quantumchemistry/241205-calmeth/</loc>
+    <loc>https://blog.alpharay.space/compchem/241205-calmeth/</loc>
     <lastmod>2024-12-05T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://blog.alpharay.space/</loc>
-    <lastmod>2025-05-14T15:14:48+00:00</lastmod>
+    <lastmod>2025-06-10T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://blog.alpharay.space/compchem/2506010-vaspqe/</loc>
+    <lastmod>2025-06-10T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
@@ -21,19 +27,19 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.alpharay.space/quantumchemistry/250402-exstdy/</loc>
+    <loc>https://blog.alpharay.space/compchem/250402-exstdy/</loc>
     <lastmod>2025-04-02T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.alpharay.space/blogs/250316-macmini/</loc>
-    <lastmod>2025-03-16T12:14:48+00:00</lastmod>
+    <loc>https://blog.alpharay.space/blogs/250316-slurmdbd/</loc>
+    <lastmod>2025-03-16T21:03:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.alpharay.space/quantumchemistry/250217-calbirad/</loc>
+    <loc>https://blog.alpharay.space/compchem/250217-calbirad/</loc>
     <lastmod>2025-02-17T09:14:16+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -45,14 +51,14 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.alpharay.space/quantumchemistry/250210-calcitation/</loc>
-    <lastmod>2025-02-10T10:17:21+00:00</lastmod>
+    <loc>https://blog.alpharay.space/blogs/250212-macmini/</loc>
+    <lastmod>2025-02-12T12:14:48+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.alpharay.space/blogs/250206-slurmdbd/</loc>
-    <lastmod>2025-02-05T21:03:22+00:00</lastmod>
+    <loc>https://blog.alpharay.space/compchem/250210-calcitation/</loc>
+    <lastmod>2025-02-10T10:17:21+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
@@ -117,7 +123,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.alpharay.space/quantumchemistry/</loc>
+    <loc>https://blog.alpharay.space/compchem/</loc>
     <lastmod>2025-01-01T22:56:14+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

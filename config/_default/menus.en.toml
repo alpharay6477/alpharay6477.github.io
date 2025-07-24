@@ -27,9 +27,9 @@ identifier = "rXVCz71ATn"
 weight = 2
 
 [[main]]
-name = "QC"
+name = "CC"
 pre = "slack"
-pageRef = "QuantumChemistry"
+pageRef = "CompChem"
 identifier = "qXVCz71ATc"
 weight = 3
 

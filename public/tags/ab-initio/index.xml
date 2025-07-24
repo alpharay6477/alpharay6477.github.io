@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ab Initio on  </title>
+    <link>https://blog.alpharay.space/tags/ab-initio/</link>
+    <description>Recent content in Ab Initio on  </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>ge6477@outlook.com (葛世杰)</managingEditor>
+    <webMaster>ge6477@outlook.com (葛世杰)</webMaster>
+    <copyright>Copyright @ 2025. All Rights Reserved.</copyright>
+    <lastBuildDate>Tue, 10 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.alpharay.space/tags/ab-initio/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>编译 VASP 和 QE</title>
+      <link>https://blog.alpharay.space/compchem/2506010-vaspqe/</link>
+      <pubDate>Tue, 10 Jun 2025 00:00:00 +0000</pubDate>
+      <author>ge6477@outlook.com (葛世杰)</author>
+      <guid>https://blog.alpharay.space/compchem/2506010-vaspqe/</guid>
+      <description>使用编译器编译 VASP 和 Quantum Espresso（开源）。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.alpharay.space/compchem/2506010-vaspqe/feature.jpg" />
+    </item>
+    
+  </channel>
+</rss>
