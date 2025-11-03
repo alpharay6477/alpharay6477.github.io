@@ -18,10 +18,12 @@ authors:
 
 ## 一、计算方法
 
-Density Functional Theory（DFT）: [10.1103/PhysRev.136.B864](https://doi.org/10.1103/PhysRev.136.B864)
+#### Density Functional Theory（DFT）: [10.1103/PhysRev.136.B864](https://doi.org/10.1103/PhysRev.136.B864)
 
-Time-Dependent Density Functional Theory (TD-DFT) : [10.1103/PhysRevLett.52.997](https://doi.org/10.1103/PhysRevLett.52.997)
+#### Time-Dependent Density Functional Theory (TD-DFT) : [10.1103/PhysRevLett.52.997](https://doi.org/10.1103/PhysRevLett.52.997)
 
+###      
+    
 ### 1. 泛函
 
 1) 杂化泛函 (Hybrid functionals) 
@@ -34,7 +36,7 @@ TPSSh : [10.1103/PhysRevLett.91.146401](https://doi.org/10.1103/PhysRevLett.91.1
 
 M06-2X : [10.1007/s00214-007-0310-x](https://doi.org/10.1007/s00214-007-0310-x)
 
-2）范围分离杂化泛函 (Range-separated hybrid functional)
+2) 范围分离杂化泛函 (Range-separated hybrid functional)
 
 ωB97XD (%HFX 16.7 – 100): [10.1039/B810189B](https://doi.org/10.1039/B810189B)
 

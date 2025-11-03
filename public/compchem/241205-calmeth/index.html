@@ -142,7 +142,7 @@
     "keywords": ["Quantum Chemistry"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "5429"
+    "wordCount": "6023"
   }]
   </script>
 
@@ -993,7 +993,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2024-12-05T00:00:00&#43;00:00">5 December 2024</time><span class="px-2 text-primary-500">&middot;</span><span>5429 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">11 mins</span>
+      <time datetime="2024-12-05T00:00:00&#43;00:00">5 December 2024</time><span class="px-2 text-primary-500">&middot;</span><span>6023 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">13 mins</span>
     
 
     
@@ -1211,7 +1211,7 @@
     class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#一量子化学计算方法">一、量子化学计算方法</a>
+    <li><a href="#一量子化学">一、量子化学</a>
       <ul>
         <li><a href="#1-基态">1. 基态</a></li>
         <li><a href="#2-垂直激发态">2. 垂直激发态</a></li>
@@ -1234,7 +1234,15 @@
         <li><a href="#19-完全活性空间自洽场方法">19. 完全活性空间自洽场方法</a></li>
         <li><a href="#20-轨道定域化">20. 轨道定域化</a></li>
         <li><a href="#21-自旋密度分布">21. 自旋密度分布</a></li>
-        <li><a href="#22-差分密度电荷">22. 差分密度电荷</a></li>
+        <li><a href="#22-电子密度插图">22. 电子密度插图</a></li>
+      </ul>
+    </li>
+    <li><a href="#二分子动力学">二、分子动力学</a>
+      <ul>
+        <li><a href="#1-结构弛豫与能量最小化-structural-relaxation-and-energy-minimization">1. 结构弛豫与能量最小化 (Structural relaxation and energy minimization)</a></li>
+        <li><a href="#2-平衡态动力学模拟-equilibrium-state-dynamics-simulation">2. 平衡态动力学模拟 (Equilibrium state dynamics simulation)</a></li>
+        <li><a href="#3-构象变化与柔性分析-conformational-changes-and-flexibility-analysis">3. 构象变化与柔性分析 (Conformational changes and flexibility analysis)</a></li>
+        <li><a href="#4-相互作用与能量分析-interaction-and-energy-analysis">4. 相互作用与能量分析 (Interaction and energy analysis)</a></li>
       </ul>
     </li>
   </ul>
@@ -1250,7 +1258,7 @@
     class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#一量子化学计算方法">一、量子化学计算方法</a>
+    <li><a href="#一量子化学">一、量子化学</a>
       <ul>
         <li><a href="#1-基态">1. 基态</a></li>
         <li><a href="#2-垂直激发态">2. 垂直激发态</a></li>
@@ -1273,7 +1281,15 @@
         <li><a href="#19-完全活性空间自洽场方法">19. 完全活性空间自洽场方法</a></li>
         <li><a href="#20-轨道定域化">20. 轨道定域化</a></li>
         <li><a href="#21-自旋密度分布">21. 自旋密度分布</a></li>
-        <li><a href="#22-差分密度电荷">22. 差分密度电荷</a></li>
+        <li><a href="#22-电子密度插图">22. 电子密度插图</a></li>
+      </ul>
+    </li>
+    <li><a href="#二分子动力学">二、分子动力学</a>
+      <ul>
+        <li><a href="#1-结构弛豫与能量最小化-structural-relaxation-and-energy-minimization">1. 结构弛豫与能量最小化 (Structural relaxation and energy minimization)</a></li>
+        <li><a href="#2-平衡态动力学模拟-equilibrium-state-dynamics-simulation">2. 平衡态动力学模拟 (Equilibrium state dynamics simulation)</a></li>
+        <li><a href="#3-构象变化与柔性分析-conformational-changes-and-flexibility-analysis">3. 构象变化与柔性分析 (Conformational changes and flexibility analysis)</a></li>
+        <li><a href="#4-相互作用与能量分析-interaction-and-energy-analysis">4. 相互作用与能量分析 (Interaction and energy analysis)</a></li>
       </ul>
     </li>
   </ul>
@@ -1380,12 +1396,12 @@
         <div class="article-content max-w-prose mb-20">
           <p>理论计算是实验的延伸，而非简单的复现实验数据，计算的内容重点在于用理论解释现象，用计算验证理论。</p>
 
-<h2 class="relative group">一、量子化学计算方法 
-    <div id="一量子化学计算方法" class="anchor"></div>
+<h2 class="relative group">一、量子化学 
+    <div id="一量子化学" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#%e4%b8%80%e9%87%8f%e5%ad%90%e5%8c%96%e5%ad%a6%e8%ae%a1%e7%ae%97%e6%96%b9%e6%b3%95" aria-label="Anchor">#</a>
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#%e4%b8%80%e9%87%8f%e5%ad%90%e5%8c%96%e5%ad%a6" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
@@ -1743,16 +1759,74 @@
 <p>  对于开壳层体系（自由基、激发态、过渡金属）中电子自旋的空间分布情况。它通过 α 电子密度和 β 电子密度的差来定义，公式为：ρ（自旋密度）= ρ （α 电子密度） – ρ（β 电子密度）。
 对于闭壳层体系（即电子总数为偶数，且每个自旋方向的电子都完全配对的体系），由于每一个 α 自旋电子都有一个 β 自旋电子与之配对，因此在空间中的任何位置，α 和 β 电子的分布密度是完全相等的。这就导致在整个空间中，自旋密度处处为零，即不存在净自旋密度。</p>
 
-<h3 class="relative group">22. 差分密度电荷 
-    <div id="22-差分密度电荷" class="anchor"></div>
+<h3 class="relative group">22. 电子密度插图 
+    <div id="22-电子密度插图" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#22-%e5%b7%ae%e5%88%86%e5%af%86%e5%ba%a6%e7%94%b5%e8%8d%b7" aria-label="Anchor">#</a>
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#22-%e7%94%b5%e5%ad%90%e5%af%86%e5%ba%a6%e6%8f%92%e5%9b%be" aria-label="Anchor">#</a>
     </span>        
     
 </h3>
 <p>  Difference map for electron density，体系中电子密度的变化分布，通过计算实际电子密度与参考状态（如孤立原子或理论模型）电子密度的差值得到，用于直观显示化学键形成、电荷转移或外场作用下的电子重新分布。</p>
+
+<h2 class="relative group">二、分子动力学 
+    <div id="二分子动力学" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#%e4%ba%8c%e5%88%86%e5%ad%90%e5%8a%a8%e5%8a%9b%e5%ad%a6" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+
+<h3 class="relative group">1. 结构弛豫与能量最小化 (Structural relaxation and energy minimization) 
+    <div id="1-结构弛豫与能量最小化-structural-relaxation-and-energy-minimization" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#1-%e7%bb%93%e6%9e%84%e5%bc%9b%e8%b1%ab%e4%b8%8e%e8%83%bd%e9%87%8f%e6%9c%80%e5%b0%8f%e5%8c%96-structural-relaxation-and-energy-minimization" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>  找到分子体系的局部或全局能量最低的稳定结构，使用的是经典的力场进行几何优化。</p>
+
+<h3 class="relative group">2. 平衡态动力学模拟 (Equilibrium state dynamics simulation) 
+    <div id="2-平衡态动力学模拟-equilibrium-state-dynamics-simulation" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#2-%e5%b9%b3%e8%a1%a1%e6%80%81%e5%8a%a8%e5%8a%9b%e5%ad%a6%e6%a8%a1%e6%8b%9f-equilibrium-state-dynamics-simulation" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>  在指定的系综（NVT、NPT等）下，模拟体系在平衡状态下的运动轨迹，是所有后续分析的基础。</p>
+
+<h3 class="relative group">3. 构象变化与柔性分析 (Conformational changes and flexibility analysis) 
+    <div id="3-构象变化与柔性分析-conformational-changes-and-flexibility-analysis" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#3-%e6%9e%84%e8%b1%a1%e5%8f%98%e5%8c%96%e4%b8%8e%e6%9f%94%e6%80%a7%e5%88%86%e6%9e%90-conformational-changes-and-flexibility-analysis" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>  研究蛋白质折叠/去折叠、配体与受体的诱导契合、分子内旋转等大尺度构象变化。均方根偏差：衡量模拟过程中结构相对于参考结构（如晶体结构）的整体偏差。均方根涨落：分析每个原子位置的波动性，常用于识别蛋白质中柔性（如环区）和刚性（如α螺旋核心）的区域。回转半径：表征分子的紧凑程度，常用于研究蛋白质的折叠状态。</p>
+
+<h3 class="relative group">4. 相互作用与能量分析 (Interaction and energy analysis) 
+    <div id="4-相互作用与能量分析-interaction-and-energy-analysis" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#4-%e7%9b%b8%e4%ba%92%e4%bd%9c%e7%94%a8%e4%b8%8e%e8%83%bd%e9%87%8f%e5%88%86%e6%9e%90-interaction-and-energy-analysis" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>  1）相互作用能计算：精确计算蛋白质与配体、酶与底物、不同分子片段之间的范德华力和静电相互作用能。这与您的“片段相互作用分析”在概念上类似，但方法不同。
+  2）氢键分析：统计和分析模拟过程中氢键的形成、寿命和数量。
+  3）溶剂可及性表面积：计算分子表面被溶剂接触的面积，与疏水作用密切相关。
+  4）结合自由能计算：通过MM/PBSA或MM/GBSA方法，估算配体与受体的结合强度。这是药物设计中的关键技术。
+  5）伞形采样：一种增强采样技术，专门用于计算两个状态之间的自由能差，例如离子跨膜运输的自由能面（势能面）、配体从结合位点解离的路径等。这与您的“势能面扫描”和“反应机理拟定”在研究“过程”上类似。</p>
 
           
           
