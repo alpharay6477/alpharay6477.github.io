@@ -18,27 +18,43 @@ authors:
 
 ## 一、计算方法
 
+Density Functional Theory（DFT）: [10.1103/PhysRev.136.B864](https://doi.org/10.1103/PhysRev.136.B864)
+
+Time-Dependent Density Functional Theory (TD-DFT) : [10.1103/PhysRevLett.52.997](https://doi.org/10.1103/PhysRevLett.52.997)
+
 ### 1. 泛函
+
+1) 杂化泛函 (Hybrid functionals) 
 
 PBE0 : [10.1063/1.478522](http://doi.org/10.1063/1.478522)
 
 B3LYP : [10.1063/1.464913](https://doi.org/10.1063/1.464913)
 
-ωB97XD : [10.1039/B810189B](https://doi.org/10.1039/B810189B)
-
-CAM-B3LYP : [10.1016/j.cplett.2004.06.011](https://doi.org/10.1016/j.cplett.2004.06.011)
+TPSSh : [10.1103/PhysRevLett.91.146401](https://doi.org/10.1103/PhysRevLett.91.146401)、[10.1063/1.1626543](https://doi.org/10.1063/1.1626543)
 
 M06-2X : [10.1007/s00214-007-0310-x](https://doi.org/10.1007/s00214-007-0310-x)
 
-LC-PBE0 : [10.1063/1.2954017](https://doi.org/10.1063/1.2954017)
+2）范围分离杂化泛函 (Range-separated hybrid functional)
 
-LC-wPBE : [10.1063/1.2409292](https://doi.org/10.1063/1.2409292)
+ωB97XD (%HFX 16.7 – 100): [10.1039/B810189B](https://doi.org/10.1039/B810189B)
 
-LC-BLYP : []()
+CAM-B3LYP (%HFX 19 – 65) : [10.1016/j.cplett.2004.06.011](https://doi.org/10.1016/j.cplett.2004.06.011)
 
-SOS-PBE-QIDH : []()
+LC-PBE0 (%HFX 25 – 100) : [10.1063/1.2954017](https://doi.org/10.1063/1.2954017)
 
-mPW2PLYP : []()
+LC-wPBE (%HFX 0 – 100) : [10.1063/1.2409292](https://doi.org/10.1063/1.2409292)
+
+LC-BLYP (%HFX 0 – 100 : [10.1063/1.1688752](https://doi.org/10.1063/1.1688752)
+
+3) 双杂化泛函 (Double-hybrid functionals)
+
+PWPB95 : [10.1021/ct100466k](https://doi.org/10.1021/ct100466k)
+
+revDSD-PBEP86 : [10.1021/acs.jpca.1c01294](https://doi.org/10.1021/acs.jpca.1c01294)
+
+SOS-PBE-QIDH : [10.1021/acs.jctc.1c00535](https://doi.org/10.1021/acs.jctc.1c00535)
+
+ωB97M(2) (Range-separated %HFX 62.2 – 100) : [10.1063/1.5025226](https://doi.org/10.1063/1.5025226)
 
 ### 2. 基组
 
@@ -90,6 +106,7 @@ Fukui function : [10.1002/jcc.24699](https://doi.org/10.1002/jcc.24699) 、[10.1
 
 Natural bond orbital（NBO） : [10.1002/0470845015.cna009](https://doi.org/10.1002/0470845015.cna009)
 
+Gimic : [10.1063/1.1773136](https://doi.org/10.1063/1.1773136) , 综述 [10.1039/C1CP21812C](https://doi.org/10.1039/C1CP21812C)
 
 
 ## 二、计算软件
@@ -149,6 +166,8 @@ MOMAP
 
 参考：
 
->  https://bane-dysta.github.io/posts/citation/
+> https://gaussian.com/dft/ 
+> 
+> https://bane-dysta.github.io/posts/citation/
 > 
 > http://sobereva.com/370

@@ -134,6 +134,10 @@ authors:
 
 &emsp;&emsp;环电流的方向与芳香性有直接关系。如果环电流方向与左手规则相同时（称为 diamagnetic 或 diatropic 环电流），电流越大，则芳香性越强。相反，如果电流方向与左手规则相反（paratropic 环电流），电流越大则表现出越强的反芳香性。如果没有产生明显净电流，则为非芳香性。
 
+&emsp;&emsp;Gauge including magnetically induced current method, GIMIC。[考察分子磁感生电流的程序GIMIC 2.0的使用](http://sobereva.com/491)
+
+&emsp;&emsp; GIMIC方法基于GIAO（gauge including/invariant atomic orbitals，范规不变的原子轨道）方法，并依靠磁性质计算过程产生的密度矩阵和密度矩阵对磁场的导数矩阵来计算感应电流密度。相对于 AICD 程序来说，计算更复杂，绘制的模型图片更加高级和多样化。
+
 #### &emsp;16.3 化学屏蔽表面 
 
 &emsp; &emsp;Iso-Chemical Shielding Surfaces, ICSS。ICSS 是指在分子周围某个特定等值面上，该面上的磁屏蔽值相等。这个等值面能够直观地展示分子中电子密度的分布情况，尤其是 π 电子的分布，从而反映分子的芳香性。

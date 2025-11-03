@@ -42,8 +42,8 @@
   <link
     type="text/css"
     rel="stylesheet"
-    href="/css/main.bundle.min.c151e7bcd5065c5e40224be3fbb60bd169e9d951f9c8733e1b08272ea915f31ec04117a9eb12351fb3d8159277ddabb18782890697078f9cc6d3bc6797e2da64.css"
-    integrity="sha512-wVHnvNUGXF5AIkvj&#43;7YL0Wnp2VH5yHM&#43;GwgnLqkV8x7AQRep6xI1H7PYFZJ33auxh4KJBpcHj5zG07xnl&#43;LaZA==">
+    href="/css/main.bundle.min.05a052cb82b82778d1da82bf665675c8f84260aaf9d5f3a9b86718f8fb93ee6ebb720e706e3230c517041882aac1656a2060f3300c28112c559ba0e87b005d76.css"
+    integrity="sha512-BaBSy4K4J3jR2oK/ZlZ1yPhCYKr51fOpuGcY&#43;PuT7m67cg5wbjIwxRcEGIKqwWVqIGDzMAwoESxVm6DoewBddg==">
 
   
   
@@ -142,7 +142,7 @@
     "keywords": ["Web"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "1338"
+    "wordCount": "1345"
   }]
   </script>
 
@@ -854,7 +854,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2025-08-10T13:17:09&#43;00:00">10 August 2025</time><span class="px-2 text-primary-500">&middot;</span><span>1338 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">3 mins</span>
+      <time datetime="2025-08-10T13:17:09&#43;00:00">10 August 2025</time><span class="px-2 text-primary-500">&middot;</span><span>1345 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">3 mins</span>
     
 
     
@@ -1197,7 +1197,8 @@
 <p>在 <a
   href="http://www.wzcwzc.cool/post/32834fab.html"
     target="_blank"
-  >苏大校园网の小妙招 - 四叶草の博客</a> 提供的脚本基础上进行修改调整，详细的原理和实现可点击 🔗 进一步了解</p></blockquote>
+  >苏大校园网の小妙招 - 四叶草の博客</a> 提供的脚本基础上进行修改调整，详细的原理和实现可点击 🔗 进一步了解</p>
+</blockquote>
 
 <h2 class="relative group">一、起因 
     <div id="一起因" class="anchor"></div>
@@ -1249,6 +1250,8 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">        <span class="c1"># 使用正则表达式查找v4ip的值</span>
 </span></span><span class="line"><span class="cl">        <span class="nv">match</span> <span class="o">=</span> re.search<span class="o">(</span>r<span class="s2">&#34;v46ip\s*=\s*&#39;([\d\.]+)&#39;&#34;</span>, response.text<span class="o">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> not match:
+</span></span><span class="line"><span class="cl">            <span class="nv">match</span> <span class="o">=</span> re.search<span class="o">(</span>r<span class="s2">&#34;v4ip\s*=\s*&#39;([\d\.]+)&#39;&#34;</span>, response.text<span class="o">)</span>
 </span></span><span class="line"><span class="cl">        <span class="k">if</span> match:
 </span></span><span class="line"><span class="cl">            <span class="k">return</span> match.group<span class="o">(</span>1<span class="o">)</span>
 </span></span><span class="line"><span class="cl">        <span class="k">else</span>:

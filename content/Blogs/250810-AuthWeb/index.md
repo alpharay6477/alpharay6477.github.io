@@ -48,6 +48,8 @@ def get_v4ip_from_webpage():
 
         # 使用正则表达式查找v4ip的值
         match = re.search(r"v46ip\s*=\s*'([\d\.]+)'", response.text)
+        if not match:
+            match = re.search(r"v4ip\s*=\s*'([\d\.]+)'", response.text)
         if match:
             return match.group(1)
         else:

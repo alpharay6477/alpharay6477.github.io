@@ -42,8 +42,8 @@
   <link
     type="text/css"
     rel="stylesheet"
-    href="/css/main.bundle.min.c151e7bcd5065c5e40224be3fbb60bd169e9d951f9c8733e1b08272ea915f31ec04117a9eb12351fb3d8159277ddabb18782890697078f9cc6d3bc6797e2da64.css"
-    integrity="sha512-wVHnvNUGXF5AIkvj&#43;7YL0Wnp2VH5yHM&#43;GwgnLqkV8x7AQRep6xI1H7PYFZJ33auxh4KJBpcHj5zG07xnl&#43;LaZA==">
+    href="/css/main.bundle.min.05a052cb82b82778d1da82bf665675c8f84260aaf9d5f3a9b86718f8fb93ee6ebb720e706e3230c517041882aac1656a2060f3300c28112c559ba0e87b005d76.css"
+    integrity="sha512-BaBSy4K4J3jR2oK/ZlZ1yPhCYKr51fOpuGcY&#43;PuT7m67cg5wbjIwxRcEGIKqwWVqIGDzMAwoESxVm6DoewBddg==">
 
   
   
@@ -1296,7 +1296,8 @@
 <p>cert.pem（有时也称为 server.crt 或 public.crt）: 这个文件包含了你的公钥证书，也就是由证书颁发机构(CA)签名的数字证书。它用来证明网站的身份，并且包含公钥，客户端可以用这个公钥来加密与服务器之间的通信。</p>
 <p>chain.pem（有时也称为 ca_bundle.crt）: 该文件包含了中间证书链，这些证书链接了你的证书(cert.pem)到CA的根证书。不是所有的情况都需要这个文件，取决于CA和你所使用的证书类型。但是，提供完整的证书链可以确保浏览器能够验证你的证书，从而顺利完成SSL/TLS握手。</p>
 <p>fullchain.pem : 这个文件是一个组合文件，它将你的证书(cert.pem)和整个证书链(chain.pem)合并到了一个文件中。使用这个文件可以让服务器更容易地配置SSL/TLS，因为只需要指定一个文件即可提供所有的证书信息。</p>
-<p>privkey.pem（有时也称为private.key）: 这个文件包含了与你的公钥证书相对应的私钥。私钥用于解密用公钥加密的数据，并且在建立安全连接时进行身份验证。私钥必须严格保密，不应该泄露给任何人。</p></blockquote>
+<p>privkey.pem（有时也称为private.key）: 这个文件包含了与你的公钥证书相对应的私钥。私钥用于解密用公钥加密的数据，并且在建立安全连接时进行身份验证。私钥必须严格保密，不应该泄露给任何人。</p>
+</blockquote>
 <p>‍</p>
 
           

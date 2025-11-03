@@ -42,8 +42,8 @@
   <link
     type="text/css"
     rel="stylesheet"
-    href="/css/main.bundle.min.c151e7bcd5065c5e40224be3fbb60bd169e9d951f9c8733e1b08272ea915f31ec04117a9eb12351fb3d8159277ddabb18782890697078f9cc6d3bc6797e2da64.css"
-    integrity="sha512-wVHnvNUGXF5AIkvj&#43;7YL0Wnp2VH5yHM&#43;GwgnLqkV8x7AQRep6xI1H7PYFZJ33auxh4KJBpcHj5zG07xnl&#43;LaZA==">
+    href="/css/main.bundle.min.05a052cb82b82778d1da82bf665675c8f84260aaf9d5f3a9b86718f8fb93ee6ebb720e706e3230c517041882aac1656a2060f3300c28112c559ba0e87b005d76.css"
+    integrity="sha512-BaBSy4K4J3jR2oK/ZlZ1yPhCYKr51fOpuGcY&#43;PuT7m67cg5wbjIwxRcEGIKqwWVqIGDzMAwoESxVm6DoewBddg==">
 
   
   
@@ -1320,7 +1320,7 @@
 </span></span><span class="line"><span class="cl"><span class="nb">cd</span> chembl_beaker-master
 </span></span></code></pre></div><p>在这里，我的 docker 版本为 <code>Docker version 27.3.1, build ce12230</code>​ 不能直接 Build 镜像，否则 env 环境变量不能读取，出现 <code>warning</code>​ 导致识别识别失败。</p>
 <p>询问 deepseek：将 Dockerfile 复制为 Dockerfile_backpack，然后修改 Dockerfile （将 ENV ~ 后面加 = ）内容为：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dockerfile" data-lang="dockerfile"><span class="line"><span class="cl"><span class="k">FROM</span><span class="s"> debian:bookworm-slim</span><span class="err">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dockerfile" data-lang="dockerfile"><span class="line"><span class="cl"><span class="k">FROM</span><span class="w"> </span><span class="s">debian:bookworm-slim</span><span class="err">
 </span></span></span><span class="line"><span class="cl"><span class="err">
 </span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="k">ENV</span> <span class="nv">PYTHONUNBUFFERED</span><span class="o">=</span><span class="m">1</span>
 </span></span><span class="line"><span class="cl">
