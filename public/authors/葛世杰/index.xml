@@ -2,236 +2,256 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>葛世杰 on  </title>
-    <link>https://blog.alpharay.space/authors/%E8%91%9B%E4%B8%96%E6%9D%B0/</link>
+    <link>http://localhost:1313/authors/%E8%91%9B%E4%B8%96%E6%9D%B0/</link>
     <description>Recent content in 葛世杰 on  </description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <managingEditor>ge6477@outlook.com (葛世杰)</managingEditor>
-    <webMaster>ge6477@outlook.com (葛世杰)</webMaster>
+    <language>en-US</language>
+    <managingEditor>ge6477@outlook.com (Jason)</managingEditor>
+    <webMaster>ge6477@outlook.com (Jason)</webMaster>
     <copyright>Copyright @ 2025. All Rights Reserved.</copyright>
-    <lastBuildDate>Sun, 10 Aug 2025 13:17:09 +0000</lastBuildDate><atom:link href="https://blog.alpharay.space/authors/%E8%91%9B%E4%B8%96%E6%9D%B0/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 02 Oct 2026 13:17:09 +0000</lastBuildDate><atom:link href="http://localhost:1313/authors/%E8%91%9B%E4%B8%96%E6%9D%B0/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>计算方法记录</title>
-      <link>https://blog.alpharay.space/compchem/241205-calmeth/</link>
+      <link>http://localhost:1313/compchem/241205-calmeth/</link>
       <pubDate>Thu, 05 Dec 2024 00:00:00 +0000</pubDate>
-      <author>ge6477@outlook.com (葛世杰)</author>
-      <guid>https://blog.alpharay.space/compchem/241205-calmeth/</guid>
+      <author>ge6477@outlook.com (Jason)</author>
+      <guid>http://localhost:1313/compchem/241205-calmeth/</guid>
       <description>将学过的计算方法做简要记录。</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.alpharay.space/compchem/241205-calmeth/feature.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/compchem/241205-calmeth/feature.jpg" />
+    </item>
+    
+    <item>
+      <title>计算化学与AI</title>
+      <link>http://localhost:1313/blogs/261004-route/</link>
+      <pubDate>Fri, 02 Oct 2026 13:17:09 +0000</pubDate>
+      <author>ge6477@outlook.com (Jason)</author>
+      <guid>http://localhost:1313/blogs/261004-route/</guid>
+      <description>选择大于努力。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blogs/261004-route/feature.jpg" />
+    </item>
+    
+    <item>
+      <title>重原子位点效应对MR-TADF调控</title>
+      <link>http://localhost:1313/compchem/260731-chemsci/</link>
+      <pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate>
+      <author>ge6477@outlook.com (Jason)</author>
+      <guid>http://localhost:1313/compchem/260731-chemsci/</guid>
+      <description>结合研究生期间学习的内容与之前发表的文章，设计的一个理论计算的 idea。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/compchem/260731-chemsci/feature.jpg" />
     </item>
     
     <item>
       <title>苏州大学校园网认证脚本</title>
-      <link>https://blog.alpharay.space/blogs/250810-authweb/</link>
+      <link>http://localhost:1313/blogs/250810-authweb/</link>
       <pubDate>Sun, 10 Aug 2025 13:17:09 +0000</pubDate>
-      <author>ge6477@outlook.com (葛世杰)</author>
-      <guid>https://blog.alpharay.space/blogs/250810-authweb/</guid>
+      <author>ge6477@outlook.com (Jason)</author>
+      <guid>http://localhost:1313/blogs/250810-authweb/</guid>
       <description>苏州大学校园网认证脚本,办公室路由器分发网络。</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.alpharay.space/blogs/250810-authweb/feature.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blogs/250810-authweb/feature.jpg" />
     </item>
     
     <item>
       <title>编译 VASP 和 QE</title>
-      <link>https://blog.alpharay.space/compchem/2506010-vaspqe/</link>
+      <link>http://localhost:1313/compchem/2506010-vaspqe/</link>
       <pubDate>Tue, 10 Jun 2025 00:00:00 +0000</pubDate>
-      <author>ge6477@outlook.com (葛世杰)</author>
-      <guid>https://blog.alpharay.space/compchem/2506010-vaspqe/</guid>
+      <author>ge6477@outlook.com (Jason)</author>
+      <guid>http://localhost:1313/compchem/2506010-vaspqe/</guid>
       <description>使用编译器编译 VASP 和 Quantum Espresso（开源）。</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.alpharay.space/compchem/2506010-vaspqe/feature.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/compchem/2506010-vaspqe/feature.jpg" />
     </item>
     
     <item>
       <title>Mac OS 化学 3D 建模软件：SANSON</title>
-      <link>https://blog.alpharay.space/blogs/250514-sanson/</link>
+      <link>http://localhost:1313/blogs/250514-sanson/</link>
       <pubDate>Wed, 14 May 2025 15:14:48 +0000</pubDate>
-      <author>ge6477@outlook.com (葛世杰)</author>
-      <guid>https://blog.alpharay.space/blogs/250514-sanson/</guid>
+      <author>ge6477@outlook.com (Jason)</author>
+      <guid>http://localhost:1313/blogs/250514-sanson/</guid>
       <description>最近无意间发现一款化学/生物结构的 3D 建模软件 SANSON，由 &lt;a
   href=&#34;https://oneangstrom.com/&#34;
     target=&#34;_blank&#34;
   &gt;OneAngstrom&lt;/a&gt; 开发，可以原生支持 Mac OS。</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.alpharay.space/blogs/250514-sanson/feature.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blogs/250514-sanson/feature.jpg" />
     </item>
     
     <item>
       <title>激发态动力学计算</title>
-      <link>https://blog.alpharay.space/compchem/250402-exstdy/</link>
+      <link>http://localhost:1313/compchem/250402-exstdy/</link>
       <pubDate>Wed, 02 Apr 2025 00:00:00 +0000</pubDate>
-      <author>ge6477@outlook.com (葛世杰)</author>
-      <guid>https://blog.alpharay.space/compchem/250402-exstdy/</guid>
+      <author>ge6477@outlook.com (Jason)</author>
+      <guid>http://localhost:1313/compchem/250402-exstdy/</guid>
       <description>计算常见激发态过程动力学速率，包括辐射速率、系间窜跃和内转换。</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.alpharay.space/compchem/250402-exstdy/feature.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/compchem/250402-exstdy/feature.jpg" />
     </item>
     
     <item>
       <title>部署 Slurm DataBase</title>
-      <link>https://blog.alpharay.space/blogs/250316-slurmdbd/</link>
+      <link>http://localhost:1313/blogs/250316-slurmdbd/</link>
       <pubDate>Sun, 16 Mar 2025 21:03:22 +0000</pubDate>
-      <author>ge6477@outlook.com (葛世杰)</author>
-      <guid>https://blog.alpharay.space/blogs/250316-slurmdbd/</guid>
+      <author>ge6477@outlook.com (Jason)</author>
+      <guid>http://localhost:1313/blogs/250316-slurmdbd/</guid>
       <description>Rocky Linux 在部署 Slurm 集群软件后启用 Slurm DataBase 对作业进行记录。</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.alpharay.space/blogs/250316-slurmdbd/feature.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blogs/250316-slurmdbd/feature.jpg" />
     </item>
     
     <item>
       <title>Gaussian | 计算双自由基</title>
-      <link>https://blog.alpharay.space/compchem/250217-calbirad/</link>
+      <link>http://localhost:1313/compchem/250217-calbirad/</link>
       <pubDate>Mon, 17 Feb 2025 09:14:16 +0000</pubDate>
-      <author>ge6477@outlook.com (葛世杰)</author>
-      <guid>https://blog.alpharay.space/compchem/250217-calbirad/</guid>
+      <author>ge6477@outlook.com (Jason)</author>
+      <guid>http://localhost:1313/compchem/250217-calbirad/</guid>
       <description>课题组同门要做一个双自由基分子，虽然终产还没拿到，但是可以先算算性质。</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.alpharay.space/compchem/250217-calbirad/feature.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/compchem/250217-calbirad/feature.jpg" />
     </item>
     
     <item>
       <title>校园网环境下部署 molOCR</title>
-      <link>https://blog.alpharay.space/blogs/250215-molocr/</link>
+      <link>http://localhost:1313/blogs/250215-molocr/</link>
       <pubDate>Sat, 15 Feb 2025 12:14:48 +0000</pubDate>
-      <author>ge6477@outlook.com (葛世杰)</author>
-      <guid>https://blog.alpharay.space/blogs/250215-molocr/</guid>
+      <author>ge6477@outlook.com (Jason)</author>
+      <guid>http://localhost:1313/blogs/250215-molocr/</guid>
       <description>molOCR 开源项目可以将图片转化学结构，对科研工作者极为方便。</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.alpharay.space/blogs/250215-molocr/feature.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blogs/250215-molocr/feature.jpg" />
     </item>
     
     <item>
       <title>Mac mini M4 使用体验</title>
-      <link>https://blog.alpharay.space/blogs/250212-macmini/</link>
+      <link>http://localhost:1313/blogs/250212-macmini/</link>
       <pubDate>Wed, 12 Feb 2025 12:14:48 +0000</pubDate>
-      <author>ge6477@outlook.com (葛世杰)</author>
-      <guid>https://blog.alpharay.space/blogs/250212-macmini/</guid>
+      <author>ge6477@outlook.com (Jason)</author>
+      <guid>http://localhost:1313/blogs/250212-macmini/</guid>
       <description>Mac mini M4（16+256G） 国补 + 教育优惠只需要 2999 ¥，果断下单体验一把 Mac 系统的生态。</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.alpharay.space/blogs/250212-macmini/feature.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blogs/250212-macmini/feature.png" />
     </item>
     
     <item>
       <title>有机发光分子计算常用的 Citation</title>
-      <link>https://blog.alpharay.space/compchem/250210-calcitation/</link>
+      <link>http://localhost:1313/compchem/250210-calcitation/</link>
       <pubDate>Mon, 10 Feb 2025 10:17:21 +0000</pubDate>
-      <author>ge6477@outlook.com (葛世杰)</author>
-      <guid>https://blog.alpharay.space/compchem/250210-calcitation/</guid>
+      <author>ge6477@outlook.com (Jason)</author>
+      <guid>http://localhost:1313/compchem/250210-calcitation/</guid>
       <description>在写文章时，对前人工作的引用是非常重要的。</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.alpharay.space/compchem/250210-calcitation/feature.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/compchem/250210-calcitation/feature.jpg" />
     </item>
     
     <item>
       <title>使用 Latex 论文投稿</title>
-      <link>https://blog.alpharay.space/blogs/250121-latex/</link>
+      <link>http://localhost:1313/blogs/250121-latex/</link>
       <pubDate>Tue, 21 Jan 2025 13:17:09 +0000</pubDate>
-      <author>ge6477@outlook.com (葛世杰)</author>
-      <guid>https://blog.alpharay.space/blogs/250121-latex/</guid>
+      <author>ge6477@outlook.com (Jason)</author>
+      <guid>http://localhost:1313/blogs/250121-latex/</guid>
       <description>如果你熟悉一门编程语言以及 Markdown 标记语言，使用 Latex 投稿文章是一个不错的选择。</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.alpharay.space/blogs/250121-latex/feature.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blogs/250121-latex/feature.png" />
     </item>
     
     <item>
       <title>Links</title>
-      <link>https://blog.alpharay.space/links/</link>
+      <link>http://localhost:1313/links/</link>
       <pubDate>Tue, 07 Jan 2025 22:56:14 +0000</pubDate>
-      <author>ge6477@outlook.com (葛世杰)</author>
-      <guid>https://blog.alpharay.space/links/</guid>
+      <author>ge6477@outlook.com (Jason)</author>
+      <guid>http://localhost:1313/links/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.alpharay.space/links/feature.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/links/feature.jpg" />
     </item>
     
     <item>
       <title>瞬间</title>
-      <link>https://blog.alpharay.space/moments/</link>
+      <link>http://localhost:1313/moments/</link>
       <pubDate>Tue, 07 Jan 2025 22:56:14 +0000</pubDate>
-      <author>ge6477@outlook.com (葛世杰)</author>
-      <guid>https://blog.alpharay.space/moments/</guid>
+      <author>ge6477@outlook.com (Jason)</author>
+      <guid>http://localhost:1313/moments/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.alpharay.space/moments/feature.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/moments/feature.png" />
     </item>
     
     <item>
       <title>识别二维核磁共振氢谱</title>
-      <link>https://blog.alpharay.space/blogs/250109-2dnmr/</link>
+      <link>http://localhost:1313/blogs/250109-2dnmr/</link>
       <pubDate>Tue, 07 Jan 2025 22:56:14 +0000</pubDate>
-      <author>ge6477@outlook.com (葛世杰)</author>
-      <guid>https://blog.alpharay.space/blogs/250109-2dnmr/</guid>
+      <author>ge6477@outlook.com (Jason)</author>
+      <guid>http://localhost:1313/blogs/250109-2dnmr/</guid>
       <description>与一维NMR光谱相比，二维NMR光谱在两个维度上展开数据，增加了分辨率和解析度。</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.alpharay.space/blogs/250109-2dnmr/feature.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blogs/250109-2dnmr/feature.jpg" />
     </item>
     
     <item>
       <title>Logto | 控制台出现 Internal server error</title>
-      <link>https://blog.alpharay.space/blogs/250107-logto/</link>
+      <link>http://localhost:1313/blogs/250107-logto/</link>
       <pubDate>Tue, 07 Jan 2025 08:35:20 +0000</pubDate>
-      <author>ge6477@outlook.com (葛世杰)</author>
-      <guid>https://blog.alpharay.space/blogs/250107-logto/</guid>
+      <author>ge6477@outlook.com (Jason)</author>
+      <guid>http://localhost:1313/blogs/250107-logto/</guid>
       <description>在更换 SSL 证书后，Logto 控制台出现 Internal server error.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.alpharay.space/blogs/250107-logto/feature.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blogs/250107-logto/feature.jpg" />
     </item>
     
     <item>
       <title>Certbot 申请 SSL 证书</title>
-      <link>https://blog.alpharay.space/blogs/250105-certbotssl/</link>
+      <link>http://localhost:1313/blogs/250105-certbotssl/</link>
       <pubDate>Sun, 05 Jan 2025 09:52:12 +0000</pubDate>
-      <author>ge6477@outlook.com (葛世杰)</author>
-      <guid>https://blog.alpharay.space/blogs/250105-certbotssl/</guid>
+      <author>ge6477@outlook.com (Jason)</author>
+      <guid>http://localhost:1313/blogs/250105-certbotssl/</guid>
       <description>Linux 服务器使用 Certbot 申请 SSL 证书。</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.alpharay.space/blogs/250105-certbotssl/feature.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blogs/250105-certbotssl/feature.jpg" />
     </item>
     
     <item>
       <title>经济机器是怎样运行的</title>
-      <link>https://blog.alpharay.space/blogs/250105-jingjijiqi/</link>
+      <link>http://localhost:1313/blogs/250105-jingjijiqi/</link>
       <pubDate>Sun, 05 Jan 2025 09:52:12 +0000</pubDate>
-      <author>ge6477@outlook.com (葛世杰)</author>
-      <guid>https://blog.alpharay.space/blogs/250105-jingjijiqi/</guid>
+      <author>ge6477@outlook.com (Jason)</author>
+      <guid>http://localhost:1313/blogs/250105-jingjijiqi/</guid>
       <description>在B站刷到过瑞·达利欧（Ray Dalio）制作的《经济机器是怎样运行的》纪录片，印象深刻，这里简做摘要。</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.alpharay.space/blogs/250105-jingjijiqi/feature.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blogs/250105-jingjijiqi/feature.jpg" />
     </item>
     
     <item>
       <title>部署 Halo 博客 | 连接到外部 Docker postgres 数据库</title>
-      <link>https://blog.alpharay.space/blogs/250104-haloblogs/</link>
+      <link>http://localhost:1313/blogs/250104-haloblogs/</link>
       <pubDate>Sat, 04 Jan 2025 19:22:20 +0000</pubDate>
-      <author>ge6477@outlook.com (葛世杰)</author>
-      <guid>https://blog.alpharay.space/blogs/250104-haloblogs/</guid>
+      <author>ge6477@outlook.com (Jason)</author>
+      <guid>http://localhost:1313/blogs/250104-haloblogs/</guid>
       <description>部署 Halo 博客，并链接到不同 docker compose 部署的 &lt;code&gt;postgres SQL&lt;/code&gt;​ 数据库。</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.alpharay.space/blogs/250104-haloblogs/feature.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blogs/250104-haloblogs/feature.jpg" />
     </item>
     
     <item>
       <title>About</title>
-      <link>https://blog.alpharay.space/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Wed, 01 Jan 2025 22:56:14 +0000</pubDate>
-      <author>ge6477@outlook.com (葛世杰)</author>
-      <guid>https://blog.alpharay.space/about/</guid>
+      <author>ge6477@outlook.com (Jason)</author>
+      <guid>http://localhost:1313/about/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.alpharay.space/about/feature.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/about/feature.jpg" />
     </item>
     
     <item>
       <title>Blogs</title>
-      <link>https://blog.alpharay.space/blogs/</link>
+      <link>http://localhost:1313/blogs/</link>
       <pubDate>Wed, 01 Jan 2025 22:56:14 +0000</pubDate>
-      <author>ge6477@outlook.com (葛世杰)</author>
-      <guid>https://blog.alpharay.space/blogs/</guid>
+      <author>ge6477@outlook.com (Jason)</author>
+      <guid>http://localhost:1313/blogs/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Computational Chemistry</title>
-      <link>https://blog.alpharay.space/compchem/</link>
+      <link>http://localhost:1313/compchem/</link>
       <pubDate>Wed, 01 Jan 2025 22:56:14 +0000</pubDate>
-      <author>ge6477@outlook.com (葛世杰)</author>
-      <guid>https://blog.alpharay.space/compchem/</guid>
+      <author>ge6477@outlook.com (Jason)</author>
+      <guid>http://localhost:1313/compchem/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Hello, World ！</title>
-      <link>https://blog.alpharay.space/blogs/250101-helloworld/</link>
+      <link>http://localhost:1313/blogs/250101-helloworld/</link>
       <pubDate>Wed, 01 Jan 2025 09:14:16 +0000</pubDate>
-      <author>ge6477@outlook.com (葛世杰)</author>
-      <guid>https://blog.alpharay.space/blogs/250101-helloworld/</guid>
+      <author>ge6477@outlook.com (Jason)</author>
+      <guid>http://localhost:1313/blogs/250101-helloworld/</guid>
       <description>H如果你看到了这一篇文章，那么证明你已经安装成功了，感谢使用 Hugo，希望能够使用愉快。</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.alpharay.space/blogs/250101-helloworld/feature.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blogs/250101-helloworld/feature.jpg" />
     </item>
     
   </channel>

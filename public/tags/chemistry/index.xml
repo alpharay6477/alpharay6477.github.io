@@ -2,56 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Chemistry on  </title>
-    <link>https://blog.alpharay.space/tags/chemistry/</link>
+    <link>http://localhost:1313/tags/chemistry/</link>
     <description>Recent content in Chemistry on  </description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <managingEditor>ge6477@outlook.com (葛世杰)</managingEditor>
-    <webMaster>ge6477@outlook.com (葛世杰)</webMaster>
+    <language>en-US</language>
+    <managingEditor>ge6477@outlook.com (Jason)</managingEditor>
+    <webMaster>ge6477@outlook.com (Jason)</webMaster>
     <copyright>Copyright @ 2025. All Rights Reserved.</copyright>
-    <lastBuildDate>Wed, 14 May 2025 15:14:48 +0000</lastBuildDate><atom:link href="https://blog.alpharay.space/tags/chemistry/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 31 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/chemistry/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>重原子位点效应对MR-TADF调控</title>
+      <link>http://localhost:1313/compchem/260731-chemsci/</link>
+      <pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate>
+      <author>ge6477@outlook.com (Jason)</author>
+      <guid>http://localhost:1313/compchem/260731-chemsci/</guid>
+      <description>结合研究生期间学习的内容与之前发表的文章，设计的一个理论计算的 idea。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/compchem/260731-chemsci/feature.jpg" />
+    </item>
     
     <item>
       <title>Mac OS 化学 3D 建模软件：SANSON</title>
-      <link>https://blog.alpharay.space/blogs/250514-sanson/</link>
+      <link>http://localhost:1313/blogs/250514-sanson/</link>
       <pubDate>Wed, 14 May 2025 15:14:48 +0000</pubDate>
-      <author>ge6477@outlook.com (葛世杰)</author>
-      <guid>https://blog.alpharay.space/blogs/250514-sanson/</guid>
+      <author>ge6477@outlook.com (Jason)</author>
+      <guid>http://localhost:1313/blogs/250514-sanson/</guid>
       <description>最近无意间发现一款化学/生物结构的 3D 建模软件 SANSON，由 &lt;a
   href=&#34;https://oneangstrom.com/&#34;
     target=&#34;_blank&#34;
   &gt;OneAngstrom&lt;/a&gt; 开发，可以原生支持 Mac OS。</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.alpharay.space/blogs/250514-sanson/feature.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blogs/250514-sanson/feature.jpg" />
     </item>
     
     <item>
       <title>激发态动力学计算</title>
-      <link>https://blog.alpharay.space/compchem/250402-exstdy/</link>
+      <link>http://localhost:1313/compchem/250402-exstdy/</link>
       <pubDate>Wed, 02 Apr 2025 00:00:00 +0000</pubDate>
-      <author>ge6477@outlook.com (葛世杰)</author>
-      <guid>https://blog.alpharay.space/compchem/250402-exstdy/</guid>
+      <author>ge6477@outlook.com (Jason)</author>
+      <guid>http://localhost:1313/compchem/250402-exstdy/</guid>
       <description>计算常见激发态过程动力学速率，包括辐射速率、系间窜跃和内转换。</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.alpharay.space/compchem/250402-exstdy/feature.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/compchem/250402-exstdy/feature.jpg" />
     </item>
     
     <item>
       <title>Gaussian | 计算双自由基</title>
-      <link>https://blog.alpharay.space/compchem/250217-calbirad/</link>
+      <link>http://localhost:1313/compchem/250217-calbirad/</link>
       <pubDate>Mon, 17 Feb 2025 09:14:16 +0000</pubDate>
-      <author>ge6477@outlook.com (葛世杰)</author>
-      <guid>https://blog.alpharay.space/compchem/250217-calbirad/</guid>
+      <author>ge6477@outlook.com (Jason)</author>
+      <guid>http://localhost:1313/compchem/250217-calbirad/</guid>
       <description>课题组同门要做一个双自由基分子，虽然终产还没拿到，但是可以先算算性质。</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.alpharay.space/compchem/250217-calbirad/feature.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/compchem/250217-calbirad/feature.jpg" />
     </item>
     
     <item>
       <title>校园网环境下部署 molOCR</title>
-      <link>https://blog.alpharay.space/blogs/250215-molocr/</link>
+      <link>http://localhost:1313/blogs/250215-molocr/</link>
       <pubDate>Sat, 15 Feb 2025 12:14:48 +0000</pubDate>
-      <author>ge6477@outlook.com (葛世杰)</author>
-      <guid>https://blog.alpharay.space/blogs/250215-molocr/</guid>
+      <author>ge6477@outlook.com (Jason)</author>
+      <guid>http://localhost:1313/blogs/250215-molocr/</guid>
       <description>molOCR 开源项目可以将图片转化学结构，对科研工作者极为方便。</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.alpharay.space/blogs/250215-molocr/feature.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blogs/250215-molocr/feature.jpg" />
     </item>
     
   </channel>

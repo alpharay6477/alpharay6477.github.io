@@ -1,6 +1,6 @@
 disabled = false
-languageCode = "en"
-languageName = "English"
+locale = "en-US"
+label = "English"
 weight = 1
 title = " "
 
@@ -15,11 +15,11 @@ title = " "
   copyright = "Copyright @ 2025. All Rights Reserved."
 
  [params.author]
-   name = "葛世杰"
+   name = "Jason"
    email = "ge6477@outlook.com"
    image = "img/author.jpeg"
-   headline = "人生而自由，却无往不在枷锁之中。"
-   bio = " Student @ Soochow "
+   headline = "做时间的朋友。"
+   bio = "Engineer @ ShangHai "
    links = [
      { email = "mailto:ge6477@outlook.com" },
 #     { link = "https://alpharay.space/" },

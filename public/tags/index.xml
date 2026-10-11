@@ -2,121 +2,121 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on  </title>
-    <link>https://blog.alpharay.space/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on  </description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <managingEditor>ge6477@outlook.com (葛世杰)</managingEditor>
-    <webMaster>ge6477@outlook.com (葛世杰)</webMaster>
+    <language>en-US</language>
+    <managingEditor>ge6477@outlook.com (Jason)</managingEditor>
+    <webMaster>ge6477@outlook.com (Jason)</webMaster>
     <copyright>Copyright @ 2025. All Rights Reserved.</copyright>
-    <lastBuildDate>Sun, 10 Aug 2025 13:17:09 +0000</lastBuildDate><atom:link href="https://blog.alpharay.space/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>Web</title>
-      <link>https://blog.alpharay.space/tags/web/</link>
-      <pubDate>Sun, 10 Aug 2025 13:17:09 +0000</pubDate>
-      <author>ge6477@outlook.com (葛世杰)</author>
-      <guid>https://blog.alpharay.space/tags/web/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Ab Initio</title>
-      <link>https://blog.alpharay.space/tags/ab-initio/</link>
-      <pubDate>Tue, 10 Jun 2025 00:00:00 +0000</pubDate>
-      <author>ge6477@outlook.com (葛世杰)</author>
-      <guid>https://blog.alpharay.space/tags/ab-initio/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Chemistry</title>
-      <link>https://blog.alpharay.space/tags/chemistry/</link>
-      <pubDate>Wed, 14 May 2025 15:14:48 +0000</pubDate>
-      <author>ge6477@outlook.com (葛世杰)</author>
-      <guid>https://blog.alpharay.space/tags/chemistry/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Mac</title>
-      <link>https://blog.alpharay.space/tags/mac/</link>
-      <pubDate>Wed, 14 May 2025 15:14:48 +0000</pubDate>
-      <author>ge6477@outlook.com (葛世杰)</author>
-      <guid>https://blog.alpharay.space/tags/mac/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Linux</title>
-      <link>https://blog.alpharay.space/tags/linux/</link>
-      <pubDate>Sun, 16 Mar 2025 21:03:22 +0000</pubDate>
-      <author>ge6477@outlook.com (葛世杰)</author>
-      <guid>https://blog.alpharay.space/tags/linux/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Gaussian</title>
-      <link>https://blog.alpharay.space/tags/gaussian/</link>
-      <pubDate>Mon, 17 Feb 2025 09:14:16 +0000</pubDate>
-      <author>ge6477@outlook.com (葛世杰)</author>
-      <guid>https://blog.alpharay.space/tags/gaussian/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Docker</title>
-      <link>https://blog.alpharay.space/tags/docker/</link>
-      <pubDate>Sat, 15 Feb 2025 12:14:48 +0000</pubDate>
-      <author>ge6477@outlook.com (葛世杰)</author>
-      <guid>https://blog.alpharay.space/tags/docker/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Html</title>
-      <link>https://blog.alpharay.space/tags/html/</link>
-      <pubDate>Mon, 10 Feb 2025 10:17:21 +0000</pubDate>
-      <author>ge6477@outlook.com (葛世杰)</author>
-      <guid>https://blog.alpharay.space/tags/html/</guid>
-      <description></description>
-      
-    </item>
+    <lastBuildDate>Fri, 02 Oct 2026 13:17:09 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Knowledge</title>
-      <link>https://blog.alpharay.space/tags/knowledge/</link>
-      <pubDate>Tue, 21 Jan 2025 13:17:09 +0000</pubDate>
-      <author>ge6477@outlook.com (葛世杰)</author>
-      <guid>https://blog.alpharay.space/tags/knowledge/</guid>
+      <link>http://localhost:1313/tags/knowledge/</link>
+      <pubDate>Fri, 02 Oct 2026 13:17:09 +0000</pubDate>
+      <author>ge6477@outlook.com (Jason)</author>
+      <guid>http://localhost:1313/tags/knowledge/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Paper</title>
-      <link>https://blog.alpharay.space/tags/paper/</link>
-      <pubDate>Tue, 21 Jan 2025 13:17:09 +0000</pubDate>
-      <author>ge6477@outlook.com (葛世杰)</author>
-      <guid>https://blog.alpharay.space/tags/paper/</guid>
+      <link>http://localhost:1313/tags/paper/</link>
+      <pubDate>Fri, 02 Oct 2026 13:17:09 +0000</pubDate>
+      <author>ge6477@outlook.com (Jason)</author>
+      <guid>http://localhost:1313/tags/paper/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Chemistry</title>
+      <link>http://localhost:1313/tags/chemistry/</link>
+      <pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate>
+      <author>ge6477@outlook.com (Jason)</author>
+      <guid>http://localhost:1313/tags/chemistry/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Web</title>
+      <link>http://localhost:1313/tags/web/</link>
+      <pubDate>Sun, 10 Aug 2025 13:17:09 +0000</pubDate>
+      <author>ge6477@outlook.com (Jason)</author>
+      <guid>http://localhost:1313/tags/web/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Ab Initio</title>
+      <link>http://localhost:1313/tags/ab-initio/</link>
+      <pubDate>Tue, 10 Jun 2025 00:00:00 +0000</pubDate>
+      <author>ge6477@outlook.com (Jason)</author>
+      <guid>http://localhost:1313/tags/ab-initio/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Mac</title>
+      <link>http://localhost:1313/tags/mac/</link>
+      <pubDate>Wed, 14 May 2025 15:14:48 +0000</pubDate>
+      <author>ge6477@outlook.com (Jason)</author>
+      <guid>http://localhost:1313/tags/mac/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>http://localhost:1313/tags/linux/</link>
+      <pubDate>Sun, 16 Mar 2025 21:03:22 +0000</pubDate>
+      <author>ge6477@outlook.com (Jason)</author>
+      <guid>http://localhost:1313/tags/linux/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Gaussian</title>
+      <link>http://localhost:1313/tags/gaussian/</link>
+      <pubDate>Mon, 17 Feb 2025 09:14:16 +0000</pubDate>
+      <author>ge6477@outlook.com (Jason)</author>
+      <guid>http://localhost:1313/tags/gaussian/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>http://localhost:1313/tags/docker/</link>
+      <pubDate>Sat, 15 Feb 2025 12:14:48 +0000</pubDate>
+      <author>ge6477@outlook.com (Jason)</author>
+      <guid>http://localhost:1313/tags/docker/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Html</title>
+      <link>http://localhost:1313/tags/html/</link>
+      <pubDate>Mon, 10 Feb 2025 10:17:21 +0000</pubDate>
+      <author>ge6477@outlook.com (Jason)</author>
+      <guid>http://localhost:1313/tags/html/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Quantum Chemistry</title>
-      <link>https://blog.alpharay.space/tags/quantum-chemistry/</link>
+      <link>http://localhost:1313/tags/quantum-chemistry/</link>
       <pubDate>Thu, 05 Dec 2024 00:00:00 +0000</pubDate>
-      <author>ge6477@outlook.com (葛世杰)</author>
-      <guid>https://blog.alpharay.space/tags/quantum-chemistry/</guid>
+      <author>ge6477@outlook.com (Jason)</author>
+      <guid>http://localhost:1313/tags/quantum-chemistry/</guid>
       <description></description>
       
     </item>

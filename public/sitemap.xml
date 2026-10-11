@@ -3,139 +3,151 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>https://blog.alpharay.space/compchem/241205-calmeth/</loc>
+    <loc>http://localhost:1313/compchem/241205-calmeth/</loc>
     <lastmod>2024-12-05T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.alpharay.space/</loc>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-10-02T13:17:09+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/blogs/261004-route/</loc>
+    <lastmod>2026-10-02T13:17:09+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/compchem/260731-chemsci/</loc>
+    <lastmod>2026-07-31T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/blogs/250810-authweb/</loc>
     <lastmod>2025-08-10T13:17:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.alpharay.space/blogs/250810-authweb/</loc>
-    <lastmod>2025-08-10T13:17:09+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://blog.alpharay.space/compchem/2506010-vaspqe/</loc>
+    <loc>http://localhost:1313/compchem/2506010-vaspqe/</loc>
     <lastmod>2025-06-10T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.alpharay.space/blogs/250514-sanson/</loc>
+    <loc>http://localhost:1313/blogs/250514-sanson/</loc>
     <lastmod>2025-05-14T15:14:48+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.alpharay.space/compchem/250402-exstdy/</loc>
+    <loc>http://localhost:1313/compchem/250402-exstdy/</loc>
     <lastmod>2025-04-02T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.alpharay.space/blogs/250316-slurmdbd/</loc>
+    <loc>http://localhost:1313/blogs/250316-slurmdbd/</loc>
     <lastmod>2025-03-16T21:03:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.alpharay.space/compchem/250217-calbirad/</loc>
+    <loc>http://localhost:1313/compchem/250217-calbirad/</loc>
     <lastmod>2025-02-17T09:14:16+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.alpharay.space/blogs/250215-molocr/</loc>
+    <loc>http://localhost:1313/blogs/250215-molocr/</loc>
     <lastmod>2025-02-15T12:14:48+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.alpharay.space/blogs/250212-macmini/</loc>
+    <loc>http://localhost:1313/blogs/250212-macmini/</loc>
     <lastmod>2025-02-12T12:14:48+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.alpharay.space/compchem/250210-calcitation/</loc>
+    <loc>http://localhost:1313/compchem/250210-calcitation/</loc>
     <lastmod>2025-02-10T10:17:21+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.alpharay.space/blogs/250121-latex/</loc>
+    <loc>http://localhost:1313/blogs/250121-latex/</loc>
     <lastmod>2025-01-21T13:17:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.alpharay.space/links/</loc>
+    <loc>http://localhost:1313/links/</loc>
     <lastmod>2025-01-07T22:56:14+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.alpharay.space/moments/</loc>
+    <loc>http://localhost:1313/moments/</loc>
     <lastmod>2025-01-07T22:56:14+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.alpharay.space/blogs/250109-2dnmr/</loc>
+    <loc>http://localhost:1313/blogs/250109-2dnmr/</loc>
     <lastmod>2025-01-07T22:56:14+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.alpharay.space/blogs/250107-logto/</loc>
+    <loc>http://localhost:1313/blogs/250107-logto/</loc>
     <lastmod>2025-01-07T08:35:20+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.alpharay.space/blogs/250105-certbotssl/</loc>
+    <loc>http://localhost:1313/blogs/250105-certbotssl/</loc>
     <lastmod>2025-01-05T09:52:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.alpharay.space/blogs/250105-jingjijiqi/</loc>
+    <loc>http://localhost:1313/blogs/250105-jingjijiqi/</loc>
     <lastmod>2025-01-05T09:52:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.alpharay.space/blogs/250104-haloblogs/</loc>
+    <loc>http://localhost:1313/blogs/250104-haloblogs/</loc>
     <lastmod>2025-01-04T19:22:20+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.alpharay.space/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2025-01-01T22:56:14+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.alpharay.space/blogs/</loc>
+    <loc>http://localhost:1313/blogs/</loc>
     <lastmod>2025-01-01T22:56:14+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.alpharay.space/compchem/</loc>
+    <loc>http://localhost:1313/compchem/</loc>
     <lastmod>2025-01-01T22:56:14+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.alpharay.space/blogs/250101-helloworld/</loc>
+    <loc>http://localhost:1313/blogs/250101-helloworld/</loc>
     <lastmod>2025-01-01T09:14:16+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
